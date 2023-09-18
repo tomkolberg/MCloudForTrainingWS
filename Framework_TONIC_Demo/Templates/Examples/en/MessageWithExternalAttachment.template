@@ -1,0 +1,58 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\Examples\en\MessageWithExternalAttachment.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>What we always wanted to tell you...</Text>
+          <Data>$Instance.Recipient.NameFirstname</Data>
+         </Span>
+        </Par>
+        <ContainerPart>
+         <ForEach><![CDATA[$Instance.OutputSettings.OutputSettings]]></ForEach>
+         <DataDefinition></DataDefinition>
+         <Par>
+          <Span>
+           <Data>$OutputSettings.InstanceID</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </ContainerPart>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Message">$Message</Param>
+      <Param name="Instance">$Instance</Param>
+      <Param name="Subject1">"B1"</Param>
+      <Param name="Subject2">"B2"</Param>
+      <Param name="Subject3"></Param>
+     </DocumentPartRef>
+     <DocumentPartRef uri="\\Framework\Framework\DocumentParts\Attachment\Attachment.model">
+      <Param name="Attachment">"PDF/Registration.pdf"</Param>
+      <Param name="AttachmentName">"Registration"</Param>
+      <Param name="InstanceOutputSettings">$InstanceOutputSettings</Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

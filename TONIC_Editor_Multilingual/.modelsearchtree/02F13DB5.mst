@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+   <queryAnd>
+      <queryAtom name="Metadata.Modelsearchtree.Foldername"
+                 operator="NotEqual"
+                 value="invisible"/>
+   </queryAnd>
+   <virtualfolder name="Metadata.Modelsearchtree.Foldername"/>
+</query>

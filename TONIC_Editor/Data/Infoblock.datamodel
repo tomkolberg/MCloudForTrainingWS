@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="clerk">
+      <Settings>
+         <Script></Script>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="gender"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="firstname"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="surname"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="phone"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="fullname"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="email"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="function"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+   </Node>
+</DataModel>

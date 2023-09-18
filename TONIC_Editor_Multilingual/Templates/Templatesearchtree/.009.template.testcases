@@ -1,0 +1,73 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="&lt;Standard&gt;">
+ <TestCase name="&lt;Standard&gt;">
+  <Root>
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="DataProvisioningService">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Pfad">
+        <Value><![CDATA[string:mtx://\\TONIC_Editor_Multilingual\Testdata\]]></Value>
+       </DataNode>
+       <DataNode name="Extension">
+        <Value><![CDATA[string:.xml]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="true">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage" valueChanged="true">
+       <Value><![CDATA[string:GER]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding">
+       <Value><![CDATA[string:\library\TONIC_Editor_Multilingual\Templates\Templatesearchtree\009.template]]></Value>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Letter">
+      <DataNode name="document">
+       <DataNode name="date">
+        <Value><![CDATA[date:Sep 25, 2019, 11:13:31 AM]]></Value>
+       </DataNode>
+       <DataNode name="dateGerman">
+        <Value><![CDATA[date:Sep 25, 2019, 11:13:31 AM]]></Value>
+       </DataNode>
+       <DataNode name="salutation">
+        <Value><![CDATA[string:Dear sir or madam,]]></Value>
+       </DataNode>
+       <DataNode name="salutationGerman">
+        <Value><![CDATA[string:Liebe Kundin, lieber Kunde,]]></Value>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <SectionPartInstance partIndex="0">
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <SectionPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef ref="$Letter" name="Letter"></DataNodeRef>
+     </Data>
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <SectionPartInstance partIndex="2">
+     <ContainerPartInstance partIndex="0">
+      <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+     </ContainerPartInstance>
+    </SectionPartInstance>
+   </RootPartInstance>
+  </Root>
+ </TestCase>
+</TestCases>

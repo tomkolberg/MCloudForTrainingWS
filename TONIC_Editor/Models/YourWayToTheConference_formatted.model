@@ -1,0 +1,81 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <DataNodeDef name="Meeting" ref="Data\Meeting.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </DataNodeDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ContentLink title="Online conference" targetId="" dataNode="$Meeting.date"></ContentLink>
+  </GuideArea>
+  <InputArea>
+   <Group title="Date online conference">
+    <Field dataNode="$Meeting.date"></Field>
+    <Field title="Begin (Time)" dataNode="$Meeting.timeFrom"></Field>
+    <Field title="End (time)" dataNode="$Meeting.timeTo"></Field>
+   </Group>
+  </InputArea>
+ </UIContribution>
+ <Numbering id="1">
+  <Style parentName="Friendly"></Style>
+ </Numbering>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>The online conference will take place on </Text>
+   <Data>$Meeting.date</Data>
+   <Text> from</Text>
+   <Text> </Text>
+   <Data>$Meeting.timeFrom</Data>
+   <Text> to </Text>
+   <Data>$Meeting.timeTo</Data>
+   <Text>  Clock.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text bold spacing before"></Style>
+  <Span>
+   <Text>Your way to the conference:</Text>
+  </Span>
+ </Par>
+ <Par>
+  <NumberingRef numberingId="1" level="1"></NumberingRef>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Please register 5-10 minutes before the conference starts by clicking on this </Text>
+  </Span>
+  <Span>
+    <Hyperlink><![CDATA["https://weekly.meeting.com/SAMInsurance"]]></Hyperlink>
+   <Style parentName="Hyperlink"></Style>
+   <Text> link.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <NumberingRef numberingId="1" level="1"></NumberingRef>
+  <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>If you want to actively participate in the conversation, click on the button "I am calling" and dial the displayed number.</Text>
+   </Span>
+ </Par>
+ <Par>
+  <NumberingRef numberingId="1" level="1"></NumberingRef>
+  <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>Then you have to enter the access code and then the participant ID.</Text>
+   </Span>
+ </Par>
+ <Par>
+  <NumberingRef numberingId="1" level="1"></NumberingRef>
+  <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>Our board will then be ready to answer any questions, comments or suggestions after a short welcome.</Text>
+   </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text></Text>
+  </Span>
+ </Par>
+</ContainerPart>

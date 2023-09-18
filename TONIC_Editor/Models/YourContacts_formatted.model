@@ -1,0 +1,209 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Container id="Free text">
+  <Numbering id="2">
+   <Style parentName="Arrow"></Style>
+  </Numbering>
+  <Numbering id="1">
+   <Style parentName="Friendly"></Style>
+  </Numbering>
+  <Par>
+   <Style parentName="Text bold spacing before"></Style>
+   <Span>
+    <Text>How you get in touch with us:</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>No matter if you want advice or want to pass something on. Whatever moves you - contact us, we will be happy to help you.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style parentName="Text border"></Style>
+   <Span>
+    <Text>Telephone, e-mail, live chat - you have many ways of reaching us</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="2" level="1"></NumberingRef>
+   <Span>
+    <Text>free hotline 24/7 reachable</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="2" level="1"></NumberingRef>
+   <Span>
+    <Text>Live chat with customer service</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="2" level="1"></NumberingRef>
+   <Span>
+    <Text>encrypted contact form</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style>
+    <BreakBefore>page_forced</BreakBefore>
+   </Style>
+   <Span>
+    <Text>or</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Style parentName="TwoColumns"></Style>
+  <Numbering id="1">
+   <Style parentName="Friendly">
+    <Levels>
+     <Level number="1" firstLineIndent="-1.0cm" indent="2.0cm">
+      <Image uri="Graphics/iconmonstr-smiley-2.svg"></Image>
+     </Level>
+    </Levels>
+   </Style>
+  </Numbering>
+  <Par>
+   <Style parentName="Text">
+    <BreakAfter>column</BreakAfter>
+   </Style>
+   <Span>
+    <Text>visit us on Facebook</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text"></Style>
+   <Span>
+    <Hyperlink><![CDATA["https://www.facebook.com/sam"]]></Hyperlink>
+    <Style parentName="Hyperlink"></Style>
+    <Text>click here</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Style parentName="TwoColumns"></Style>
+  <Numbering id="1">
+   <Style parentName="Friendly"></Style>
+  </Numbering>
+  <Par>
+   <Style parentName="Text">
+    <BreakAfter>none</BreakAfter>
+   </Style>
+   <Span>
+    <Text>use our WhatsApp Service</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text">
+    <BreakBefore>column</BreakBefore>
+   </Style>
+   <Span>
+    <Text>Save the mobile phone number 0800 123456 12 as a contact in your address book on your smartphone.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>Open WhatsApp</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text spacing before">
+    <BreakAfter>none</BreakAfter>
+   </Style>
+   <Span>
+    <Text>Start a conversation with us.</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Style parentName="TwoColumnsEnd"></Style>
+  <Numbering id="1">
+   <Style parentName="Friendly"></Style>
+  </Numbering>
+  <Par>
+   <Style parentName="Text">
+    <BreakAfter>column</BreakAfter>
+   </Style>
+   <Span>
+    <Text>use our SMS callback service</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>Send SMS to our mobile phone number 0800 123456 12</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>ask for a callback or</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>request an insurance quote or</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>ask questions about existing contracts.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <NumberingRef numberingId="1" level="1"></NumberingRef>
+   <Style parentName="Text spacing before"></Style>
+   <Span>
+    <Text>After sending your SMS we will contact you by phone, e-mail or letter.</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Container id="Free text">
+   <Par>
+    <Style parentName="Text spacing before"></Style>
+    <Span>
+     <Text>Of course, you can also take the good old postal route.</Text>
+    </Span>
+   </Par>
+   <Par>
+    <Style parentName="Text spacing before"></Style>
+    <Span>
+     <Text>Or you can send us an e-mail </Text>
+    </Span>
+    <Span>
+     <Hyperlink><![CDATA["mailto:service@weltweit.info"]]></Hyperlink>
+     <Style parentName="Hyperlink"></Style>
+     <Text>service@weltweit.info</Text>
+    </Span>
+   </Par>
+   <Par>
+    <Style parentName="Text spacing before"></Style>
+    <Span>
+     <Text>Kind regards</Text>
+    </Span>
+   </Par>
+  </Container>
+ </Container>
+</ContainerPart>

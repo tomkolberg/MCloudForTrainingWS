@@ -1,0 +1,29 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Style parentName="Indented_local">
+   <LeftIndent>0.5cm</LeftIndent>
+  </Style>
+  <Span>
+   <Text>Lorem ipsum </Text>
+  </Span>
+  <Span>
+   <Text>Dolor sit amet, consetetur sadipscing elitr, </Text>
+  </Span>
+  <Span>
+   <Text>Sed diam nonumy eirmod tempor invidunt </Text>
+  </Span>
+  <Span>
+   <Text>Ut labore et dolore magna aliquyam erat, </Text>
+  </Span>
+  <Span>
+   <Text>Sed diam voluptua. At vero eos et accusam </Text>
+  </Span>
+  <Span>
+   <Text>Et justo duo dolores et ea rebum. </Text>
+  </Span>
+  <Span>
+   <Text>Stet clita kasd gubergren, no sea takimata Sanctus est Lorem ipsum dolor sit amet.</Text>
+  </Span>
+ </Par>
+</ContainerPart>

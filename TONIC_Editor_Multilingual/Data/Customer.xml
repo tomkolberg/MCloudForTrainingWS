@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE write [
+]>
+<!-- L e t t e r -->
+<letter>
+	<account>
+		<title1>234567890</title1>
+		<title2>Sylvia Bacres, London</title2>
+	</account>
+	<document>
+		<type />
+		<subject1></subject1>
+		<subject2></subject2>
+		<id>010101</id>
+	</document>
+	<!-- C u s t o m e r (Address) -->
+	<customer>
+		<customerno>234567890</customerno>
+		<gender>1</gender>
+		<title>Dr.</title>
+		<firstname>Sylvia</firstname>
+		<surname>Bacres</surname>
+		<street>22 Christchurch Street</street>
+		<postcode>SW3 4AR</postcode>
+		<town>London</town>
+		<!-- B a n k  d e t a i l s -->
+		<bankdetails>
+			<owner>Sylvia Bacres</owner>
+			<bank>Bank of England</bank>
+			<bic></bic>
+			<iban>GB32ESSE40486562136016</iban>
+		</bankdetails>
+	</customer>
+	<!-- C l e r k  -->
+	<clerk>
+		<gender>Mr</gender>
+		<firstname>Erich</firstname>
+		<surname>Hofmeier</surname>
+		<phone>0761-8852-123</phone>
+		<fullname>Erich Hofmeier</fullname>
+		<email>Hofmeier@kw.de</email>
+		<function>Customer Service Manager</function>
+	</clerk>
+</letter>

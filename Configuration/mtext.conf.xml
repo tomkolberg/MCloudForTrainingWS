@@ -1,0 +1,445 @@
+<!-- M/TEXT Formatter configuration -->
+<configuration
+	xmlns="http://www.kwsoft.de/mtext-formatter/conf">
+
+	<!-- Global information about the input format, valid for all destinations. 
+		Replaces M/TEXT environment (used to be in the edit.lib) -->
+	<global>
+		<long-date-format>dd.MM.yyyy</long-date-format>
+		<short-date-format>dd.MM.yy</short-date-format>
+		<time-format>HH:mm:ss</time-format>
+		<decimal-separator>,</decimal-separator>
+		<thousands-separator>.</thousands-separator>
+		<minus-at-number-start>true</minus-at-number-start>
+
+		<default-language>ENG</default-language>
+		<sign-password-checked>true</sign-password-checked>
+		<!-- Default value for .OCL PAGE_CONTROL TEXT_OFFSET_X/Y, default units 
+			(without postfix) are mgraf units - 1/100 mm, other possible units are millipoints 
+			with postfix 'mtp' e.g. 42520mtp or cm, mm. -->
+		<default-text-offset
+			top="1cm"
+			left="2cm" />
+
+		<available-editor-fonts>
+			<font-family name="SERIF" />
+			<font-family name="SANS" />
+
+			<font-family name="MONO" />
+			<font-family name="STANDARD" />
+
+
+		</available-editor-fonts>
+	</global>
+	<destinations>
+		<!-- Default setting that will be used for each destination if not overridden 
+			at destination level -->
+		<destination-defaults>
+			<!-- absolute offset of all elements (text + graphics) on the page, default 
+				units (without postfix) are mgraf units - 1/100 mm, other possible units 
+				are millipoints with postfix 'mtp' e.g. 42520mtp or cm, mm. -->
+			<page-pos />
+			<!-- renderer -->
+			<renderer
+				mime-type="application/X-mtext-intermediate-format"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/mtext-intermediate-format" />
+			<!-- font set reference, defined bellow -->
+			<font-set name="ttf-fonts"></font-set>
+			<!-- Defines barcode engine used for generating barcode. Possible values 
+				are : native barcode4j -->
+			<barcode-engine>barcode4j</barcode-engine>
+			<!-- Target resolution in dpi (dots/pixels per inch) for specifying the 
+				target resolution for generated bitmaps, default: 72dpi -->
+			<target-resolution>300</target-resolution>
+		</destination-defaults>
+		<!-- Destination with reserved name "preview" is used for preview. This 
+			special destination ignores renderer and post-processor settings, and uses 
+			the font settings only for formatting, for rendering always the AWT fonts 
+			on the client are used -->
+		<destination name="preview">
+		</destination>
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+		<destination name="export-application/pdf">
+			<renderer
+				mime-type="application/X-kw-pdf"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pdf">
+			</renderer>
+			<!-- example of key handler, used to pass .KEY elements to an external 
+				handler <key-handler class="de.kwsoft.mtext.format.config.DummyKeyHandler"/> -->
+		</destination>
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+		<destination name="postscript">
+			<font-set name="postscript-fonts" />
+			<renderer
+				mime-type="application/X-kw-postscript"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/postscript" />
+		</destination>
+
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+		<destination name="pcl">
+			<font-set name="ttf-fonts" />
+			<renderer
+				mime-type="application/X-kw-pcl"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pcl"></renderer>
+		</destination>
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+		<!-- This example destination shows the OMS integration -->
+		<destination name="OMS">
+			<ocl-handler
+				class="de.kwsoft.moms.client.ocl.converter.OCLCommandHandler"
+				xmlns:ocl-handler="http://www.kwsoft.de/mtext/ext/ocl-handler/oms" />
+			<post-processor
+				class="de.kwsoft.moms.client.postprocessor.OmsPostProcessor"
+				xmlns:post-processor="http://www.kwsoft.de/mtext/ext/post-processor/oms" />
+		</destination>
+		<destination name="afp">
+			<renderer
+				mime-type="application/X-kw-afp"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/afp"></renderer>
+			<post-processor
+				class="de.kwsoft.mtext.format.ext.FileOutputPostProcessor"
+				xmlns:post-processor="http://www.kwsoft.de/mtext/ext/post-processor/file-output">
+				<post-processor:output-file>/opt/serie-m/Dokumente/afp/${documentName}_${counter}.${ext}</post-processor:output-file>
+			</post-processor>
+			<font-set name="ttf-fonts" />
+		</destination>
+		<destination name="export-image/png">
+			<renderer
+				mime-type="image/png"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/png" />
+			<target-resolution>150</target-resolution>
+		</destination>
+	</destinations>
+	<!-- Font set definitions -->
+	<fonts>
+		<font-set name="standard-fonts">
+			<!-- base URL used for resolving fonts, when font are defined manually 
+				as font triplets. Not required, if auto-detect is used. <font-base>file:/c:/windows/fonts</font-base> -->
+			<font-name-alias
+				from-name="SERIF"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="SANS"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="MONO"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="TIMES"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="ARIAL"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="COURIER"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="STANDARD"
+				to-name="DejaVu Sans Condensed" />
+		</font-set>
+		<font-set name="postscript-fonts">
+
+			<font-base>mtx://Fonts/Postscript</font-base>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed.pfb">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="normal"
+					weight="normal" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-Bold.pfb">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="normal"
+					weight="bold" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-Oblique.pfb">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="italic"
+					weight="normal" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-BoldOblique.pfb">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="italic"
+					weight="bold" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono.pfb">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="normal"
+					weight="normal" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-Bold.pfb">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="normal"
+					weight="bold" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-Oblique.pfb">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="italic"
+					weight="normal" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-BoldOblique.pfb">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="italic"
+					weight="bold" />
+			</font>
+
+
+
+
+
+
+
+
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed.pfb">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="normal"
+					weight="normal" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-Bold.pfb">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="normal"
+					weight="bold" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-Italic.pfb">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="italic"
+					weight="normal" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-BoldItalic.pfb">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="italic"
+					weight="bold" />
+			</font>
+			<font-base>mtx://Fonts/Postscript</font-base>
+			<font-name-alias
+				from-name="SERIF"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="SANS"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="MONO"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="TIMES"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="ARIAL"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="COURIER"
+				to-name="DejaVu Sans Mono" />
+		</font-set>
+
+
+
+
+
+		<font-set name="ttf-fonts">
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="normal"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-Bold.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="normal"
+					weight="bold" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-Oblique.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="italic"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-BoldOblique.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="italic"
+					weight="bold" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="normal"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-Bold.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="normal"
+					weight="bold" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-Italic.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="italic"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-BoldItalic.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="italic"
+					weight="bold" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono.ttf">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="normal"
+					weight="normal" />
+
+
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-Bold.ttf">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="normal"
+					weight="bold" />
+
+
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-Oblique.ttf">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="italic"
+					weight="normal" />
+
+
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-BoldOblique.ttf">
+
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="italic"
+					weight="bold" />
+
+			</font>
+
+			<font-base>mtx://Fonts/TTF</font-base>
+			<font-name-alias
+				from-name="SANS"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="SERIF"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="MONO"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="ARIAL"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="TIMES"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="COURIER"
+				to-name="DejaVu Sans Mono" />
+
+			<font-name-alias
+				from-name="STANDARD"
+				to-name="DejaVu Sans Condensed" />
+		</font-set>
+	</fonts>
+	<!-- Renderer specific configuration valid for all destinations, if not 
+		overriden at destination level -->
+	<renderers>
+		<renderer
+			mime-type="application/X-kw-pdf"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pdf">
+			<renderer:pdf-a-mode>PDF/A disabled</renderer:pdf-a-mode>
+		</renderer>
+		<renderer
+			mime-type="application/X-kw-pcl"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pcl">
+			<renderer:enable-color-support>true</renderer:enable-color-support>
+		</renderer>
+
+		<renderer
+			mime-type="application/X-kw-postscript"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/postscript"></renderer>
+		<renderer
+			mime-type="application/X-kw-afp"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/afp">
+			<renderer:images
+				mode="color"
+				native="true"></renderer:images>
+		</renderer>
+	</renderers>
+</configuration>

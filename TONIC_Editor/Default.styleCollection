@@ -1,0 +1,242 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+ <TableStyle name="Grid">
+  <RowStyle>
+   <CellStyle>
+    <Border>
+     <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+     <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+     <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+     <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+    </Border>
+    <Padding top="0.05cm" right="0.3cm" bottom="0.05cm" left="0.3cm"></Padding>
+   </CellStyle>
+  </RowStyle>
+  <SpaceBefore resolution="combine">0.5cm</SpaceBefore>
+ </TableStyle>
+ <TableStyle name="Stripes" parentName="Grid">
+  <TableHeaderStyle>
+   <RowStyle>
+    <BackgroundColor>rgb(224,224,224)</BackgroundColor>
+   </RowStyle>
+  </TableHeaderStyle>
+  <RowStyle index="even">
+   <BackgroundColor>rgb(237,237,237)</BackgroundColor>
+  </RowStyle>
+  <RowStyle index="odd">
+  	<BackgroundColor>rgb(255,255,255)</BackgroundColor></RowStyle>
+ </TableStyle>
+ <TableStyle name="Stripes 2" parentName="Grid">
+  <TableHeaderStyle>
+   <RowStyle>
+    <CellStyle>
+     <ContainerStyle>
+      <ParStyle>
+       <SpanStyle>
+        <TextColor>rgb(255,255,255)</TextColor>
+       </SpanStyle>
+      </ParStyle>
+     </ContainerStyle>
+    </CellStyle>
+    <BackgroundColor>rgb(227,0,24)</BackgroundColor>
+   </RowStyle>
+  </TableHeaderStyle>
+  <RowStyle index="even">
+   <BackgroundColor>rgb(251,153,162)</BackgroundColor>
+  </RowStyle>
+ </TableStyle>
+ <ParStyle name="Normal">
+  <SpanStyle>
+   <FontSize>12000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+  </SpanStyle>
+  <RightIndent>0.0mpt</RightIndent>
+  <Align>left</Align>
+  <LeftIndent>0.0mpt</LeftIndent>
+ </ParStyle>
+ <ParStyle name="Heading 1">
+  <SpanStyle>
+   <FontSize>16000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+ <ParStyle name="Heading 2">
+  <SpanStyle>
+   <FontStyle>bold</FontStyle>
+   <FontSize>14000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+ <ParStyle name="Heading 3">
+  <SpanStyle>
+   <TextColor>rgb(102,102,102)</TextColor>
+   <FontStyle>bold</FontStyle>
+   <FontSize>13000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+ <ParStyle name="Heading 4">
+  <SpanStyle>
+   <FontStyle>underlined</FontStyle>
+   <FontSize>12000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+ <SpanStyle name="SANS11">
+  <FontSize>11000.0mpt</FontSize>
+  <FontFamily>SANS</FontFamily>
+ </SpanStyle>
+ <SectionStyle name="SAMLetter">
+  <PageLayouts parentRef="Layouts/Letter.pageLayouts"></PageLayouts>
+ </SectionStyle>
+ <ParStyle name="Text">
+  <SpanStyle parentName="SANS11"></SpanStyle>
+ </ParStyle>
+ <NumberingStyle name="Arrow">
+  <Levels>
+   <Level number="1" firstLineIndent="-1.0cm" indent="1.0cm">
+    <Symbol>arrow</Symbol>
+   </Level>
+  </Levels>
+ </NumberingStyle>
+ <ParStyle name="Text spacing before" parentName="Text">
+  <SpaceBefore>11.0pt</SpaceBefore>
+ </ParStyle>
+ <NumberingStyle name="Sqare">
+  <Levels>
+   <Level number="1" firstLineIndent="-1.0cm" indent="1.0cm">
+    <Symbol>square</Symbol>
+   </Level>
+  </Levels>
+ </NumberingStyle>
+ <NumberingStyle name="Friendly">
+  <Levels>
+   <Level number="1" firstLineIndent="-1.0cm" indent="2.0cm">
+    <Image uri="Graphics/iconmonstr-smiley-2.svg"></Image>
+   </Level>
+  </Levels>
+ </NumberingStyle>
+ <ParStyle
+ 	name="FW_Text"
+ 	hideInEditor="true">
+ 	<SpanStyle parentName="SANS11"></SpanStyle>
+ </ParStyle>
+ <ParStyle
+ 	name="FW_Salutation"
+ 	parentName="FW_Text"
+ 	hideInEditor="true">
+ 	<SpaceAfter resolution="overwrite">11.0pt</SpaceAfter>
+ </ParStyle>
+ <ParStyle name="Text bold" parentName="Text">
+  <SpanStyle parentName="SANS11">
+   <FontStyle>bold</FontStyle>
+  </SpanStyle>
+ </ParStyle>
+ <ParStyle name="Text bold spacing before" parentName="Text">
+  <SpanStyle parentName="SANS11">
+   <FontStyle>bold</FontStyle>
+  </SpanStyle>
+  <SpaceBefore>11.0pt</SpaceBefore>
+ </ParStyle>
+ <ParStyle name="Text border" parentName="Text">
+  <Border>
+   <Left width="426.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+   <Top width="426.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+   <Right width="426.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+   <Bottom width="426.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+  </Border>
+  <SpaceBefore>11.0pt</SpaceBefore>
+  <Padding top="2.0mm" right="2.0mm" bottom="2.0mm" left="2.0mm"></Padding>
+  <SpaceAfter>11.0pt</SpaceAfter>
+ </ParStyle>
+ <ContainerStyle name="TwoColumns">
+  <Border>
+   <Top width="426.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+  </Border>
+  <ColumnsDefinition>
+   <ColumnDefinition width="8.0cm" gap="0.2cm"></ColumnDefinition>
+   <ColumnDefinition width="8.0cm"></ColumnDefinition>
+  </ColumnsDefinition>
+  <Padding top="0.2cm" bottom="0.2cm"></Padding>
+ </ContainerStyle>
+ <ContainerStyle name="TwoColumnsEnd">
+  <Border>
+   <Top width="426.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+   <Bottom width="426.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+  </Border>
+  <ColumnsDefinition>
+   <ColumnDefinition width="8.0cm" gap="0.2cm"></ColumnDefinition>
+   <ColumnDefinition width="8.0cm"></ColumnDefinition>
+  </ColumnsDefinition>
+  <Padding top="0.2cm" bottom="0.2cm"></Padding>
+ </ContainerStyle>
+ <SpanStyle name="Hyperlink">
+  <HyperlinkColor>rgb(0,0,255)</HyperlinkColor>
+  <HyperlinkUnderline>true</HyperlinkUnderline>
+ </SpanStyle>
+ <SpanStyle>
+ 	<FontSize>11.0pt</FontSize>
+ 	<FontFamily>SANS</FontFamily></SpanStyle>
+ <ParStyle
+ 	name="FW_Subject"
+ 	parentName="FW_Text"
+ 	hideInEditor="true">
+ </ParStyle>
+ <ParStyle
+ 	name="FW_Recipient"
+ 	parentName="FW_Text"
+ 	hideInEditor="true">
+ 	<SpanStyle>
+ 		<ReduceMultipleBlanks>true</ReduceMultipleBlanks></SpanStyle>
+ </ParStyle>
+ <TableStyle name="Marginalie">
+ 	<RowStyle>
+ 		<CellStyle>
+ 			<Padding bottom="0.2cm" top="0.2cm"/>
+ 			<Border>
+ 				<Left style="none"></Left><Top style="solid"></Top>
+ 				<Right style="none"/>
+ 				<Bottom style="none"></Bottom></Border></CellStyle></RowStyle>
+ 	<TableFooterStyle></TableFooterStyle>
+ 	<RowStyle>
+ 		<Border>
+ 			<Bottom style="solid"/></Border></RowStyle></TableStyle>
+ <TableStyle
+ 	name="demo"
+ 	hideInEditor="true">
+ 	<BackgroundColor>rgb(255,228,196)</BackgroundColor>
+ 	<Padding top="0.5cm" bottom="0.5cm" left="0.5cm" right="0.5cm"/>
+ 	<Border>
+ 		<Top color="rgb(0,0,0)" style="solid" width="1.0mm"/>
+ 	<Bottom color="rgb(0,0,0)" style="solid" width="1.0mm" /><Left color="rgb(0,0,0)" style="solid" width="1.0mm" /><Right color="rgb(0,0,0)" style="solid" width="1.0mm" /></Border>
+ 	<SpaceBefore>0.0cm</SpaceBefore>
+ 	<RowStyle>
+ 		<BackgroundColor>rgb(255,160,122)</BackgroundColor>
+ 		<Padding bottom="0.3cm" left="0.3cm" right="0.3cm" top="0.3cm"/>
+ 		<Border>
+ 			<Top
+ 				color="rgb(0,0,0)"
+ 				style="solid"
+ 				width="0.1cm">
+ 			</Top></Border>
+ 		<CellStyle>
+ 			<BackgroundColor>rgb(240,255,240)</BackgroundColor>
+ 			<Padding top="0.2cm" bottom="0.2cm" left="0.2cm" right="0.2cm"/>
+ 			<Scope>both</Scope></CellStyle>
+ 	</RowStyle>
+ </TableStyle>
+ <SectionStyle name="2PersonLetter">
+ 	<PageLayouts parentRef="Layouts/2PersonLetter.pageLayouts"></PageLayouts>
+ </SectionStyle>
+</StyleCollection>

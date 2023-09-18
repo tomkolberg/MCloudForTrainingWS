@@ -1,0 +1,194 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <ModificationRights>
+  <Allowed></Allowed>
+  <Denied>
+   <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
+  </Denied>
+ </ModificationRights>
+ <StaticContainer>
+  <Style>
+   <RegionRef>Logo</RegionRef>
+  </Style>
+  <Image uri="mtx:Graphics/SAM.jpg">
+   <Style>
+    <FillContainerHeight>false</FillContainerHeight>
+    <FillContainerWidth>false</FillContainerWidth>
+   </Style>
+  </Image>
+ </StaticContainer>
+ <StaticContainer>
+  <Style>
+   <RegionRef>Infoblock</RegionRef>
+  </Style>
+  <Par>
+   <Span>
+    <Style>
+     <FontStyle>bold</FontStyle>
+     <FontSize>12000.0mpt</FontSize>
+    </Style>
+    <Text>Public limited company</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style>
+    <SpaceBefore resolution="combine">0.2cm</SpaceBefore>
+   </Style>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>9000.0mpt</FontSize>
+    </Style>
+    <Text>St Helen's, 1 Undershaft</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>9000.0mpt</FontSize>
+    </Style>
+    <Text>London EC3P 3DQ</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style>
+    <SpaceBefore resolution="combine">0.2cm</SpaceBefore>
+   </Style>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>9000.0mpt</FontSize>
+    </Style>
+    <Text>Tel. +44 20 45689-0</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style>
+    <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+   </Style>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>9000.0mpt</FontSize>
+    </Style>
+    <Text>Fax +44 20 45689-11</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style>
+    <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+   </Style>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>9000.0mpt</FontSize>
+    </Style>
+    <Text>Mail service@sam.net</Text>
+   </Span>
+  </Par>
+ </StaticContainer>
+ <StaticContainer>
+  <Style>
+   <RegionRef>CLI</RegionRef>
+  </Style>
+  <Par>
+   <Style>
+    <Align>center</Align>
+   </Style>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Registered office: St Helen's, 1 Undershaft, London EC3P 3DQ</Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>HRB 5674321 </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Registered in England </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Registered number </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>56784321</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style>
+    <Align>center</Align>
+   </Style>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Chairman </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Sir Adrian Wainwright, CBE </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>George Freeth, CEO </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Claudia Sullivan, </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Executive board Nicolas Wells, Herman Miller, </Text>
+   </Span>
+   <Span>
+    <Style>
+     <FontStyle></FontStyle>
+     <FontSize>7000.0mpt</FontSize>
+     <FontFamily>SANS</FontFamily>
+    </Style>
+    <Text>Patricia Griffin </Text>
+   </Span>
+  </Par>
+ </StaticContainer>
+</SectionPart>

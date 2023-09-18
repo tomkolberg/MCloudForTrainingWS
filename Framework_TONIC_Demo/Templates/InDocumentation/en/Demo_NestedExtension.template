@@ -1,0 +1,48 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\InDocumentation\en\Demo_NestedExtension.template">
+ <DataDefinition></DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="Leaflet"></Style>
+   <Container>
+    <Par>
+     <Span>
+      <Text>This is text from the template.</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+    <ContainerPartRef uri="Models\ExtensionNestedFirst.model">
+     <Extensions>
+      <ContainerExtension id="Content First Extension">
+       <Par>
+        <Span>
+         <Text>	</Text>
+        </Span>
+        <Span>
+         <Style>
+          <TextColor>rgb(227,0,24)</TextColor>
+         </Style>
+         <Text>TEXT</Text>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+    </ContainerPartRef>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>marginalnotes</RegionRef>
+    </Style>
+   </StaticContainer>
+  </Section>
+ </Document>
+</RootPart>

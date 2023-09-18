@@ -1,0 +1,157 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="&lt;default&gt;">
+ <TestCase name="&lt;default&gt;">
+  <Root base="TONIC_Editor">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="DataProvisioningService">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Pfad">
+        <Value><![CDATA[string:mtx://\\TONIC_Editor\Testdata\]]></Value>
+       </DataNode>
+       <DataNode name="Extension">
+        <Value><![CDATA[string:.xml]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="true">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding">
+       <Value><![CDATA[string:\library\TONIC_Editor\Templates\Templatesearchtree\014.template]]></Value>
+      </DataNode>
+      <DataNode name="GroupAssignee">
+       <Value><![CDATA[string:MText.Clerk]]></Value>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Letterdps" valueChanged="true">
+      <Value><![CDATA[string:]]></Value>
+      <Provisioning></Provisioning>
+      <DataNode name="document" valueChanged="true">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="date">
+        <Value><![CDATA[date:Sep 18, 2019, 12:25:19 PM]]></Value>
+       </DataNode>
+       <DataNode name="salutation">
+        <Value><![CDATA[string:Dear Sylvia,]]></Value>
+       </DataNode>
+       <DataNode name="id_from_dialog" valueChanged="true">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="type" valueChanged="true">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject1" valueChanged="true">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject2" valueChanged="true">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="id" valueChanged="true">
+        <Value><![CDATA[string:010101]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Infoblock" valueChanged="true">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="clerk" valueChanged="true">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="gender" valueChanged="true">
+         <Value><![CDATA[string:Mr]]></Value>
+        </DataNode>
+        <DataNode name="firstname" valueChanged="true">
+         <Value><![CDATA[string:Erich]]></Value>
+        </DataNode>
+        <DataNode name="surname" valueChanged="true">
+         <Value><![CDATA[string:Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="phone" valueChanged="true">
+         <Value><![CDATA[string:0761-8852-123]]></Value>
+        </DataNode>
+        <DataNode name="fullname" valueChanged="true">
+         <Value><![CDATA[string:Erich Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="email" valueChanged="true">
+         <Value><![CDATA[string:Hofmeier@kw.de]]></Value>
+        </DataNode>
+        <DataNode name="function" valueChanged="true">
+         <Value><![CDATA[string:Customer Service Manager]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Customer" valueChanged="true">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="customerno" valueChanged="true">
+        <Value><![CDATA[string:234567890]]></Value>
+       </DataNode>
+       <DataNode name="gender" valueChanged="true">
+        <Value><![CDATA[string:Mrs]]></Value>
+       </DataNode>
+       <DataNode name="title" valueChanged="true">
+        <Value><![CDATA[string:Dr.]]></Value>
+       </DataNode>
+       <DataNode name="firstname" valueChanged="true">
+        <Value><![CDATA[string:Sylvia]]></Value>
+       </DataNode>
+       <DataNode name="surname" valueChanged="true">
+        <Value><![CDATA[string:Bacres]]></Value>
+       </DataNode>
+       <DataNode name="street" valueChanged="true">
+        <Value><![CDATA[string:22 Christchurch Street]]></Value>
+       </DataNode>
+       <DataNode name="postcode" valueChanged="true">
+        <Value><![CDATA[string:SW3 4AR]]></Value>
+       </DataNode>
+       <DataNode name="town" valueChanged="true">
+        <Value><![CDATA[string:London]]></Value>
+       </DataNode>
+       <DataNode name="bankdetails" valueChanged="true">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="owner" valueChanged="true">
+         <Value><![CDATA[string:Sylvia Bacres]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <SectionPartInstance partIndex="0">
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <SectionPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef ref="$Letterdps" name="Letterdps"></DataNodeRef>
+     </Data>
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <SectionPartInstance partIndex="2">
+     <SectionPartInstance partIndex="0">
+      <SectionPartInstance partIndex="0"></SectionPartInstance>
+      <SectionPartInstance partIndex="1"></SectionPartInstance>
+     </SectionPartInstance>
+    </SectionPartInstance>
+    <ContainerPartInstance partIndex="3">
+     <ContainerPartInstance partIndex="0">
+      <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+     </ContainerPartInstance>
+    </ContainerPartInstance>
+    <ContainerPartInstance partIndex="4">
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+   </RootPartInstance>
+  </Root>
+ </TestCase>
+</TestCases>

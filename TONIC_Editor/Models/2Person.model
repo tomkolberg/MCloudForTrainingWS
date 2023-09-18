@@ -1,0 +1,57 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <SectionPart>
+  <DataDefinition></DataDefinition>
+  <UIContribution>
+   <GuideArea>
+    <ActionLink title="Forward" hint="Weiter im Workflow" inputAreaGroupID="">
+     <Script><![CDATA[	switch ($Metadata.State.toString()){
+			case 'Created':
+				$context.setDataValue($Metadata.Assignee, '-75db6333:168fb3c5694:-7ffa'); 
+				$context.setDataValue($Metadata.State, 'WaitingForRelease');
+				$context.save();
+				$context.close();
+				break;
+			case 'WaitingForRelease':
+				if ($CurrentUser.guid.toString() == $Metadata.Assignee.toString()){
+					$context.setDataValue($Metadata.State, 'Released');
+					$context.save();
+					$context.print('OMS');
+					$context.close();
+					break;
+				}
+				else
+				$context.save();
+				$context.close();
+				break;
+			case 'Released':
+				$context.close();
+				break;
+	}]]></Script>
+    </ActionLink>
+   </GuideArea>
+   <InputArea>
+    <Group title="Endedialog">
+     <VisibleIf><![CDATA[$Metadata.State = 'Created']]></VisibleIf>
+     <Field dataNode="$Metadata.State"></Field>
+    </Group>
+   </InputArea>
+  </UIContribution>
+ </SectionPart>
+ <SectionPart>
+  <VisibleIf><![CDATA[$CurrentUser.guid.toString() != $Metadata.Assignee.toString()]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <StaticContainer>
+   <Style>
+    <RegionRef>2PersonMandatory</RegionRef>
+   </Style>
+   <Image uri="mtx:Graphics/2Person.png">
+    <Style>
+     <FillContainerHeight>true</FillContainerHeight>
+     <FillContainerWidth>true</FillContainerWidth>
+     <Stretch>scale_to_fill</Stretch>
+    </Style>
+   </Image>
+  </StaticContainer>
+ </SectionPart>
+</SectionPart>

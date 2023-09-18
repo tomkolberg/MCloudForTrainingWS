@@ -1,0 +1,72 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Title" provided="true">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="DoNotArchive" data-type="boolean" provided="true">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="X" false-value=""></Output>
+   <Script><![CDATA[false]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="SendAsAttachment" data-type="boolean" provided="true">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="X" false-value=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="AttachmentName" provided="true">
+   <Description></Description>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <Section>
+  <OutputSettingsRef uri="Framework\FW_OutputSettings.outputSettings"></OutputSettingsRef>
+  <Style parentName="Leaflet"></Style>
+  <StaticContainer>
+   <Style>
+    <RegionRef>logo</RegionRef>
+   </Style>
+   <Image uri="mtx://Framework/Graphics/SAM.jpg">
+    <Style>
+     <VerticalAlignment>center</VerticalAlignment>
+     <HorizontalAlignment>last</HorizontalAlignment>
+     <FillContainerWidth>true</FillContainerWidth>
+    </Style>
+   </Image>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>heading</RegionRef>
+   </Style>
+   <Par>
+    <Style parentName="FW_Default"></Style>
+    <Span>
+     <Data>$Title</Data>
+    </Span>
+   </Par>
+  </StaticContainer>
+  <SectionPartRef uri="Framework\LayoutComponents\FW_MarginalNotes.model"></SectionPartRef>
+  <Container>
+   <ContainerExtensionDef id="Leaflet Content"></ContainerExtensionDef>
+  </Container>
+ </Section>
+</DocumentPart>

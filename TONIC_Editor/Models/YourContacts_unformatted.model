@@ -1,0 +1,129 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Text>Wie du mit uns in Kontakt kommst:</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Ganz egal ob du Beratung wünschst oder etwas weitergeben möchtest. Was auch immer dich gerade bewegt – kontaktiere uns, wir helfen dir gerne weiter.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Telefon, E-Mail, Live-Chat – du hast viele Möglichkeiten, uns zu erreichen</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>gebührenfreie Hotline 24/7 erreichbar</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Live-Chat mit dem Kundenservice</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>verschlüsseltes Kontaktformular</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>oder</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>besuche uns auf Facebook</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>https://www.facebook.com/sam</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>nutze unseren WhatsApp Service</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Öffne WhatsApp</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Speichere die Mobilfunknummer 0800 123456 12 als Kontakt in deinem Adressbuch auf dem Smartphone.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Starte eine Unterhaltung mit uns.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>nutze unseren SMS Rückrufservice</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>SMS an unsere Mobilfunknummer 0800 123456 12 schicken</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>um Rückruf bitten oder</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>ein Versicherungsangebot anfordern oder</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Rückfragen zu bestehenden Verträgen stellen.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Nach dem Absenden deiner SMS wirst du von uns telefonisch, per E-Mail oder Brief zeitnah kontaktiert.</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Par>
+   <Span>
+    <Text>Natürlich kannst du auch den guten alten Postweg nehmen.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Oder du schickst uns eine E-Mail </Text>
+   </Span>
+   <Span>
+    <Style parentName="Hyperlink"></Style>
+    <Hyperlink>'mailto:service@weltweit.info'</Hyperlink>
+    <Text>service@weltweit.info</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Mit freundlichen Grüßen</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Par>
+   <Span>
+    <Text></Text>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

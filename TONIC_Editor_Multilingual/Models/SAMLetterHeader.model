@@ -1,0 +1,164 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Letter" ref="Data\Letter.datamodel"></ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied>
+   <ModificationRight role="_EVERYONE_" operations="EDIT"></ModificationRight>
+  </Denied>
+ </ModificationRights>
+ <StaticContainer>
+  <Style>
+   <RegionRef>ReturnShipmentAddress</RegionRef>
+  </Style>
+  <Par>
+   <Span>
+    <Style>
+     <FontSize>9000.0mpt</FontSize>
+    </Style>
+    <Text>sam plc - St Helen's, 1 Undershaft - London EC3P 3DQ</Text>
+   </Span>
+  </Par>
+ </StaticContainer>
+ <StaticContainer>
+  <Style>
+   <RegionRef>Recipient</RegionRef>
+  </Style>
+  <Par>
+   <Span>
+    <Style>
+     <FontSize>9000.0mpt</FontSize>
+    </Style>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style parentName="FW_Recipient"></Style>
+   <Span>
+    <Style>
+     <ReduceMultipleBlanks>true</ReduceMultipleBlanks>
+    </Style>
+    <Data>$Letter.Customer.title</Data>
+    <Text> </Text>
+    <Data>$Letter.Customer.firstname</Data>
+    <Text> </Text>
+    <Data>$Letter.Customer.surname</Data>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style parentName="FW_Recipient"></Style>
+   <Span>
+    <Data>$Letter.Customer.street</Data>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style parentName="FW_Recipient"></Style>
+   <Span>
+    <Text>  </Text>
+    <Data>$Letter.Customer.town</Data>
+    <Text> </Text>
+    <Data>$Letter.Customer.postcode</Data>
+    <Text></Text>
+   </Span>
+  </Par>
+ </StaticContainer>
+ <StaticContainer id="">
+  <Style>
+   <RegionRef>Subject</RegionRef>
+  </Style>
+  <Par>
+   <Style parentName="FW_Subject"></Style>
+   <Span>
+    <Data>$Letter.document.subject1</Data>
+    <Text> </Text>
+    <Text></Text>
+   </Span>
+  </Par>
+  <Par>
+   <Style parentName="FW_Subject"></Style>
+   <Span>
+    <Data>$Letter.document.subject2</Data>
+   </Span>
+  </Par>
+ </StaticContainer>
+ <StaticContainer>
+  <Style>
+   <RegionRef>Date</RegionRef>
+  </Style>
+  <Par>
+   <Style parentName="Text"></Style>
+   <Span>
+    <Data>$Letter.document.date</Data>
+    <Text></Text>
+   </Span>
+     <Translations>
+      <Translation>
+       <Language language="de" country="DE" variant=""></Language>
+       <Span>
+        <Data>$Letter.document.dateGerman</Data>
+       </Span>
+      </Translation>
+     </Translations>
+  </Par>
+ </StaticContainer>
+ <StaticContainer>
+  <Style>
+   <RegionRef>Salutation</RegionRef>
+  </Style>
+  <Par>
+   <Style parentName="FW_Salutation"></Style>
+   <Span>
+    <Data>$Letter.document.salutation</Data>
+    <Text></Text>
+   </Span>
+     <Translations>
+      <Translation>
+       <Language language="de" country="DE" variant=""></Language>
+       <Span>
+	    <Data>$Letter.document.salutationGerman </Data>
+       </Span>
+      </Translation>
+     </Translations>
+  </Par>
+ </StaticContainer>
+ <StaticContainer>
+  <Style>
+   <RegionRef>Header</RegionRef>
+  </Style>
+  <Par>
+   <Style parentName="Text"></Style>
+   <Span>
+    <Text>Page </Text>
+    <PageNumber></PageNumber>
+    <Text> of </Text>
+    <PageCount></PageCount>
+   </Span>
+     <Translations>
+      <Translation>
+       <Language language="de" country="DE" variant=""></Language>
+       <Span>
+    <Text>Seite </Text>
+    <PageNumber></PageNumber>
+    <Text> von </Text>
+    <PageCount></PageCount>
+       </Span>
+      </Translation>
+     </Translations>
+  </Par>
+ </StaticContainer>
+</SectionPart>

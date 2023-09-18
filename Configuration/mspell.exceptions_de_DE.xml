@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mspell-exceptions
+    xmlns="http://www.kwsoft.de/mspell/exceptions"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+  <includes>
+    <!--
+      Erläuterung:
+      * Trennstellen für ein Wort vereinbaren:  <word>Früh_warn_service</word>
+      * Wort in Wortliste aufnehmen:            <word>Frühwarnservice</word>
+      * Trennung für ein Wort verhindern:       <word>_Frühwarnservice</word>
+      * Wort auch am Satzanfang klein
+        geschrieben akzeptieren                 <word enforce-case="true">kühn</word>
+    -->
+    <word enforce-case="true">kühn</word>
+  </includes>
+
+  <excludes>
+    <!--
+      Erläuterung:
+      * Attribut word: das nicht mehr zu verwendende Wort.
+      * Attribut additional: Sollen nur die angegebenen Voschläge angezeigt werden,
+        oder zusätzlich auch die berechneten Vorschläge.
+    -->
+    <word-with-suggestions word='daß' additional='false'>
+      <correct>dass</correct>
+      <correct>das</correct>
+    </word-with-suggestions>
+  </excludes>
+
+</mspell-exceptions>

@@ -1,0 +1,81 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Instance" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Subject1" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject2" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject3" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <DocumentPart>
+  <VisibleIf><![CDATA[$Instance.RecipientProxy.isValid.valueOf()]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <DocumentPartRef uri="Framework/DocumentParts/Letter/Letter.model">
+   <Validation></Validation>
+   <Extensions>
+	<ContainerExtension id="Letter Content">
+	    <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_SalutatoryAddress.model">
+	     <Param name="Recipient">$Instance.RecipientProxy</Param>
+	    </ContainerPartRef>
+	    <ContainerPartRef uri="Framework/DefaultContents/CoverLetter/LetterContentRecipientProxy.model">
+	     <Param name="Recipient">$Instance.RecipientProxy</Param>
+	     <Param name="PrimaryRecipient">$Instance.Recipient</Param>
+	    </ContainerPartRef>
+    </ContainerExtension>
+   </Extensions>
+   <Param name="Message">$Message</Param>
+   <Param name="Instance">$Instance</Param>
+   <Param name="Recipient">$Instance.RecipientProxy</Param>
+   <Param name="Sender">$Instance.Sender</Param>
+   <Param name="Subject1">$Subject1</Param>
+   <Param name="Subject2">$Subject2</Param>
+   <Param name="Subject3">$Subject3</Param>
+  </DocumentPartRef>
+ </DocumentPart>
+ <DocumentPartRef uri="Framework/DocumentParts/Letter/Letter.model">
+  <Extensions>
+   <ContainerExtension id="Letter Content">
+    <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_SalutatoryAddress.model">
+     <Param name="Recipient">$Instance.Recipient</Param>
+    </ContainerPartRef>
+    <ContainerExtensionDef id="CoverLetter Content"></ContainerExtensionDef>
+   </ContainerExtension>
+  </Extensions>
+  <Param name="Message">$Message</Param>
+  <Param name="Instance">$Instance</Param>
+  <Param name="Recipient">$Instance.Recipient</Param>
+  <Param name="Sender">$Instance.Sender</Param>
+  <Param name="Subject1">$Subject1</Param>
+  <Param name="Subject2">$Subject2</Param>
+  <Param name="Subject3">$Subject3</Param>
+ </DocumentPartRef>
+</DocumentPart>

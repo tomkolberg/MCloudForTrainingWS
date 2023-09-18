@@ -1,0 +1,31 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Translations>
+   <Translation>
+    <Language language="de" country="DE" variant=""></Language>
+    <Span>
+     <Text>Herzliche Grüße</Text>
+    </Span>
+   </Translation>
+  </Translations>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Kind regards</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Translations>
+   <Translation>
+    <Language language="de" country="DE" variant=""></Language>
+    <Span>
+     <Text>Dein Team SAM</Text>
+    </Span>
+   </Translation>
+  </Translations>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Your team SAM</Text>
+  </Span>
+ </Par>
+</ContainerPart>

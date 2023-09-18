@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="customerno"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="gender"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field="COMBOBOX"
+                     label=""
+                     operator="ANY"
+                     validation-type="LIST">
+            <Values>
+               <Value content="0" description="Mr" valId="1"/>
+               <Value content="1" description="Mrs" valId="2"/>
+            </Values>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="title"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="firstname"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="surname"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="street"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="postcode"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="town"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node multiple="false" name="bankdetails">
+      <Settings>
+         <Script></Script>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="owner"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="Bank"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="BIC"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="IBAN"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+   </Node>
+</DataModel>

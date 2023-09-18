@@ -1,0 +1,11 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Image uri="mtx:Graphics/SAM.jpg">
+  <Alt><![CDATA["Logo"]]></Alt>
+  <Style>
+   <HorizontalAlignment>first</HorizontalAlignment>
+   <Stretch>keep_aspect_ratio</Stretch>
+   <FillContainerWidth>true</FillContainerWidth>
+  </Style>
+ </Image>
+</ContainerPart>

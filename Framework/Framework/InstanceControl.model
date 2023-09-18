@@ -1,0 +1,21 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Instance" ref="\\Framework\Data\Instance.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="InstancePrimary" ref="\\Framework\Data\Instance.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <DocumentExtensionDef id="Instance Content"></DocumentExtensionDef>
+</DocumentPart>

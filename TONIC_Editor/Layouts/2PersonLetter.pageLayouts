@@ -1,0 +1,9 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First parentRef="\\TONIC_Editor\Layouts\2PersonLetterFirstPage.pageLayout">
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+ </First>
+ <DefaultPageLayout parentRef="\\TONIC_Editor\Layouts\2PersonLetterStandard.pageLayout">
+  <PageSize name="A4"></PageSize>
+ </DefaultPageLayout>
+</PageLayouts>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Insurancenumber"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Damagenumber"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node multiple="false" name="MissingDocuments">
+      <Settings>
+         <Script></Script>
+      </Settings>
+      <Node data-type="BOOLEAN"
+            hierarchical="FLAT"
+            multiple="false"
+            name="PoliceReport"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input false-value="false" true-value="true"/>
+               <Output true-value="X"/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="BOOLEAN"
+            hierarchical="FLAT"
+            multiple="false"
+            name="EstimateCosts"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input false-value="false" true-value="true"/>
+               <Output true-value="X"/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="BOOLEAN"
+            hierarchical="FLAT"
+            multiple="false"
+            name="CopyDLicence"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input false-value="false" true-value="true"/>
+               <Output true-value="X"/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="BOOLEAN"
+            hierarchical="FLAT"
+            multiple="false"
+            name="AddressWitness"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input false-value="false" true-value="true"/>
+               <Output true-value="X"/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+   </Node>
+</DataModel>

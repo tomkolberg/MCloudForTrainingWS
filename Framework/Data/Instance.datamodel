@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="NUMBER"
+         hierarchical="FLAT"
+         multiple="false"
+         name="No"
+         searchable="false">
+      <Settings>
+         <Description>Number of instance
+
+The # of instance is 1 for the primary instance. The primary instance is the one instance which is required for every message. The primary instance is also called first instance.
+The other instances, copies, ... have numbers starting from 2.</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field="EDITFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input decimal-separator="46" thousand-separator="44"/>
+            <Output currency-format="BEFORE_WITH_SPACE"
+                    currency-symbol="€"
+                    decimal-separator="44"
+                    formatting-type="NUMBER"
+                    fractional-digits="-1"
+                    leading-zeros="1"
+                    text-prefix=""
+                    text-suffix=""
+                    thousand-separator="46"
+                    use-current-locale="true"/>
+         </Format>
+         <Script>dataNodeIndexOfInstance($Instance) + 1;
+</Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Type"
+         searchable="false">
+      <Settings>
+         <Description>Type of instance
+
+Valid values are:
+PRIMARY_INSTANCE
+OTHER_INSTANCE</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script>if ($Instance.No.valueOf() == 1) {
+	"PRIMARY_INSTANCE";
+}
+else {
+	"OTHER_INSTANCE";
+}</Script>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="Sender"
+         ref="\\Framework\Data\Sender.datamodel">
+      <Settings>
+         <Description>Sender of this instance</Description>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="Recipient"
+         ref="\\Framework\Data\Recipient.datamodel">
+      <Settings>
+         <Description>Recipient of current instance</Description>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="RecipientProxy"
+         ref="\\Framework\Data\Recipient.datamodel">
+      <Settings>
+         <Description>Proxy for current recipient
+
+The proxy get the message originally sent to recpient. The framework is generating an extra covering letter for the proxy the send the current instance to the proxy.</Description>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node multiple="true"
+         name="OutputSettings"
+         ref="\\Framework\Data\OutputSettings.datamodel">
+      <Settings>
+         <Script></Script>
+      </Settings>
+   </Node>
+</DataModel>

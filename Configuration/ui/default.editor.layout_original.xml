@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><UI branding-color="rgb(255,0,0)" branding-foreground-color="white">
+  <EditorAreas>
+      <EditorArea category="GUIDE"/>
+      <EditorArea category="THUMBS">
+         <Action code="ActionCode:DOCUMENT_SELECTION" role="LIST"/>
+         <Action code="ActionCode:GO_TO_PAGE" role="BUTTON"/>
+      </EditorArea>
+      <EditorArea category="VALIDATION"/>
+      <EditorArea category="INPUT"/>
+      <EditorArea category="MODEL">
+         <Action code="ActionCode:INSERT_MODEL" role="BUTTON"/>
+         <Action code="ActionCode:MODEL_SEARCH_MODE" role="BUTTON"/>
+         <Action code="ActionCode:REMOVE_PREVIEW" role="BUTTON"/>
+      </EditorArea>
+  </EditorAreas>
+  <PropertyPages>
+      <PropertyArea category="TABLE">
+         <PropertyGroup name="TABLE_STYLE">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_TABLE_STYLE" role="STYLE_BUTTON"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+		       <PropertyGroup name="TABLE_HEADER">
+		          <Toolbars optional="false">
+               <Toolbar>
+                  <ComplexAction code="ActionCode:CHANGE_TABLE_HEADER" role="TABLE_HEADER_MENU">
+                     <Actions>
+		                      <Action code="ActionCode:CHANGE_TABLE_ADD_HEADER_ROW" role="NUMBER"/>
+                        <Action code="ActionCode:CHANGE_TABLE_HEADER_OCCURRENCE" role="LIST"/>
+                        <Action code="ActionCode:CHANGE_TABLE_REMOVE_HF" role="BUTTON"/>
+                     </Actions>
+                  </ComplexAction>
+                  <Action code="ActionCode:CHANGE_TABLE_ADD_HEADER" role="BUTTON"/>
+               </Toolbar>
+            </Toolbars> 
+        </PropertyGroup>
+        <PropertyGroup name="TABLE_FOOTER">
+            <Toolbars optional="false">
+               <Toolbar>
+                  <ComplexAction code="ActionCode:CHANGE_TABLE_FOOTER" role="TABLE_HEADER_MENU">
+                     <Actions>
+		                      <Action code="ActionCode:CHANGE_TABLE_ADD_FOOTER_ROW" role="NUMBER"/>
+                        <Action code="ActionCode:CHANGE_TABLE_FOOTER_OCCURRENCE" role="LIST"/>
+                        <Action code="ActionCode:CHANGE_TABLE_REMOVE_HF" role="BUTTON"/>
+                     </Actions>
+                  </ComplexAction>
+	                 <Action code="ActionCode:CHANGE_TABLE_ADD_FOOTER" role="BUTTON"/> 
+
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+      </PropertyArea>
+      <PropertyArea category="CELL">
+         <PropertyGroup name="CELL_BACKGROUND">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_CELL_BACKGROUND_COLOR"
+                          role="COLOR_PICKER"
+                          parameter="String:BASIC"/>
+               </Toolbar>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_BACKGROUND_IMAGE" role="IMAGE_PICKER"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="BORDER">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:RESET_BORDERS_AND_INDENTS" role="BORDER_EDITOR"/>
+                  <Action code="ActionCode:CHANGE_BORDER_SELECTION_CELL" role="BORDER_EDITOR"/>
+                  <Action code="ActionCode:CHANGE_PADDING_CELL" role="BORDER_EDITOR"/>
+                  <Action code="ActionCode:CHANGE_MARGIN_CELL" role="BORDER_EDITOR"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+      </PropertyArea>
+      <PropertyArea category="TEXT">
+         <PropertyGroup name="PARAGRAPH_STYLE">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_PAR_STYLE" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="FONT">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_FONT_FAMILY" role="LIST"/>
+                  <Action code="ActionCode:CHANGE_FONT_SIZE" role="NUMBER"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_FONT_STYLE"
+                          parameter="FontStyle:BOLD"
+                          role="TOGGLE"
+                          shortcut="CTRL B"/>
+                  <Action code="ActionCode:CHANGE_FONT_STYLE"
+                          parameter="FontStyle:ITALICS"
+                          role="TOGGLE"
+                          shortcut="CTRL I"/>
+                  <Action code="ActionCode:CHANGE_FONT_STYLE"
+                          parameter="FontStyle:UNDERLINED"
+                          role="TOGGLE"
+                          shortcut="CTRL U"/>
+                  <Action code="ActionCode:CHANGE_FONT_STYLE"
+                          parameter="FontStyle:SUBSCRIPT"
+                          role="TOGGLE"/>
+                  <Action code="ActionCode:CHANGE_FONT_STYLE"
+                          parameter="FontStyle:SUPERSCRIPT"
+                          role="TOGGLE"/>
+                  <Action code="ActionCode:CHANGE_FONT_STYLE"
+                          parameter="FontStyle:STRIKEOUT"
+                          role="TOGGLE"/>
+                  <Action code="ActionCode:NULL" role="SEPARATOR"/>
+                  <Action code="ActionCode:CHANGE_TEXT_COLOR"
+                          role="COLOR_PICKER"
+                          parameter="String:BASIC"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="ALIGNMENT">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_PAR_ALIGN"
+                          parameter="Align:LEFT"
+                          role="TOGGLE"
+                          shortcut="CTRL L"/>
+                  <Action code="ActionCode:CHANGE_PAR_ALIGN"
+                          parameter="Align:JUSTIFIED"
+                          role="TOGGLE"
+                          shortcut="CTRL J"/>
+                  <Action code="ActionCode:CHANGE_PAR_ALIGN"
+                          parameter="Align:CENTER"
+                          role="TOGGLE"
+                          shortcut="CTRL E"/>
+                  <Action code="ActionCode:CHANGE_PAR_ALIGN"
+                          parameter="Align:RIGHT"
+                          role="TOGGLE"
+                          shortcut="CTRL R"/>
+                  <Action code="ActionCode:NULL" role="SEPARATOR"/>
+                  <Action code="ActionCode:CHANGE_PAR_INCREASE_INDENT" role="BUTTON"/>
+                  <Action code="ActionCode:CHANGE_PAR_DECREASE_INDENT" role="BUTTON"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="SPACING">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_PAR_SPACE_BEFORE" role="UNIT_VALUE"/>
+                  <Action code="ActionCode:CHANGE_PAR_SPACE_AFTER" role="UNIT_VALUE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_PAR_LINE_SPACING" role="LIST"/>
+                  <Action code="ActionCode:CHANGE_PAR_LINE_SPACING_VALUE" role="UNIT_VALUE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar name="INDENTATION">
+                  <Action code="ActionCode:CHANGE_PAR_FIRST_INDENT" role="UNIT_VALUE"/>
+                  <Action code="ActionCode:CHANGE_PAR_LEFT_INDENT" role="UNIT_VALUE"/>
+                  <Action code="ActionCode:CHANGE_PAR_RIGHT_INDENT" role="UNIT_VALUE"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="PAGEBREAK_PROTECTION">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_KEEP_TOGETHER" role="CHECKBOX"/>
+                  <Action code="ActionCode:CHANGE_KEEP_WITH_NEXT" role="CHECKBOX"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_KEEP_WITH_PREVIOUS" role="CHECKBOX"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_BREAK_BEFORE" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_BREAK_AFTER" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="LANGUAGE">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_LANGUAGE" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="BORDER">
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:RESET_BORDERS_AND_INDENTS" role="BORDER_EDITOR"/>
+                  <Action code="ActionCode:CHANGE_BORDER_SELECTION_PAR" role="BORDER_EDITOR"/>
+                  <Action code="ActionCode:CHANGE_PADDING" role="BORDER_EDITOR"/>
+                  <Action code="ActionCode:CHANGE_MARGIN" role="BORDER_EDITOR"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="TABULATORS">
+            <Toolbars optional="true">
+               <Toolbar>
+                  <ComplexAction code="ActionCode:CHANGE_PAR_TABS" role="GRID">
+                     <Actions>
+                        <Action code="ActionCode:CHANGE_PAR_TAB_POSITION" role="UNIT_VALUE"/>
+                        <Action code="ActionCode:CHANGE_PAR_TAB_TYPE" role="LIST"/>
+                        <Action code="ActionCode:CHANGE_PAR_TAB_STYLE" role="LIST"/>
+                     </Actions>
+                  </ComplexAction>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_PAR_TAB_ADD" role="BUTTON"/>
+                  <Action code="ActionCode:CHANGE_PAR_TAB_REMOVE" role="BUTTON"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="BULLETS">
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_NUMBERING_STYLE" role="STYLE_BUTTON"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar name="LEVEL">
+                  <Action code="ActionCode:CHANGE_PAR_NUMBERING_LEVEL_SYMBOL" role="LIST"/>
+                  <Action code="ActionCode:CHANGE_PAR_NUMBERING_LEVEL_IMAGE_URI"
+                          role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_PAR_NUMBERING_LEVEL_INCLUDE_PREVIOUS"
+                          role="CHECKBOX"/>
+                  <Action code="ActionCode:START_NEW_NUMBERING" role="CHECKBOX"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar name="INDENTATION">
+                  <Action code="ActionCode:CHANGE_PAR_NUMBERING_LEVEL_SYMBOL_INDENT"
+                          role="UNIT_VALUE"/>
+                  <Action code="ActionCode:CHANGE_PAR_NUMBERING_LEVEL_FIRST_INDENT"
+                          role="UNIT_VALUE"/>
+                  <Action code="ActionCode:CHANGE_PAR_NUMBERING_LEVEL_TEXT_INDENT"
+                          role="UNIT_VALUE"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="COLUMNS">
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_COLUMN_COUNT" role="NUMBER"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <ComplexAction code="ActionCode:CHANGE_COLUMNS" role="GRID">
+                     <Actions>
+                        <Action code="ActionCode:CHANGE_COLUMN_NUMBER" role="NUMBER"/>
+                        <Action code="ActionCode:CHANGE_COLUMN_WIDTH" role="UNIT_VALUE_AND_RELATIVE"/>
+                        <Action code="ActionCode:CHANGE_COLUMN_GAP" role="UNIT_VALUE_AND_RELATIVE"/>
+                     </Actions>
+                  </ComplexAction>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="ACCESSIBILITY">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_ACCESSIBILITY_ROLE" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+      </PropertyArea>
+      <PropertyArea category="DOCUMENT">
+         <PropertyGroup name="DOCUMENT_INFORMATION">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_NAME" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:PROJECT_NAME" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_DESCRIPTION" role="TEXTFIELD_MULTI_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_CREATED_BY" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_CREATED_AT" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_CHANGED_BY" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_CHANGED_AT" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_PROCESSED_BY" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_PROCESSED_SINCE" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_PRINTED_BY" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars optional="true">
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_PRINTED_AT" role="TEXTFIELD_SINGLE_LINE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar name="PASSWORD">
+                  <Action code="ActionCode:DOCUMENT_PASSWORD" role="PASSWORD"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_PASSWORD_CONFIRMATION" role="PASSWORD"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="OUTPUT"/>
+         <PropertyGroup name="SIGNATURE"/>
+         <PropertyGroup name="METADATA">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:DOCUMENT_METADATA" role="TREE"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+      </PropertyArea>
+      <PropertyArea category="IMAGE">
+         <PropertyGroup name="IMAGE_SIZE">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_IMAGE_STRETCH" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_IMAGE_WIDTH" role="UNIT_VALUE"/>
+                  <Action code="ActionCode:CHANGE_IMAGE_HEIGHT" role="UNIT_VALUE"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_IMAGE_FILL_WIDTH" role="CHECKBOX"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_IMAGE_FILL_HEIGHT" role="CHECKBOX"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+         <PropertyGroup name="ALIGNMENT">
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_IMAGE_HORIZONTAL_ALIGN" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+            <Toolbars>
+               <Toolbar>
+                  <Action code="ActionCode:CHANGE_IMAGE_VERTICAL_ALIGN" role="LIST"/>
+               </Toolbar>
+            </Toolbars>
+         </PropertyGroup>
+      </PropertyArea>
+  </PropertyPages>
+  <Toolbars>
+      <Toolbar>
+         <Action code="ActionCode:DOCUMENT_SAVE" role="BUTTON" shortcut="CTRL S"/>
+         <Action code="ActionCode:DOCUMENT_CLOSE" role="BUTTON"/>
+      </Toolbar>
+      <Toolbar/>
+      <Toolbar>
+         <Action code="ActionCode:UNDO" role="BUTTON" shortcut="CTRL Z"/>
+         <Action code="ActionCode:REDO" role="BUTTON" shortcut="CTRL Y"/>
+      </Toolbar>
+      <Toolbar/>
+      <Toolbar>
+         <Action code="ActionCode:ZOOM" role="LIST"/>
+      </Toolbar>
+      <Toolbar/>
+      <Toolbar>
+         <ComplexAction code="ActionCode:INSERT_OBJECT" role="MENU">
+            <Actions>
+		             <Action code="ActionCode:INSERT_PAGE_BREAK"
+                       role="BUTTON"
+                       shortcut="CTRL ENTER"/>
+		             <Action code="ActionCode:INSERT_COLUMN_BREAK" role="BUTTON"/>
+		             <Action code="ActionCode:NULL" role="SEPARATOR"/>
+		             <Action code="ActionCode:INSERT_MODEL_MENU" role="BUTTON"/>
+		             <Action code="ActionCode:INSERT_DATA" role="BUTTON"/>
+		             <Action code="ActionCode:NULL" role="SEPARATOR"/>
+		             <Action code="ActionCode:INSERT_IMAGE" role="BUTTON"/>
+		             <Action code="ActionCode:INSERT_ATTACHMENT" role="BUTTON"/>
+		             <Action code="ActionCode:INSERT_SYMBOL" role="BUTTON"/>
+		          </Actions>
+         </ComplexAction>
+         <Action code="ActionCode:INSERT_TABLE" role="TABLE_INSERTION_TOOL"/>
+         <ComplexAction code="ActionCode:DOCUMENT_EXPORT" role="MENU">
+            <Actions>
+               <Action code="ActionCode:EXPORT_PDF" role="BUTTON"/>
+               <Action code="ActionCode:PRINT_OMS" role="BUTTON"/>          
+            </Actions>
+         </ComplexAction>
+      </Toolbar>
+      <Toolbar/>
+      <Toolbar>
+	        <Action code="ActionCode:CHANGE_PAR_STYLE" role="LIST"/>
+      </Toolbar>
+      <Toolbar/>
+      <Toolbar>
+         <Action code="ActionCode:SHOW_FORMAT_PROPERTIES" role="TOGGLE"/>
+         <Action code="ActionCode:SHOW_DOCUMENT_PROPERTIES" role="TOGGLE"/>
+         <Action code="ActionCode:SHOW_PROPERTIES" role="TOGGLE"/>
+      </Toolbar>
+  </Toolbars>
+  <ContextMenu>
+      <Action code="ActionCode:WORD_CORRECTIONS" role="LIST"/>
+      <Action code="ActionCode:WORD_SPELL_CHECKING" role="BUTTON"/>
+      <Action code="ActionCode:NULL" role="SEPARATOR"/>
+      <Action code="ActionCode:CUT" role="BUTTON" shortcut="CTRL X"/>
+      <Action code="ActionCode:COPY" role="BUTTON" shortcut="CTRL C"/>
+      <Action code="ActionCode:PASTE" role="BUTTON" shortcut="CTRL V"/>
+      <Action code="ActionCode:NULL" role="SEPARATOR"/>
+      <ComplexAction code="ActionCode:MENU_TABLE_ROW" role="MENU">
+         <Actions>
+            <Action code="ActionCode:INSERT_ROW"
+                    parameter="InsertMode:BEFORE"
+                    role="BUTTON"/>
+            <Action code="ActionCode:INSERT_ROW"
+                    parameter="InsertMode:AFTER"
+                    role="BUTTON"/>
+            <Action code="ActionCode:REMOVE_ROW" role="BUTTON"/>
+         </Actions>
+      </ComplexAction>
+      <ComplexAction code="ActionCode:MENU_TABLE_COLUMN" role="MENU">
+         <Actions>
+            <Action code="ActionCode:INSERT_COLUMN"
+                    parameter="InsertMode:BEFORE"
+                    role="BUTTON"/>
+            <Action code="ActionCode:INSERT_COLUMN"
+                    parameter="InsertMode:AFTER"
+                    role="BUTTON"/>
+		          <Action code="ActionCode:MOVE_COLUMN_RIGHT" role="BUTTON"/>
+            <Action code="ActionCode:MOVE_COLUMN_LEFT" role="BUTTON"/>
+            <Action code="ActionCode:REMOVE_COLUMN" role="BUTTON"/>
+         </Actions>
+      </ComplexAction>
+      <ComplexAction code="ActionCode:MENU_TABLE_CELL" role="MENU">
+         <Actions>
+            <Action code="ActionCode:JOIN_CELLS" role="BUTTON"/>
+            <Action code="ActionCode:SPLIT_CELLS" role="BUTTON"/>
+         </Actions>
+      </ComplexAction>
+  </ContextMenu>
+  <PredefinedColors>
+      <ColorPicker name="BASIC">
+         <ColorItem value="rgb(0,0,0)"/>
+         <ColorItem value="rgb(255,255,255)"/>
+         <ColorItem value="rgb(255,0,0)"/>
+         <ColorItem value="rgb(0,255,0)"/>
+         <ColorItem value="rgb(0,0,255)"/>
+         <ColorItem value="rgb(255,255,0)"/>
+         <ColorItem value="rgb(0,255,255)"/>
+         <ColorItem value="rgb(255,0,255)"/>
+         <ColorItem value="rgb(192,192,192)"/>
+         <ColorItem value="rgb(128,128,128)"/>
+         <ColorItem value="rgb(0,128,0)"/>
+         <ColorItem value="rgb(128,0,128)"/>
+         <ColorItem value="rgb(0,128,128)"/>
+         <ColorItem value="rgb(0,0,128)"/>
+      </ColorPicker>
+  </PredefinedColors>
+  <Shortcuts>
+      <Action code="ActionCode:UNDO" shortcut="CTRL Z"/>
+      <Action code="ActionCode:REDO" shortcut="CTRL Y"/>
+      <Action code="ActionCode:GO_TO_DOCUMENT_START" shortcut="CTRL HOME"/>
+      <Action code="ActionCode:GO_TO_DOCUMENT_END" shortcut="CTRL END"/>
+      <Action code="ActionCode:GO_TO_NEXT_WORD"
+              parameter="Boolean:TRUE"
+              shortcut="CTRL RIGHT"/>
+      <Action code="ActionCode:GO_TO_NEXT_WORD"
+              parameter="Boolean:FALSE"
+              shortcut="CTRL LEFT"/>
+      <Action code="ActionCode:GO_TO_NEXT_PARAGRAPH"
+              parameter="Boolean:FALSE"
+              shortcut="CTRL UP"/>
+      <Action code="ActionCode:GO_TO_NEXT_PARAGRAPH"
+              parameter="Boolean:TRUE"
+              shortcut="CTRL DOWN"/>
+      <Action code="ActionCode:GO_TO_NEXT_CELL" shortcut="SHIFT TAB"/>
+      <Action code="ActionCode:INSERT_CHARACTER"
+              parameter="String:&#x9;"
+              shortcut="CTRL TAB"/>
+      <Action code="ActionCode:INSERT_CHARACTER"
+              parameter="String:&#xA;"
+              shortcut="SHIFT ENTER"/>
+      <Action code="ActionCode:INSERT_CHARACTER"
+              parameter="String: "
+              shortcut="SHIFT SPACE"/>
+      <Action code="ActionCode:SELECT_ENTIRE_DOCUMENT" shortcut="CTRL A"/>
+      <Action code="ActionCode:SELECT_BEGIN_OF_DOCUMENT" shortcut="CTRL SHIFT HOME"/>
+      <Action code="ActionCode:SELECT_REST_OF_DOCUMENT" shortcut="CTRL SHIFT END"/>
+      <Action code="ActionCode:SELECT_BEGIN_OF_LINE" shortcut="SHIFT HOME"/>
+      <Action code="ActionCode:SELECT_REST_OF_LINE" shortcut="SHIFT END"/>
+      <Action code="ActionCode:SELECT_NEXT_CHAR"
+              parameter="Boolean:TRUE"
+              shortcut="SHIFT RIGHT"/>
+      <Action code="ActionCode:SELECT_NEXT_CHAR"
+              parameter="Boolean:FALSE"
+              shortcut="SHIFT LEFT"/>
+      <Action code="ActionCode:SELECT_NEXT_LINE"
+              parameter="Boolean:TRUE"
+              shortcut="SHIFT DOWN"/>
+      <Action code="ActionCode:SELECT_NEXT_LINE"
+              parameter="Boolean:FALSE"
+              shortcut="SHIFT UP"/>
+      <Action code="ActionCode:SELECT_NEXT_PARAGRAPH"
+              parameter="Boolean:FALSE"
+              shortcut="CTRL SHIFT UP"/>
+      <Action code="ActionCode:SELECT_NEXT_PARAGRAPH"
+              parameter="Boolean:TRUE"
+              shortcut="CTRL SHIFT DOWN"/>
+      <Action code="ActionCode:SELECT_NEXT_WORD"
+              parameter="Boolean:TRUE"
+              shortcut="CTRL SHIFT RIGHT"/>
+      <Action code="ActionCode:SELECT_NEXT_WORD"
+              parameter="Boolean:FALSE"
+              shortcut="CTRL SHIFT LEFT"/>
+      <Action code="ActionCode:ZOOM_IN" shortcut="CTRL NUM_PLUS"/>
+      <Action code="ActionCode:ZOOM_OUT" shortcut="CTRL NUM_MINUS"/>
+      <Action code="ActionCode:CONTEXT_MENU" shortcut="SHIFT F10"/>
+      <Action code="ActionCode:DOCUMENT_SAVE" shortcut="CTRL S"/>
+      <Action code="ActionCode:CHANGE_PAR_ALIGN"
+              parameter="Align:LEFT"
+              shortcut="CTRL L"/>
+      <Action code="ActionCode:CHANGE_PAR_ALIGN"
+              parameter="Align:RIGHT"
+              shortcut="CTRL R"/>
+      <Action code="ActionCode:CHANGE_PAR_ALIGN"
+              parameter="Align:CENTER"
+              shortcut="CTRL E"/>
+      <Action code="ActionCode:CHANGE_PAR_ALIGN"
+              parameter="Align:JUSTIFIED"
+              shortcut="CTRL J"/>
+      <Action code="ActionCode:CHANGE_FONT_STYLE"
+              parameter="FontStyle:BOLD"
+              shortcut="CTRL B"/>
+      <Action code="ActionCode:CHANGE_FONT_STYLE"
+              parameter="FontStyle:ITALICS"
+              shortcut="CTRL I"/>
+      <Action code="ActionCode:CHANGE_FONT_STYLE"
+              parameter="FontStyle:UNDERLINED"
+              shortcut="CTRL U"/>
+      <Action code="ActionCode:SHOW_FIND_REPLACE_DIALOG" shortcut="CTRL F"/>
+      <Action code="ActionCode:PARTIAL_UPDATE" shortcut="CTRL SHIFT F"/>
+      <Action code="ActionCode:EVENT_PERFORMANCE_LOGGING" shortcut="CTRL SHIFT E"/>
+      <Action code="ActionCode:SWITCH_VIEW_RECYCLING" shortcut="ALT SHIFT R"/>
+      <Action code="ActionCode:TEST_FORMATTER_PERFORMANCE" shortcut="CTRL SHIFT P"/>
+      <Action code="ActionCode:FORCED_RESOURCES_RELOAD" shortcut="F5"/>
+      <Action code="ActionCode:INCREASE_FONT_SIZE" shortcut="CTRL ]"/>
+      <Action code="ActionCode:DECREASE_FONT_SIZE" shortcut="CTRL ["/>
+      <Action code="ActionCode:SHOW_INSERT_DATA_MODEL_NODE_POPUP"
+              shortcut="CTRL SPACE"/>
+      <Action code="ActionCode:INSERT_PAGE_BREAK" shortcut="CTRL ENTER"/>
+      <Action code="ActionCode:INSERT_EMPTY_PARAGRAPH"
+              parameter="Boolean:TRUE"
+              shortcut="ALT DOWN"/>
+      <Action code="ActionCode:INSERT_EMPTY_PARAGRAPH"
+              parameter="Boolean:FALSE"
+              shortcut="ALT UP"/>
+      <Action code="ActionCode:SHOW_SPECIAL_CHARACTERS" shortcut="ALT F10"/>
+      <Action code="ActionCode:TOGGLE_ENDLESS_PAGE_MODE" shortcut="ALT F12"/>
+      <Action code="ActionCode:DELETE_NEXT_WORD"
+              parameter="Boolean:FALSE"
+              shortcut="CTRL BACKSPACE"/>
+      <Action code="ActionCode:DELETE_NEXT_WORD"
+              parameter="Boolean:TRUE"
+              shortcut="CTRL DELETE"/>
+  </Shortcuts>
+</UI>

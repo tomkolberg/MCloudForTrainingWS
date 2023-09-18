@@ -1,0 +1,51 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\InDocumentation\en\Demo_1Message_2Instances.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPart>
+   <DataDefinition></DataDefinition>
+   <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+    <Extensions>
+     <DocumentExtension id="Message Content">
+      <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+       <Extensions>
+        <ContainerExtension id="CoverLetter Content">
+         <Par>
+          <Span>
+           <Text>we will cover the costs of treatment for your patient </Text>
+           <Data>$Message.Instances.Instance.instance(1).Recipient.NameFirstname</Data>
+           <Text>.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+        </ContainerExtension>
+       </Extensions>
+       <Param name="Message">$Message</Param>
+       <Param name="Instance">$Instance</Param>
+       <Param name="Subject3"></Param>
+      </DocumentPartRef>
+     </DocumentExtension>
+    </Extensions>
+    <Param name="Message">$TaskControl.Message.instance(0)</Param>
+    <Param name="Subject1">"Assumption of treatment costs"</Param>
+    <Param name="Subject2">"Patient Maria Mercurial"</Param>
+   </DocumentPartRef>
+  </DocumentPart>
+ </Document>
+</RootPart>

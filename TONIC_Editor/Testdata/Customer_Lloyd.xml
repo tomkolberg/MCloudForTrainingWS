@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE write [
+]>
+<!-- L e t t e r -->
+<Letter>
+	<account>
+		<title1>5146543</title1>
+		<title2>David Lloyd, South Brent</title2>
+	</account>
+	<document>
+		<type />
+		<subject1></subject1>
+		<subject2></subject2>
+		<id>010103</id>
+	</document>
+	<!-- C u s t o m e r (Address) -->
+	<customer>
+		<customerno>2345543654</customerno>
+		<gender>Mr</gender>
+		<title></title>
+		<firstname>David</firstname>
+		<surname>Lloyd</surname>
+		<street>34 Mill Rd</street>
+		<postcode>NR15</postcode>
+		<town>Norwich</town>
+		<!-- B a n k  d e t a i l s -->
+		<bankdetails>
+			<owner>David Lloyd</owner>
+			<bank>Barclays</bank>
+			<bic></bic>
+			<iban>GB32ESSE40486562156765</iban>
+		</bankdetails>
+	</customer>
+	<!-- C l e r k  -->
+	<clerk>
+		<gender>Mr</gender>
+		<firstname>Erich</firstname>
+		<surname>Hofmeier</surname>
+		<phone>0761-8852-123</phone>
+		<fullname>Erich Hofmeier</fullname>
+		<email>Hofmeier@kw.de</email>
+		<function>Customer Service Manager</function>
+	</clerk>
+</Letter>

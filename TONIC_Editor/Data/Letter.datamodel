@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="document">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="type"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="subject1"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="subject2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="id"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="DATETIME"
+            hierarchical="FLAT"
+            multiple="false"
+            name="date"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Format>
+               <Input date-format="MMM d, yyyy h:mm:ss a"/>
+               <Output date-format="dd-MMM-yyyy HH:mm:ss"
+                       date-style="2"
+                       date-type="DATE"
+                       use-current-locale="true"/>
+            </Format>
+            <Script>new Date();</Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="salutation"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script>switch ($Letter.Customer.gender.toString()){
+	case 'Mr':
+	'Dear ' + $Letter.Customer.firstname + ','
+	break;
+	case 'Mrs':
+	'Dear ' +  $Letter.Customer.firstname + ','
+	break;
+	default:
+	'Dear sir or madam,'
+}</Script>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false"
+         name="Infoblock"
+         ref="\\TONIC_Editor\Data\Infoblock.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="Customer"
+         ref="\\TONIC_Editor\Data\Customer.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>

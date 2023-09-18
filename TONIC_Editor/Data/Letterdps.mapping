@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\TONIC_Editor\Data\Letterdps.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true"
+            name="/Letterdps/Customer"
+            xpath="/letter/customer"/>
+      <Rule copySubtree="false"
+            name="/Letterdps/document"
+            xpath="/letter/document"/>
+      <Rule copySubtree="true" name="/Letterdps/document/id" xpath="id"/>
+      <Rule copySubtree="true"
+            name="/Letterdps/document/subject1"
+            xpath="subject1"/>
+      <Rule copySubtree="true"
+            name="/Letterdps/document/subject2"
+            xpath="subject2"/>
+      <Rule copySubtree="true" name="/Letterdps/document/type" xpath="type"/>
+      <Rule copySubtree="true"
+            name="/Letterdps/Infoblock/clerk"
+            xpath="/letter/clerk"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE write [
+]>
+<!-- I n v o i c e -->
+<letter>
+	<account>
+		<title1>2346543</title1>
+		<title2>Michelle Forbes, South Brent</title2>
+	</account>
+	<document>
+		<type />
+		<subject1></subject1>
+		<subject2></subject2>
+		<id>010102</id>
+	</document>
+	<!-- C u s t o m e r (Address) -->
+	<customer>
+		<customerno>2345543320</customerno>
+		<gender>Mrs</gender>
+		<title></title>
+		<firstname>Michelle</firstname>
+		<surname>Forbes</surname>
+		<street>12 Hillside</street>
+		<postcode>TQ10</postcode>
+		<town>South Brent</town>
+		<!-- B a n k  d e t a i l s -->
+		<bankdetails>
+			<owner>Michelle Forbes</owner>
+			<bank>Royal Bank of Scotland</bank>
+			<bic></bic>
+			<iban>GB32ESSE40486562135099</iban>
+		</bankdetails>
+	</customer>
+	<!-- C l e r k  -->
+	<clerk>
+		<gender>Mr</gender>
+		<firstname>Erich</firstname>
+		<surname>Hofmeier</surname>
+		<phone>0761-8852-123</phone>
+		<fullname>Erich Hofmeier</fullname>
+		<email>Hofmeier@kw.de</email>
+		<function>Customer Service Manager</function>
+	</clerk>
+	<!-- I n v o i c e -->
+	<invoice>
+		<totalTime>01:05:15</totalTime>
+		<totalNet>5.41</totalNet>
+		<totalGross>6.44</totalGross>
+		<totalTax>1.03</totalTax>
+		<date>11.11.2018</date>
+		<period>10/2018</period>
+		<item>
+			<number>+44 151 55123456</number>
+			<description>mobile sim</description>
+			<amount>1</amount>
+			<duration>00:58:23</duration>
+			<net>5.24</net>
+			<gross>6.24</gross>
+			<tax>1.00</tax>
+			<singleConnection>
+				<connection>
+					<date>01.10.</date>
+					<begin>09:35</begin>
+					<duration>00:25:13</duration>
+					<call>+44 761 8852 285</call>
+					<tariff>mobile2landline</tariff>
+				</connection>
+				<connection>
+					<date>05.10.</date>
+					<begin>20:13</begin>
+					<duration>00:01:00</duration>
+					<call>+44 151 55123457</call>
+					<tariff>familyNfriends</tariff>
+				</connection>
+				<connection>
+					<date>05.10.</date>
+					<begin>20:15</begin>
+					<duration>00:05:49</duration>
+					<call>+44 151 55123457</call>
+					<tariff>familyNfriends</tariff>
+				</connection>
+				<connection>
+					<date>09.10.</date>
+					<begin>11:19</begin>
+					<duration>00:03:13</duration>
+					<call>+44 157 12345657</call>
+					<tariff>mobile2mobile</tariff>
+				</connection>
+				<connection>
+					<date>11.10.</date>
+					<begin>13:09</begin>
+					<duration>00:02:56</duration>
+					<call>+44 151 55123488</call>
+					<tariff>familyNfriends</tariff>
+				</connection>
+				<connection>
+					<date>15.10.</date>
+					<begin>20:13</begin>
+					<duration>00:01:01</duration>
+					<call>+44 152 35627891</call>
+					<tariff>mobile2mobile</tariff>
+				</connection>
+				<connection>
+					<date>19.10.</date>
+					<begin>15:15</begin>
+					<duration>00:00:59</duration>
+					<call>+44 157 95124879</call>
+					<tariff>mobile2mobile</tariff>
+				</connection>
+				<connection>
+					<date>19.10.</date>
+					<begin>17:35</begin>
+					<duration>00:10:33</duration>
+					<call>+44 151 55123459</call>
+					<tariff>familyNfriends</tariff>
+				</connection>
+				<connection>
+					<date>25.10.</date>
+					<begin>10:40</begin>
+					<duration>00:00:15</duration>
+					<call>+44 40 1256744</call>
+					<tariff>mobile2landline</tariff>
+				</connection>
+				<connection>
+					<date>31.10.</date>
+					<begin>22:01</begin>
+					<duration>00:07:24</duration>
+					<call>+44 151 55123408</call>
+					<tariff>familyNfriends</tariff>
+				</connection>
+			</singleConnection>
+		</item>
+	<item>
+			<number>+44 761 9876543</number>
+			<description>landline</description>
+			<amount>1</amount>
+			<duration>00:06:52</duration>
+			<net>0.17</net>
+			<gross>0.20</gross>
+			<tax>0.03</tax>
+			<singleConnection>
+				<connection>
+					<date>02.10.</date>
+					<begin>05:10</begin>
+					<duration>00:02:59</duration>
+					<call>+44 761 8852 984</call>
+					<tariff>landline</tariff>
+				</connection>
+				<connection>
+					<date>16.10.</date>
+					<begin>15:33</begin>
+					<duration>00:03:54</duration>
+					<call>+44 157 4321 985</call>
+					<tariff>landline2mobile</tariff>
+				</connection>
+			</singleConnection>
+		</item>
+	</invoice>
+</letter>

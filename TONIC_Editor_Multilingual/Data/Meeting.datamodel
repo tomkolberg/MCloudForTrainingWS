@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="date"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="timeFrom"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="timeTo"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>

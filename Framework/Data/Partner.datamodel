@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="PartnerID"
+         searchable="true">
+      <Settings>
+         <Description>PartnerID </Description>
+         <Validation allow-empty-value="true"
+                     dialog-field="EDITFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="UserID"
+         searchable="false">
+      <Settings>
+         <Description>Shortname of business partner oder UserID of responsible user</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Salutation"
+         searchable="false">
+      <Settings>
+         <Description>Salutation</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label="Anrede"
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Title"
+         searchable="false">
+      <Settings>
+         <Description>academic title</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label="Titel"
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Firstname"
+         searchable="false">
+      <Settings>
+         <Description>firstname</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label="Vorname"
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Lastname"
+         searchable="false">
+      <Settings>
+         <Description>lastname or company name</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label="Nachname"
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+            <ErrorMessage>Bitte geben Sie den Nachnamen ein</ErrorMessage>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="CompanyName1"
+         searchable="false">
+      <Settings>
+         <Description>company name 1 (if longer)</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="CompanyName2"
+         searchable="false">
+      <Settings>
+         <Description>company name 2 (if longer)</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="HouseNo"
+         searchable="false">
+      <Settings>
+         <Description>house no</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="AddressSupplement"
+         searchable="false">
+      <Settings>
+         <Description>supplement in address</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Street"
+         searchable="false">
+      <Settings>
+         <Description>street</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label="Strasse"
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Zip"
+         searchable="false">
+      <Settings>
+         <Description>zip or postcode</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label="Postleitzahl"
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+            <ErrorMessage>Bitte geben Sie die Postleitzahl ein</ErrorMessage>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="City"
+         searchable="false">
+      <Settings>
+         <Description>city, town</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label="Ort"
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+            <ErrorMessage>Bitte geben Sie den Ort ein</ErrorMessage>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Country"
+         searchable="false">
+      <Settings>
+         <Description>country as used in address writing</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="CountryCode"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="State"
+         searchable="false">
+      <Settings>
+         <Description>state, e.g. Texas, Bayern </Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Region"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false" name="Address">
+      <Settings>
+         <Description>Lines for adress</Description>
+         <Script></Script>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="true"
+            name="Line"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field="EDITFIELD"
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="SalutatoryAddress"
+         searchable="false">
+      <Settings>
+         <Description>salutatory address</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Role"
+         searchable="false">
+      <Settings>
+         <Description>Role of partner</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field="EDITFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Email"
+         searchable="false">
+      <Settings>
+         <Description>Primary email address</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Phone"
+         searchable="false">
+      <Settings>
+         <Description>phone number</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Fax"
+         searchable="false">
+      <Settings>
+         <Description>fax number</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Signature"
+         searchable="false">
+      <Settings>
+         <Description>Signature of user
+Derrived from UserID</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script>var sRetVal = "";
+var usid = $UserID.valueOf();
+if (usid != null &amp;&amp; usid != "")
+{
+	sRetVal = "mtx://Framework/Graphics/signature_" + usid + ".png";
+}
+sRetVal;</Script>
+      </Settings>
+   </Node>
+</DataModel>

@@ -1,0 +1,51 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>&lt;&lt;insert Text&gt;&gt;</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Span>
+          <Text>&lt;&lt;hier Text einfügen&gt;&gt;</Text>
+         </Span>
+        </Par>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Message"></Param>
+      <Param name="Instance"></Param>
+      <Param name="Subject2"></Param>
+      <Param name="Subject3"></Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+   <Param name="Subject1">"Subject line #1"</Param>
+   <Param name="Subject2"></Param>
+   <Param name="Subject3"></Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

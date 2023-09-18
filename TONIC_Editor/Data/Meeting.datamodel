@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="DATETIME"
+         hierarchical="FLAT"
+         multiple="false"
+         name="date"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input date-format="MMM d, yyyy h:mm:ss a"/>
+            <Output date-format="dd-MMM-yyyy HH:mm:ss"
+                    date-style="2"
+                    date-type="DATE"
+                    use-current-locale="true"/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="DATETIME"
+         hierarchical="FLAT"
+         multiple="false"
+         name="timeFrom"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input date-format="MMM d, yyyy h:mm:ss a"/>
+            <Output date-format="dd-MMM-yyyy HH:mm:ss"
+                    date-style="3"
+                    date-type="TIME"
+                    use-current-locale="true"/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="DATETIME"
+         hierarchical="FLAT"
+         multiple="false"
+         name="timeTo"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input date-format="MMM d, yyyy h:mm:ss a"/>
+            <Output date-format="dd-MMM-yyyy HH:mm:ss"
+                    date-style="3"
+                    date-type="TIME"
+                    use-current-locale="true"/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+</DataModel>

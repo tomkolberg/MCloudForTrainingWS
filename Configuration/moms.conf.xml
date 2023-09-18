@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration
+	xmlns="http://www.kwsoft.de/moms/conf"
+	collectRootFolderName=""
+	splitSynchronously="false"
+	timestampFormat="dd.MM.yyyy HH:mm:ss">
+	<Stacks>
+
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			allowToUpdateDocuments="true"
+			continueOnDocumentError="true"
+			documentDistributionMode="FULL_REST"
+			isReprintStack="false"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="2"
+			name="_sys_systemTest"
+			onlineStackSleepSeconds="0"
+			persistControlJob="true"
+			processDocCollectionParallel="true"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			splitDocStatusAfterError="STACK_ERROR"
+			splitDocStatusAfterInterruption="STACK_INTERRUPTED"
+			splitDocumentStatus="PRINTABLE"
+			stackGroupID="PrintStacks"
+			tolerance="100"
+			description="A stack for basic system functionality test.">
+			<SortParameters>
+			</SortParameters>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.marking.MarkingExtension"
+					name="MarkingExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Marking">
+
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:MarkingConfiguration
+							xmlns="http://www.kwsoft.de/moms/ext/stack/marking">
+							<StackExtension:Marking
+								length="8"
+								name="ITV25"
+								pageDirection="FORWARD">
+								<StackExtension:PagePositionConfiguration
+									sheetFrontPages="true"
+									sheetBackPages="true"></StackExtension:PagePositionConfiguration>
+								<StackExtension:BarcodeMarkingFormat
+									length="0"
+									name=""
+									position="1">
+									<StackExtension:BarcodeMetadata
+										code-size="8"
+										code-type="ITV25"
+										encoding="0"
+										error-level="0"
+										invert-colors="false"
+										resolution="75"
+										text-font="ARIAL"
+										text-font-size="8000"
+										text-position="2"
+										tile-size-x="1"
+										tile-size-y="20" />
+									<StackExtension:BarcodeLocationPortrait
+										invert-orientation="false"
+										orientation="0"
+										position-x="400000"
+										position-y="10000" />
+									<StackExtension:BarcodeLocationLandscape
+										invert-orientation="false"
+										orientation="270"
+										position-x="812692"
+										position-y="399996" />
+								</StackExtension:BarcodeMarkingFormat>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.SheetOfDocumentCollection"
+									encoding="STR_DECIMAL"
+									length="4"
+									name="Command_1"
+									position="1"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/SheetOfDocumentCollection">
+									<Command:ExtensionConfiguration />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.PageOfDocumentCollection"
+									encoding="STR_DECIMAL"
+									length="4"
+									name="Command_2"
+									position="5"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/PageOfDocumentCollection">
+									<Command:ExtensionConfiguration />
+								</StackExtension:Command>
+							</StackExtension:Marking>
+							<StackExtension:Marking
+								length="4"
+								name="OMR"
+								pageDirection="FORWARD">
+								<StackExtension:PagePositionConfiguration
+									sheetFrontPages="true"
+									sheetBackPages="true"></StackExtension:PagePositionConfiguration>
+								<StackExtension:OutputMarkingFormat
+									length="0"
+									name="Format1"
+									position="1">
+									<StackExtension:OutputMarkingMetadata
+										duplicate="true"
+										duplicateInvert="true"
+										duplicateShiftX="0"
+										duplicateShiftY="10000"
+										invert="false"
+										lineDistance="5000"
+										lineLength="5000"
+										lineThickness="1000" />
+									<StackExtension:PageOperationLocationPortrait
+										orientation="0"
+										position-x="490000"
+										position-y="10000" />
+									<StackExtension:PageOperationLocationLandscape
+										orientation="270"
+										position-x="816889"
+										position-y="490000" />
+								</StackExtension:OutputMarkingFormat>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.BeginOfDocument"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_1"
+									position="1"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/BeginOfDocument">
+									<Command:ExtensionConfiguration
+										invert="false" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.EndOfDocument"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_2"
+									position="2"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/EndOfDocument">
+									<Command:ExtensionConfiguration
+										invert="false" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.OMRLineSumEvenOrOdd"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_3"
+									position="3"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/OMRLineSumEvenOrOdd">
+									<Command:ExtensionConfiguration
+										invert="false"
+										lineSumConstraint="EVEN" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.OMRLineSumEvenOrOdd"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_4"
+									position="4"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/OMRLineSumEvenOrOdd">
+									<Command:ExtensionConfiguration
+										invert="false"
+										lineSumConstraint="ODD" />
+								</StackExtension:Command>
+							</StackExtension:Marking>
+							<StackExtension:Marking
+								length="10"
+								name="Text"
+								paddingChar="32"
+								pageDirection="FORWARD">
+								<StackExtension:PagePositionConfiguration
+									sheetBackPages="true"
+									sheetFrontPages="true"></StackExtension:PagePositionConfiguration>
+								<StackExtension:TextMarkingFormat
+									length="0"
+									name=""
+									position="1">
+									<StackExtension:Text
+										fontName="MONO"
+										fontSize="14173"
+										fontStyle="0" />
+									<StackExtension:PageOperationLocationPortrait
+										orientation="0"
+										position-x="540000"
+										position-y="20000" />
+									<StackExtension:PageOperationLocationLandscape
+										orientation="270"
+										position-x="807716"
+										position-y="540000" />
+								</StackExtension:TextMarkingFormat>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.ConstantValue"
+									clippingSide="RIGHT"
+									encoding="STRING"
+									length="5"
+									name="Command_1"
+									position="1"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/ConstantValue">
+									<Command:ExtensionConfiguration
+										position="ALL_MARKINGS_OF_DOCUMENT"
+										value="Seite" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									alignment="LEFT"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.PageOfDocument"
+									encoding="STR_DECIMAL"
+									length="3"
+									name="Command_2"
+									paddingChar="32"
+									position="8"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/PageOfDocument">
+									<Command:ExtensionConfiguration />
+								</StackExtension:Command>
+							</StackExtension:Marking>
+						</StackExtension:MarkingConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					name="RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						destination="pcl"
+						outputFilenameExtension="pcl"
+						outputFilenamePrefix="pstackcollection"
+						outputMode="SINGLE_AND_APPEND_DOCUMENT"
+						persistInterpretedDocument="true"
+						persistRenderedDocuments="true"
+						renderInput="INTERPRET_GENERATED_MCJ" />
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.CollectExtension"
+					name="CollectExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Collect">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						outputFilenameExtension="pcl"
+						outputFilenamePrefix="collection"
+						removeParallelStackCollectFiles="true"
+						setDocumentsCollectFileId="true">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM"
+					value="_sys_systemTest" />
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_STATUS"
+					value="WAIT_FOR_STACK_PROCESSING" />
+			</Select>
+			<ReprintStackNames>
+				<ReprintStackName name="REPRINT_RENDER" />
+				<ReprintStackName name="REPRINT_INTERPRET_RENDER" />
+				<ReprintStackName name="REPRINT_PRNS" />
+			</ReprintStackNames>
+
+		</Stack>
+
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			allowToUpdateDocuments="true"
+			continueOnDocumentError="true"
+			description="An example print stack configuration"
+			documentDistributionMode="FULL_REST"
+			isReprintStack="false"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="2"
+			name="PRINT"
+			onlineStackSleepSeconds="0"
+			persistControlJob="true"
+			processDocCollectionParallel="true"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			splitDocStatusAfterError="STACK_ERROR"
+			splitDocStatusAfterInterruption="STACK_INTERRUPTED"
+			splitDocumentStatus="PRINTABLE"
+			stackGroupID="PrintStacks"
+			tolerance="100">
+			<SortParameters>
+
+
+			</SortParameters>
+			<StackExtensions>
+
+
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.marking.MarkingExtension"
+					name="MarkingExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Marking">
+
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:MarkingConfiguration
+							xmlns="http://www.kwsoft.de/moms/ext/stack/marking">
+							<StackExtension:Marking
+								length="8"
+								name="ITV25"
+								pageDirection="FORWARD">
+								<StackExtension:PagePositionConfiguration
+									sheetFrontPages="true"
+									sheetBackPages="true"></StackExtension:PagePositionConfiguration>
+								<StackExtension:BarcodeMarkingFormat
+									length="0"
+									name=""
+									position="1">
+									<StackExtension:BarcodeMetadata
+										code-size="8"
+										code-type="ITV25"
+										encoding="0"
+										error-level="0"
+										invert-colors="false"
+										resolution="75"
+										text-font="ARIAL"
+										text-font-size="8000"
+										text-position="0"
+										tile-size-x="1"
+										tile-size-y="20" />
+									<StackExtension:BarcodeLocationPortrait
+										invert-orientation="false"
+										orientation="0"
+										position-x="400000"
+										position-y="10000" />
+									<StackExtension:BarcodeLocationLandscape
+										invert-orientation="false"
+										orientation="270"
+										position-x="812692"
+										position-y="399996" />
+								</StackExtension:BarcodeMarkingFormat>
+								<StackExtension:TextMarkingFormat
+									length="0"
+									name=""
+									position="1">
+									<StackExtension:Text
+										fontName="ARIAL"
+										fontSize="8000"
+										fontStyle="0"
+										horizontalAlignment="1"
+										textColor="#000000"
+										verticalAlignment="0" />
+									<StackExtension:PageOperationLocationPortrait
+										orientation="0"
+										position-x="438746"
+										position-y="32598" />
+									<StackExtension:PageOperationLocationLandscape
+										orientation="270"
+										position-x="790100"
+										position-y="438746" />
+								</StackExtension:TextMarkingFormat>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.SheetOfDocumentCollection"
+									encoding="STR_DECIMAL"
+									length="4"
+									name="Command_1"
+									position="1"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/SheetOfDocumentCollection">
+									<Command:ExtensionConfiguration />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.PageOfDocumentCollection"
+									encoding="STR_DECIMAL"
+									length="4"
+									name="Command_2"
+									position="5"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/PageOfDocumentCollection">
+									<Command:ExtensionConfiguration />
+								</StackExtension:Command>
+							</StackExtension:Marking>
+							<StackExtension:Marking
+								length="4"
+								name="OMR"
+								pageDirection="FORWARD">
+								<StackExtension:PagePositionConfiguration
+									sheetFrontPages="true"
+									sheetBackPages="true"></StackExtension:PagePositionConfiguration>
+								<StackExtension:OutputMarkingFormat
+									length="0"
+									name="Format1"
+									position="1">
+									<StackExtension:OutputMarkingMetadata
+										duplicate="true"
+										duplicateInvert="true"
+										duplicateShiftX="0"
+										duplicateShiftY="10000"
+										invert="false"
+										lineDistance="5000"
+										lineLength="5000"
+										lineThickness="1000" />
+									<StackExtension:PageOperationLocationPortrait
+										orientation="0"
+										position-x="490000"
+										position-y="10000" />
+									<StackExtension:PageOperationLocationLandscape
+										orientation="270"
+										position-x="816889"
+										position-y="490000" />
+								</StackExtension:OutputMarkingFormat>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.BeginOfDocument"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_1"
+									position="1"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/BeginOfDocument">
+									<Command:ExtensionConfiguration
+										invert="false" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.EndOfDocument"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_2"
+									position="2"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/EndOfDocument">
+									<Command:ExtensionConfiguration
+										invert="false" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.OMRLineSumEvenOrOdd"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_3"
+									position="3"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/OMRLineSumEvenOrOdd">
+									<Command:ExtensionConfiguration
+										invert="false"
+										lineSumConstraint="EVEN" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.OMRLineSumEvenOrOdd"
+									encoding="NONE"
+									length="1"
+									name="OMRCommand_4"
+									position="4"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/OMRLineSumEvenOrOdd">
+									<Command:ExtensionConfiguration
+										invert="false"
+										lineSumConstraint="ODD" />
+								</StackExtension:Command>
+							</StackExtension:Marking>
+							<StackExtension:Marking
+								length="10"
+								name="Text"
+								paddingChar="32"
+								pageDirection="FORWARD">
+								<StackExtension:PagePositionConfiguration
+									sheetBackPages="true"
+									sheetFrontPages="true"></StackExtension:PagePositionConfiguration>
+								<StackExtension:TextMarkingFormat
+									length="0"
+									name=""
+									position="1">
+									<StackExtension:Text
+										fontName="MONO"
+										fontSize="14173"
+										fontStyle="0" />
+									<StackExtension:PageOperationLocationPortrait
+										orientation="0"
+										position-x="540000"
+										position-y="20000" />
+									<StackExtension:PageOperationLocationLandscape
+										orientation="270"
+										position-x="807716"
+										position-y="540000" />
+								</StackExtension:TextMarkingFormat>
+								<StackExtension:Command
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.ConstantValue"
+									clippingSide="RIGHT"
+									encoding="STRING"
+									length="5"
+									name="Command_1"
+									position="1"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/ConstantValue">
+									<Command:ExtensionConfiguration
+										position="ALL_MARKINGS_OF_DOCUMENT"
+										value="Seite" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									alignment="LEFT"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.PageOfDocument"
+									encoding="STR_DECIMAL"
+									length="3"
+									name="Command_2"
+									paddingChar="32"
+									position="8"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/PageOfDocument">
+									<Command:ExtensionConfiguration />
+								</StackExtension:Command>
+							</StackExtension:Marking>
+						</StackExtension:MarkingConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					name="RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						destination="postscript"
+						outputFilenameExtension="ps"
+						outputFilenamePrefix="pstackcollection"
+						outputMode="SINGLE_AND_APPEND_DOCUMENT"
+						persistInterpretedDocument="true"
+						persistRenderedDocuments="true"
+						renderInput="INTERPRET_GENERATED_MCJ" />
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.CollectExtension"
+					name="CollectExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Collect">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						outputFilenameExtension="ps"
+						outputFilenamePrefix="collection"
+						removeParallelStackCollectFiles="true"
+						setDocumentsCollectFileId="true">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM"
+					value="PRINT" />
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_STATUS"
+					value="WAIT_FOR_STACK_PROCESSING" />
+			</Select>
+			<ReprintStackNames>
+				<ReprintStackName name="REPRINT_RENDER" />
+				<ReprintStackName name="REPRINT_INTERPRET_RENDER" />
+				<ReprintStackName name="REPRINT_PRNS" />
+			</ReprintStackNames>
+
+		</Stack>
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			allowToUpdateDocuments="true"
+			continueOnDocumentError="true"
+			description="An example online stack configuration printing single documents"
+			documentDistributionMode="FULL_REST"
+			isReprintStack="false"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="0"
+			name="ONLINE"
+			onlineStackSleepSeconds="20"
+			persistControlJob="false"
+			processDocCollectionParallel="true"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			splitDocStatusAfterError="STACK_ERROR"
+			splitDocStatusAfterInterruption="STACK_INTERRUPTED"
+			splitDocumentStatus="PRINTED"
+			stackGroupID="ArchiveStacks"
+			tolerance="100">
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					name="RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						destination="postscript"
+						outputFilenameExtension="ps"
+						outputMode="SINGLE_DOCUMENT"
+						persistInterpretedDocument="false"
+						persistRenderedDocuments="false"
+						renderInput="INTERPRET_GENERATED_MCJ" />
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.PrintResourceExtension"
+					name="PrintResourceExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/PrintResourceExtension">
+					<StackExtension:ExtensionConfiguration
+						printerQueue="Printer_JPS"
+						resourceName='STACK_PRN'>
+						<StackExtension:PrintSystemParameterRefConfiguration>
+							<StackExtension:PrintSystemParameterRef
+								parameter-name="KW_MEDIUM"
+								parameter-type="M/OMS-Parameter"
+								printSystemParameterName="Document" />
+						</StackExtension:PrintSystemParameterRefConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM"
+					value="ONLINE" />
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_STATUS"
+					value="WAIT_FOR_STACK_PROCESSING" />
+			</Select>
+		</Stack>
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			allowToUpdateDocuments="false"
+			continueOnDocumentError="false"
+			description=""
+			documentDistributionMode="FULL_REST"
+			isReprintStack="true"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="3"
+			name="REPRINT_RENDER"
+			onlineStackSleepSeconds="0"
+			persistControlJob="false"
+			processDocCollectionParallel="true"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			splitDocStatusAfterError="STACK_ERROR"
+			splitDocStatusAfterInterruption="STACK_INTERRUPTED"
+			stackGroupID="Reprint-Stacks"
+			tolerance="10">
+			<SortParameters>
+				<SortParameter
+					name="KW_STACK_POS"
+					order="asc" />
+			</SortParameters>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					name="RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						destination="postscript"
+						outputFilenameExtension="ps"
+						outputFilenamePrefix="pstackcollection"
+						outputMode="APPEND_DOCUMENT"
+						persistInterpretedDocument="false"
+						persistRenderedDocuments="false"
+						renderInput="RENDER_EXISTING_MFD" />
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.CollectExtension"
+					name="CollectExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Collect">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						outputFilenameExtension="ps"
+						outputFilenamePrefix="collection"
+						removeParallelStackCollectFiles="true"
+						setDocumentsCollectFileId="false">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.print.RePrintCollectPrnExtension"
+					name="RePrintCollectPrnExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/print/RePrintCollectPrnExtension">
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:PrintConfiguration
+							printerQueueIdDefault="Printer_JPS"
+							use-default-printerqueue="true" />
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Select />
+		</Stack>
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			allowToUpdateDocuments="false"
+			continueOnDocumentError="false"
+			description=""
+			documentDistributionMode="FULL_REST"
+			isReprintStack="true"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="3"
+			name="REPRINT_INTERPRET_RENDER"
+			onlineStackSleepSeconds="0"
+			persistControlJob="false"
+			processDocCollectionParallel="true"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			splitDocStatusAfterError="STACK_ERROR"
+			splitDocStatusAfterInterruption="STACK_INTERRUPTED"
+			stackGroupID="Reprint-Stacks"
+			tolerance="10">
+			<SortParameters>
+				<SortParameter
+					name="KW_STACK_POS"
+					order="asc" />
+			</SortParameters>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					name="RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						destination="postscript"
+						outputFilenameExtension="ps"
+						outputFilenamePrefix="pstackcollection"
+						outputMode="APPEND_DOCUMENT"
+						persistInterpretedDocument="false"
+						persistRenderedDocuments="false"
+						renderInput="INTERPRET_EXISTING_MCJ" />
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.CollectExtension"
+					name="CollectExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Collect">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						outputFilenameExtension="ps"
+						outputFilenamePrefix="collection"
+						removeParallelStackCollectFiles="true"
+						setDocumentsCollectFileId="false">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.print.RePrintCollectPrnExtension"
+					name="RePrintCollectPrnExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/print/RePrintCollectPrnExtension">
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:PrintConfiguration
+							printerQueueIdDefault="Printer_JPS"
+							use-default-printerqueue="true" />
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Select />
+		</Stack>
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			allowToUpdateDocuments="false"
+			continueOnDocumentError="false"
+			description=""
+			documentDistributionMode="FULL_REST"
+			isReprintStack="true"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="3"
+			name="REPRINT_PRNS"
+			onlineStackSleepSeconds="0"
+			persistControlJob="false"
+			processDocCollectionParallel="true"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			splitDocStatusAfterError="STACK_ERROR"
+			splitDocStatusAfterInterruption="STACK_INTERRUPTED"
+			stackGroupID="Reprint-Stacks"
+			tolerance="10">
+			<SortParameters>
+				<SortParameter
+					name="KW_STACK_POS"
+					order="asc" />
+			</SortParameters>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.CollectPRNExtension"
+					name="CollectPRNExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/CollectPRN">
+					<StackExtension:ExtensionConfiguration
+						coverpagePosition="NONE"
+						outputFilenameExtension="ps"
+						outputFilenamePrefix="collection">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.print.RePrintCollectPrnExtension"
+					name="RePrintCollectPrnExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/print/RePrintCollectPrnExtension">
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:PrintConfiguration
+							printerQueueIdDefault="Printer_JPS"
+							use-default-printerqueue="true" />
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Select />
+		</Stack>
+	</Stacks>
+	<CommonStackExtensionConfigurations>
+		<CommonStackExtensionConfiguration
+			className="de.kwsoft.moms.server.stack.extension.extensions.archive.BasicArchiveExtension"
+			name="BasicArchiveExtension"
+			xmlns:CommonStackExtensionConfiguration="http://www.kwsoft.de/moms/ext/stack/archive/BasicArchiveExtension">
+			<CommonStackExtensionConfiguration:ExtensionConfiguration>
+				<CommonStackExtensionConfiguration:BasicArchiveConfiguration>
+					<CommonStackExtensionConfiguration:Aspects>
+						<CommonStackExtensionConfiguration:Aspect
+							datatype="Long"
+							description="Example aspect"
+							name="Aspekt 1" />
+					</CommonStackExtensionConfiguration:Aspects>
+				</CommonStackExtensionConfiguration:BasicArchiveConfiguration>
+			</CommonStackExtensionConfiguration:ExtensionConfiguration>
+		</CommonStackExtensionConfiguration>
+	</CommonStackExtensionConfigurations>
+	<Splitter />
+	<Parameters>
+		<Parameter
+			displayName="PRINTER_NAME"
+			editable="false"
+			indexed="false"
+			length="100"
+			name="PRINTER_NAME"
+			nullable="true"
+			system="false"
+			type="Character" />
+		<Parameter
+			editable="true"
+			nullable="true"
+			type="Character"
+			name="KUNDENNUMMER" />
+	</Parameters>
+	<PreviewFormats>
+		<PreviewFormat inputType="MFD">
+			<PreviewFormatOutput
+				destinationName="export-application/pdf"
+				fileNameExtension="pdf"
+				formatName="Portable Data Format" />
+			<PreviewFormatOutput
+				destinationName="postscript"
+				fileNameExtension="ps"
+				formatName="Postscript" />
+		</PreviewFormat>
+	</PreviewFormats>
+	<PrintingParameters>
+		<PrinterQueues>
+			<PrinterQueue
+				descriptionOfPrinterQueue="Physical-Printer for JPS"
+				locationOfPrinterQueue="Lokal"
+				nameId="Printer_JPS"
+				nameOfPrinterQueue="DummyPrinterQueue"
+				printTypeId="PrintType_Jps" />
+			<PrinterQueue
+				descriptionOfPrinterQueue="Physical-Printer for external process-call"
+				locationOfPrinterQueue="Lokal"
+				nameId="Printer_Perl"
+				nameOfPrinterQueue="DummyPrinterQueue"
+				printTypeId="PrintType_Perl" />
+		</PrinterQueues>
+		<PrintTypes>
+			<PrintType
+				descriptionOfPrintType="For PrintDocumentExtension via jps on windows"
+				descriptionOfWayOfPrinting="using the Java-Print-Service"
+				nameId="PrintType_Jps"
+				printTimeOutSec="0"
+				wayOfPrinting="JPS" />
+			<PrintType
+				descriptionOfPrintType="For PrintDocumentExtension via perl on unix and windows"
+				descriptionOfWayOfPrinting="using an external Perl-Script"
+				nameId="PrintType_Perl"
+				printCommand="cmd.exe, /c, momsPrintingScript.pl"
+				printDirFileMode="PERSIST"
+				printTimeOutSec="30"
+				wayOfPrinting="COMMAND" />
+		</PrintTypes>
+	</PrintingParameters>
+	<StackGroupIDs>
+		<StackGroupID
+			descriptionOfStackGroup="Stack which are printing"
+			groupId="PrintStacks" />
+		<StackGroupID
+			descriptionOfStackGroup="Stacks which are archiving"
+			groupId="ArchiveStacks" />
+		<StackGroupID
+			descriptionOfStackGroup="Stacks to reprint sinlge documents of collect files"
+			groupId="Reprint-Stacks" />
+	</StackGroupIDs>
+	<DateParsePatterns>
+		<DateParsePattern pattern="dd.MM.yy HH:mm:ss" />
+		<DateParsePattern pattern="dd.MM.yy" />
+		<DateParsePattern pattern="dd.MM.yyyy HH:mm:ss" />
+		<DateParsePattern pattern="dd.MM.yyyy" />
+	</DateParsePatterns>
+</Configuration>

@@ -1,0 +1,14 @@
+<configuration
+	xmlns="http://www.kwsoft.de/controlcenter/serverConfiguration"
+	name="DME server - WS">
+	<description />
+	<mtextclient>
+		<defaults>WS</defaults>
+		<communication>
+			<wsdlHost>https://training614basic-git.test.omscloud.eu:443</wsdlHost>
+		</communication>
+	</mtextclient>
+	<packagenumbering>1</packagenumbering>
+	<notifications>false</notifications>
+</configuration>
+

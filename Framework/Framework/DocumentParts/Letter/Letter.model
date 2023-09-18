@@ -1,0 +1,115 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Instance" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Recipient" ref="\\Framework\Data\Recipient.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Subject1">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject2">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject3">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Section>
+  <OutputSettingsRef uri="Framework\FW_OutputSettings.outputSettings"></OutputSettingsRef>
+  <Style parentName="Letter"></Style>
+  <StaticContainer>
+   <Style>
+    <RegionRef>logo</RegionRef>
+   </Style>
+   <ContainerExtensionDef id="AnschreibenLogo"></ContainerExtensionDef>
+   <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_Logo.model"></ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>contactinformation</RegionRef>
+   </Style>
+   <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_ContactInformations.model">
+    <Param name="Sender">$Sender</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>senderaddress</RegionRef>
+   </Style>
+   <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_Sender.model">
+    <Param name="Sender">$Sender</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>recipientaddress</RegionRef>
+   </Style>
+   <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_RecipientAddress.model">
+    <Param name="Recipient">$Recipient</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>subject</RegionRef>
+   </Style>
+   <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_Subject.model">
+    <Param name="Subject1">$Subject1</Param>
+    <Param name="Subject2">$Subject2</Param>
+    <Param name="Subject3">$Subject3</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <Container>
+   <ContainerExtensionDef id="Letter Content"></ContainerExtensionDef>
+  </Container>
+  <SectionPartRef uri="Framework/DocumentParts/Letter/FW_ComplimentaryClose.model">
+   <Param name="Sender">$Instance.Sender</Param>
+  </SectionPartRef>
+  <SectionPartRef uri="\\Framework\Framework\LayoutComponents\FW_MarginalNotes.model"></SectionPartRef>
+  <StaticContainer>
+   <Style>
+    <RegionRef>companyfooter</RegionRef>
+   </Style>
+   <ContainerPartRef uri="Framework/DocumentParts/Letter/FW_CompanyFooter.model"></ContainerPartRef>
+  </StaticContainer>
+ </Section>
+</DocumentPart>

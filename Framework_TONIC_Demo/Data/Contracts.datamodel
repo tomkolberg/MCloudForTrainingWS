@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="true"
+         name="Contract"
+         ref="\\Framework_TONIC_Demo\Data\Contract.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>

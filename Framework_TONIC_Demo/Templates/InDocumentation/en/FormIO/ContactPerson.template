@@ -1,0 +1,56 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ContactPerson" ref="\\Framework_TONIC_Demo\Data\ContactPerson.datamodel" dataMappingRef="">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ActionLink title="Change contact details" inputAreaGroupID="">
+    <Script><![CDATA[var formFunc = $context.FormIO.createForm("\\\\Framework_TONIC_Demo\\FormIO\\en\\ContactPerson.formio");
+var layout = {
+	"height": "700",
+	"width" : "700",
+	"title" : "Contact Person"
+};
+$context.showForm(formFunc, $ContactPerson, layout);]]></Script>
+   </ActionLink>
+  </GuideArea>
+  <InputArea></InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Container>
+    <Par>
+     <Span>
+      <Text>Your contact person:</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Text>Name: </Text>
+      <Data>$ContactPerson.name</Data>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Text>Phone number: </Text>
+      <Data>$ContactPerson.phone</Data>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

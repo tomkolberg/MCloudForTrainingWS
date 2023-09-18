@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\Framework\Data\Partner.datamodel</DataModel>
+   <SourceRoot xpath="/taskcontrol/message/instance/recipient/Partner"/>
+   <Rules>
+      <Rule copySubtree="true" name="/Partner" xpath="/"/>
+      <Rule copySubtree="true" name="/Partner/Address" xpath="address"/>
+      <Rule copySubtree="true"
+            name="/Partner/AddressSupplement"
+            xpath="addresssupplement"/>
+      <Rule copySubtree="true" name="/Partner/City" xpath="city"/>
+      <Rule copySubtree="true"
+            name="/Partner/CompanyName1"
+            xpath="companyname1"/>
+      <Rule copySubtree="true"
+            name="/Partner/CompanyName2"
+            xpath="companyname2"/>
+      <Rule copySubtree="true" name="/Partner/Country" xpath="country"/>
+      <Rule copySubtree="true" name="/Partner/Email" xpath="email"/>
+      <Rule copySubtree="true" name="/Partner/Fax" xpath="fax"/>
+      <Rule copySubtree="true" name="/Partner/Firstname" xpath="firstname"/>
+      <Rule copySubtree="true" name="/Partner/HouseNo" xpath="houseno"/>
+      <Rule copySubtree="true" name="/Partner/Lastname" xpath="lastname"/>
+      <Rule copySubtree="true" name="/Partner/PartnerID" xpath="partnerid"/>
+      <Rule copySubtree="true" name="/Partner/Phone" xpath="phone"/>
+      <Rule copySubtree="true" name="/Partner/Role" xpath="role"/>
+      <Rule copySubtree="true" name="/Partner/Salutation" xpath="salutation"/>
+      <Rule copySubtree="true" name="/Partner/Street" xpath="Street"/>
+      <Rule copySubtree="true" name="/Partner/Title" xpath="title"/>
+      <Rule copySubtree="true" name="/Partner/UserID" xpath="userid"/>
+      <Rule copySubtree="true" name="/Partner/Zip" xpath="zip"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

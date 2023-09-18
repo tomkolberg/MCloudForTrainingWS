@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query inherit="false">
+   <queryAnd>
+      <queryAtom name="Metadata.Templatesearchtree.Level_1"
+                 operator="NotEqual"
+                 value="Pattern"/>
+   </queryAnd>
+   <virtualfolder name="Metadata.Templatesearchtree.Level_1"/>
+   <virtualfolder name="Metadata.Templatesearchtree.Level_2"/>
+   <virtualfolder name="Metadata.Templatesearchtree.Level_3"/>
+</query>

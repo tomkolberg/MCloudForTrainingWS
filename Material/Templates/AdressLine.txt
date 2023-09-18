@@ -1,0 +1,10 @@
+switch ($Letter.Customer.gender.toString()){
+	case 'Mr':
+	'Dear ' + $Letter.Customer.firstname + ','
+	break;
+	case 'Mrs':
+	'Dear ' +  $Letter.Customer.firstname + ','
+	break;
+	default:
+	'Dear sir or madam,'
+}

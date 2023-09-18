@@ -1,0 +1,27 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+  <Par>
+   <Span>
+    <Text>You were unhappy with us or our performance? We read in one of your tweets that something didn't go well. Our retweet has already been sent, now we want to know more specifically from you.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Please tell us the reason for your complaint. We will be happy to take time for you.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>We will clarify your request as soon as possible and get back to you.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>You can also express your criticism directly to the board.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>We invite you to join our board's online conference.</Text>
+   </Span>
+  </Par>
+</ContainerPart>

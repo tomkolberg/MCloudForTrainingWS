@@ -1,0 +1,194 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\Examples\en\Dictionary_and_Hyphenation.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <Numbering id="1">
+         <Style name="Bullet">
+          <Levels>
+           <Level number="1" firstLineIndent="0.0cm" indent="0.5cm">
+            <Symbol>bullet</Symbol>
+            <Tab position="0.5cm" tabType="left" underlineStyle="default"></Tab>
+           </Level>
+          </Levels>
+         </Style>
+        </Numbering>
+        <Numbering id="1">
+         <Style name="Bullet">
+          <Levels>
+           <Level number="1" firstLineIndent="0.0cm" indent="0.5cm">
+            <Symbol>bullet</Symbol>
+            <Tab position="0.5cm" tabType="left" underlineStyle="default"></Tab>
+           </Level>
+          </Levels>
+         </Style>
+        </Numbering>
+        <Numbering id="1">
+         <Style parentName="Bullet"></Style>
+        </Numbering>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>The prescription requirement is coming now. To this end, there is the prescription ID card holder issuing authorities input note.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>There are two words in the sentence above that do not exist in the standard dictionary:</Text>
+         </Span>
+        </Par>
+        <Par>
+         <NumberingRef numberingId="1" level="1"></NumberingRef>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>Prescription</Text>
+         </Span>
+        </Par>
+        <Par>
+         <NumberingRef numberingId="1" level="1"></NumberingRef>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>Prescription ID card holder issuing authorities entry notice</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>The first step is to add these two words to the German dictionary. For this purpose there is the file mspell.exceptions_en_DE.xml in the configuration project.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>Add a new element "word" to this file under the "includes".</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Image uri="mtx://Framework_TONIC_Demo/Templates/Examples/Graphics/Configuration_mspell.exceptions_en_US.xml.png"></Image>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>Enter the new word in the column "Content".</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>After that, the TONIC dictionary must be generated. For that, right click on the project Configuration and select the context menu item "New, Other...". Choose "TONIC SpellcheckerDictionary" and click "Next".</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>Select the directory where the default dictionaries are located. This is usually the "spell" directory below the directory from which you start the Workbench. Select the English dictionary and switch on "Include exception list". Only then will the new words be included.</Text>
+         </Span>
+        </Par>
+        <Image uri="mtx://Framework_TONIC_Demo/Templates/Examples/Graphics/Configuration_TONIC_Create_new_dictionary.png"></Image>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>To set up the correct hyphenation for TONIC now, open the file en.xml from the configuration project from the "hyphenation" directory
+Add the new word to the section "&lt;exceptions&gt;", starting with a lowercase letter. In the places where it can be separated, insert hyphens:</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>&lt;exceptions&gt;</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>mother-in-law</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>&lt;/exceptions&gt;</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text>Now the phrase mother-in-law shall not be hyphened any longer. Now the phrase mother-in-law shall not be hyphened any longer.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="TextSpaceAfter"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <ContainerPart>
+         <ForEach><![CDATA[$Instance.OutputSettings.OutputSettings]]></ForEach>
+         <DataDefinition></DataDefinition>
+         <Par>
+          <Span>
+           <Data>$OutputSettings.InstanceID</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </ContainerPart>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Message">$Message</Param>
+      <Param name="Instance">$Instance</Param>
+      <Param name="Subject1">"Add your own words to the dictionary"</Param>
+      <Param name="Subject2">"Set up hyphenation for your own words"</Param>
+      <Param name="Subject3"></Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

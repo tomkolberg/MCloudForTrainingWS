@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+   <entry name="/dataProviders/Metadata">
+      <SerializedDataProvider providerClass="de.kwsoft.mtext.format.dataprovider.MetadataNodeInstance">
+         <DataModelResourceName name=""/>
+         <NodeInst name="Metadata" value="">
+            <Children>
+               <NodeInst name="Templatesearchtree" value="">
+                  <Children>
+                     <NodeInst name="Level_1" value="Finance"/>
+                     <NodeInst name="Level_2" value="Invoices"/>
+                  </Children>
+               </NodeInst>
+               <NodeInst name="TemplateRoles"
+                         uuid="07ea0056-9969-4334-8113-5fff6bdb5125"
+                         value="_everyone_"/>
+            </Children>
+         </NodeInst>
+      </SerializedDataProvider>
+   </entry>
+</content>

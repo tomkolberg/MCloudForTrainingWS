@@ -1,0 +1,14 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Span>
+   <Text>This is text inside the model! This model provides an extension supposed to be filled in the template.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Span>
+   <Text></Text>
+  </Span>
+ </Par>
+ <ContainerExtensionDef id="Extension Content"></ContainerExtensionDef>
+</ContainerPart>

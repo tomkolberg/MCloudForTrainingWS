@@ -1,0 +1,25 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="letter_of_apology" description="017 for billing error 2018">
+ <DataDefinition>
+  <ParamDef name="Letter" ref="Data\Letter.datamodel" dataMappingRef="Data\Letter.mapping">
+   <Description>Basics for standard templates SAM</Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="Models/CoverLetter.model">
+    <Param name="Letter">$Letter</Param>
+   <Extensions>
+    <ContainerExtension id="Please insert the current letter here">
+     <ContainerPartRef uri="Models/Apology_2018.model"></ContainerPartRef>
+    </ContainerExtension>
+   </Extensions>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

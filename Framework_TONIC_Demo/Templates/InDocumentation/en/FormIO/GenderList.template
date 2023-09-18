@@ -1,0 +1,41 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="GenderList" ref="\\Framework_TONIC_Demo\Data\GenderList.datamodel" dataMappingRef="Data\GenderList.mapping">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ActionLink title="Select gender" inputAreaGroupID="">
+    <Script><![CDATA[var formFunc = $context.FormIO.createForm("\\\\Framework_TONIC_Demo\\FormIO\\en\\GenderList.formio");
+var layout = {
+	"height": "700",
+	"width" : "700",
+	"title" : "Select Gender"
+};
+$context.showForm(formFunc, $GenderList, layout);]]></Script>
+   </ActionLink>
+  </GuideArea>
+  <InputArea></InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Container>
+    <Par>
+     <Span>
+      <Text>Selected gender: </Text>
+      <Data>$GenderList.selectedGender</Data>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

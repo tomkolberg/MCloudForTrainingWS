@@ -1,0 +1,64 @@
+<PageLayout xmlns="urn:kwsoft:mtext:tonic:dom">
+ <PageSize name="A4"></PageSize>
+ <Landscape>false</Landscape>
+ <Region name="2PersonMandatory">
+  <Left distance="45000.0mpt" anchorSide="same"></Left>
+  <Top distance="37199.0mpt" anchorSide="same"></Top>
+  <Right distance="31252.0mpt" anchorSide="same"></Right>
+  <Bottom distance="10139.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Logo">
+  <Left distance="425196.0mpt" anchorSide="same"></Left>
+  <Top distance="58393.0mpt" anchorSide="same"></Top>
+  <Right distance="99213.0mpt" anchorSide="same"></Right>
+  <Bottom distance="712630.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Recipient">
+  <Left distance="56691.0mpt" anchorSide="same"></Left>
+  <Top distance="2.75cm" anchorSide="same"></Top>
+  <Right distance="293104.0mpt" anchorSide="same"></Right>
+  <Bottom distance="664725.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Infoblock">
+  <Left distance="15.0cm" anchorSide="same"></Left>
+  <Top distance="148251.0mpt" anchorSide="same"></Top>
+  <Right distance="2.0cm" anchorSide="same"></Right>
+  <Bottom distance="596977.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Subject">
+  <Left distance="56692.0mpt" anchorSide="same"></Left>
+  <Top distance="244911.0mpt" anchorSide="same"></Top>
+  <Right distance="178243.0mpt" anchorSide="same"></Right>
+  <Bottom distance="549639.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Date">
+  <Left distance="439757.0mpt" anchorSide="same"></Left>
+  <Top distance="270708.0mpt" anchorSide="same"></Top>
+  <Right distance="2.0cm" anchorSide="same"></Right>
+  <Bottom distance="549638.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Body">
+  <Left distance="56692.0mpt" anchorSide="same"></Left>
+  <Top distance="12.41cm" anchorSide="same"></Top>
+  <Right distance="56692.0mpt" anchorSide="same"></Right>
+  <Bottom distance="62645.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="CLI">
+  <Left distance="56691.0mpt" anchorSide="same"></Left>
+  <Top distance="788881.0mpt" anchorSide="same"></Top>
+  <Right distance="56693.0mpt" anchorSide="same"></Right>
+  <Bottom distance="15719.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="ReturnShipmentAddress">
+  <Left distance="56691.0mpt" anchorSide="same"></Left>
+  <Top distance="61795.0mpt" anchorSide="same"></Top>
+  <Right distance="293105.0mpt" anchorSide="same"></Right>
+  <Bottom distance="27.0cm" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Salutation">
+  <Left distance="56691.0mpt" anchorSide="same"></Left>
+  <Top distance="316062.0mpt" anchorSide="same"></Top>
+  <Right distance="56694.0mpt" anchorSide="same"></Right>
+  <Bottom distance="507119.0mpt" anchorSide="same"></Bottom>
+ </Region>
+</PageLayout>

@@ -1,0 +1,129 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Text>How you get in touch with us:</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>No matter if you want advice or want to pass something on. Whatever moves you - contact us, we will be happy to help you.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Telephone, e-mail, live chat - you have many ways of reaching us</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>free hotline 24/7 reachable</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>live chat with customer service</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>encrypted contact form</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>or</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>visit us on Facebook</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>https://www.facebook.com/sam</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>use our WhatsApp Service</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Open WhatsApp</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Save the mobile phone number 0800 123456 12 as a contact in your address book on your smartphone.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Start a conversation with us.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>use our SMS callback service</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Send SMS to our mobile phone number 0800 123456 12</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>ask for a callback or</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>request an insurance quote or</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Ask questions about existing contracts.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>After sending your SMS we will contact you by phone, e-mail or letter.</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Par>
+   <Span>
+    <Text>Of course, you can also take the good old postal route.</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Or you can send us an e-mail </Text>
+   </Span>
+   <Span>
+    <Style parentName="Hyperlink"></Style>
+    <Hyperlink>'mailto:service@weltweit.info'</Hyperlink>
+    <Text>service@weltweit.info</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Kind regards</Text>
+   </Span>
+  </Par>
+ </Container>
+ <Container>
+  <Par>
+   <Span>
+    <Text></Text>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

@@ -1,0 +1,549 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\InDocumentation\en\Demo_Reply.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+  <DataNodeDef name="Applicant" ref="\\Framework_TONIC_Demo\Data\Applicant.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </DataNodeDef>
+  <DataNodeDef name="Formdata">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+   <DataNodeDef name="Reason_for_DomesticHelp">
+    <Description></Description>
+    <Input text-prefix="" text-suffix=""></Input>
+    <Output text-prefix="" text-suffix=""></Output>
+    <Script></Script>
+    <Validation validation-type="list" operator="any" allow-empty-value="true">
+     <Values>
+      <Value content="0"></Value>
+      <Value content="1"></Value>
+     </Values>
+    </Validation>
+   </DataNodeDef>
+   <DataNodeDef name="Reason_for_Illness">
+    <Description></Description>
+    <Input text-prefix="" text-suffix=""></Input>
+    <Output text-prefix="" text-suffix=""></Output>
+    <Script></Script>
+    <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+     <Values></Values>
+    </Validation>
+    <DataNodeDef name="WorkAccident">
+     <Description></Description>
+     <Input text-prefix="" text-suffix=""></Input>
+     <Output text-prefix="" text-suffix=""></Output>
+     <Script></Script>
+     <Validation validation-type="list" operator="any" allow-empty-value="true">
+      <Values>
+       <Value content="nein"></Value>
+       <Value content="ja"></Value>
+      </Values>
+     </Validation>
+    </DataNodeDef>
+    <DataNodeDef name="PrivateAccident">
+     <Description></Description>
+     <Input text-prefix="" text-suffix=""></Input>
+     <Output text-prefix="" text-suffix=""></Output>
+     <Script></Script>
+     <Validation validation-type="list" operator="any" allow-empty-value="true">
+      <Values>
+       <Value content="nein"></Value>
+       <Value content="ja"></Value>
+      </Values>
+     </Validation>
+    </DataNodeDef>
+   </DataNodeDef>
+   <DataNodeDef name="DayOfAccident" data-type="datetime">
+    <Description></Description>
+    <Input date-format="dd.MM.y HH:mm:ss" date-style="2" use-current-locale="false" date-type="both"></Input>
+    <Output date-format="dd.MM.y HH:mm:ss" date-style="2" use-current-locale="true" date-type="date"></Output>
+    <Script></Script>
+    <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+     <Values></Values>
+    </Validation>
+   </DataNodeDef>
+  </DataNodeDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Style>
+   <SectionStyle>
+    <ContainerStyle>
+     <ParStyle>
+      <SpanStyle>
+       <InlineFieldStyle name="MyFormfield" parentName="Formfield"></InlineFieldStyle>
+      </SpanStyle>
+     </ParStyle>
+    </ContainerStyle>
+   </SectionStyle>
+  </Style>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <Section>
+      <OutputSettingsRef uri="\\Framework\Framework\FW_OutputSettings.outputSettings"></OutputSettingsRef>
+      <Style parentName="Reply"></Style>
+      <StaticContainer>
+       <Style>
+        <RegionRef>logo</RegionRef>
+       </Style>
+       <ContainerPartRef uri="\\Framework\Framework\DocumentParts\Letter\FW_Logo.model"></ContainerPartRef>
+      </StaticContainer>
+      <StaticContainer>
+       <Style>
+        <RegionRef>recipient</RegionRef>
+       </Style>
+       <Par>
+        <Style parentName="FW_RecipientAddress"></Style>
+        <Span>
+         <Text>k&amp;w Health Insurance</Text>
+        </Span>
+       </Par>
+       <Par>
+        <Style parentName="FW_RecipientAddress"></Style>
+        <Span>
+         <Text>Linnéstr. 1-3</Text>
+        </Span>
+       </Par>
+       <Par>
+        <Style parentName="FW_RecipientAddress"></Style>
+        <Span>
+         <Text>79110 Freiburg</Text>
+        </Span>
+       </Par>
+      </StaticContainer>
+      <StaticContainer>
+       <Style>
+        <RegionRef>Subject</RegionRef>
+       </Style>
+       <Par>
+        <Style parentName="FW_Subject"></Style>
+        <Span>
+         <Text>Application for Domestic Help</Text>
+        </Span>
+       </Par>
+      </StaticContainer>
+      <Container>
+       <Par>
+        <Span>
+         <Text>Please fill in the requested information below.</Text>
+        </Span>
+       </Par>
+       <Table>
+        <Columns>
+         <Column>
+          <Style>
+           <ColumnWidth>22908.0mpt</ColumnWidth>
+          </Style>
+         </Column>
+         <Column>
+          <Style>
+           <ColumnWidth>100789.0mpt</ColumnWidth>
+          </Style>
+         </Column>
+         <Column>
+          <Style>
+           <ColumnWidth>3.0cm</ColumnWidth>
+          </Style>
+         </Column>
+         <Column>
+          <Style>
+           <ColumnWidth>48242.0mpt</ColumnWidth>
+          </Style>
+         </Column>
+         <Column>
+          <Style>
+           <ColumnWidth>71867.0mpt</ColumnWidth>
+          </Style>
+         </Column>
+         <Column>
+          <Style>
+           <ColumnWidth>auto</ColumnWidth>
+          </Style>
+         </Column>
+        </Columns>
+        <Style parentName="Form"></Style>
+        <Row>
+         <Cell colSpan="5">
+          <Container>
+           <Par>
+            <Span>
+             <Text>Name, Surname</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField description="" dataNode="$Applicant.Name"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+         <Cell>
+          <Container>
+           <Par>
+            <Span>
+             <Text>Date of birth</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField dataNode="$Applicant.DateOfBirth"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <Row>
+         <Cell colSpan="5">
+          <Container>
+           <Par>
+            <Span>
+             <Text>Phone number</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField dataNode="$Applicant.Phone"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+         <Cell>
+          <Container>
+           <Par>
+            <Span>
+             <Text>Marital status</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField dataNode="$Applicant.MarialStatus"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <Row>
+         <Cell colSpan="5">
+          <Container>
+           <Par>
+            <Style parentName="Formfield_Label_SpaceBefore"></Style>
+            <Span>
+             <Text>Bank account</Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+         <Cell>
+          <Container>
+           <Par>
+            <Span>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <Row>
+         <Cell colSpan="2">
+          <Container>
+           <Par>
+            <Span>
+             <Text>BIC</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField dataNode="$Applicant.BIC"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+         <Cell colSpan="3">
+          <Container>
+           <Par>
+            <Span>
+             <Text>IBAN</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField dataNode="$Applicant.IBAN"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+         <Cell>
+          <Container>
+           <Par>
+            <Span>
+             <Text>Bank name</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField dataNode="$Applicant.Bankname"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <Row>
+         <Cell colSpan="6">
+          <Container>
+           <Par>
+            <Span>
+             <Text>Account owner</Text>
+            </Span>
+           </Par>
+           <Par>
+            <Span>
+             <InlineField dataNode="$Applicant.AccountOwner"></InlineField>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <Row>
+         <Cell colSpan="6">
+          <Container>
+           <Par>
+            <Style parentName="Formfield_Label_SpaceBefore"></Style>
+            <Span>
+             <Text>According to the medical certificate, I am not able to continue the household because of ...</Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <Row>
+         <Cell>
+          <Container>
+           <Par>
+            <Style parentName="Klein"></Style>
+            <Span>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+         <Cell colSpan="5">
+          <Container>
+           <Par>
+            <Span>
+             <InlineRadioButton dataNode="$Formdata.Reason_for_DomesticHelp" valueIndex="0" groupId="Reason_for_DomesticHelp"></InlineRadioButton>
+             <Text> pregnancy / childbirth</Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <Row>
+         <Cell>
+          <Container>
+           <Par>
+            <Span>
+             <Text></Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+         <Cell colSpan="5">
+          <Container>
+           <Par>
+            <Span>
+             <InlineRadioButton dataNode="$Formdata.Reason_for_DomesticHelp" valueIndex="1" groupId="Reason_for_DomesticHelp"></InlineRadioButton>
+             <Text> an acute illness</Text>
+            </Span>
+           </Par>
+          </Container>
+         </Cell>
+        </Row>
+        <TablePart>
+         <VisibleIf><![CDATA[$Formdata.Reason_for_DomesticHelp == "1"]]></VisibleIf>
+         <DataDefinition></DataDefinition>
+         <Row>
+          <Cell colSpan="6">
+           <Container>
+            <Par>
+             <Style parentName="Formfield_Label_SpaceBefore"></Style>
+             <Span>
+              <Text>The disease is the result of</Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+         </Row>
+         <Row>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <Text></Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell colSpan="2">
+           <Container>
+            <Par>
+             <Span>
+              <Text>an accident at work / an occupational disease</Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <InlineRadioButton fieldId="WorkAccident_no" dataNode="$Formdata.Reason_for_Illness.WorkAccident" valueIndex="0" groupId="WorkAccident"></InlineRadioButton>
+              <Text> </Text>
+              <Text>no</Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <InlineRadioButton fieldId="WorkAccident_yes" dataNode="$Formdata.Reason_for_Illness.WorkAccident" valueIndex="1" groupId="WorkAccident"></InlineRadioButton>
+              <Text> yes</Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <Text></Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+         </Row>
+         <Row>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <Text></Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell colSpan="2">
+           <Container>
+            <Par>
+             <Span>
+              <Text>a private accident</Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <InlineRadioButton fieldId="PrivateAccident_no" dataNode="$Formdata.Reason_for_Illness.PrivateAccident" valueIndex="0" groupId="PrivateAccident"></InlineRadioButton>
+              <Text> </Text>
+              <Text>no</Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <InlineRadioButton fieldId="PrivateAccident_yes" dataNode="$Formdata.Reason_for_Illness.PrivateAccident" valueIndex="1" groupId="PrivateAccident"></InlineRadioButton>
+              <Text> yes</Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+          <Cell>
+           <Container>
+            <Par>
+             <Span>
+              <Text>Accident day</Text>
+             </Span>
+            </Par>
+            <Par>
+             <Span>
+              <InlineField dataNode="$Formdata.DayOfAccident"></InlineField>
+              <Text></Text>
+             </Span>
+            </Par>
+           </Container>
+          </Cell>
+         </Row>
+        </TablePart>
+       </Table>
+       <Par>
+        <Span>
+         <InlineSignature>
+          <Style>
+           <Height>3.0cm</Height>
+           <Width>8.0cm</Width>
+          </Style>
+         </InlineSignature>
+         <Text></Text>
+        </Span>
+       </Par>
+       <Par>
+        <Span>
+         <Text>Date and signature of the insured person</Text>
+        </Span>
+       </Par>
+      </Container>
+      <StaticContainer>
+       <Style>
+        <RegionRef>footer</RegionRef>
+       </Style>
+       <Par>
+        <Style parentName="Standard"></Style>
+        <Span>
+         <Text>Page </Text>
+         <PageNumber></PageNumber>
+         <Text> of </Text>
+         <PageCount></PageCount>
+        </Span>
+       </Par>
+      </StaticContainer>
+      <SectionPartRef uri="\\Framework\Framework\LayoutComponents\FW_MarginalNotes.model">
+       <Param name="InstanceOutputSettings">$InstanceOutputSettings</Param>
+       <Param name="Instance">$Instance</Param>
+      </SectionPartRef>
+     </Section>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

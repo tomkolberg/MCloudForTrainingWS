@@ -1,0 +1,23 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="&lt;Standard&gt;">
+ <TestCase name="&lt;Standard&gt;">
+  <Root>
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Metadata" value="string:">
+      <DataNode name="State" value="string:Created"></DataNode>
+      <DataNode name="ValidationState" value="string:OK" valueChanged="true"></DataNode>
+      <DataNode name="Editor" value="string:">
+       <DataNode name="DefaultDocumentName" value="string:"></DataNode>
+       <DataNode name="DefaultDocumentDescription" value="string:"></DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage" value="string:"></DataNode>
+      <DataNode name="InitialDataBinding" value="string:\library\TONIC_Editor\Models\SEPA.model.template"></DataNode>
+     </DataNode>
+    </Data>
+    <ContainerPartInstance partIndex="0">
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+   </RootPartInstance>
+  </Root>
+ </TestCase>
+</TestCases>

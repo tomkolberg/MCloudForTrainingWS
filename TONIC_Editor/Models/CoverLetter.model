@@ -1,0 +1,58 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Letter" ref="Data\Letter.datamodel" dataMappingRef="Data\Letter.mapping">
+   <Description>Basics for standard templates SAM</Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ContentLink title="Recipient" targetId="" dataNode="$Letter.Costumer.Anrede"></ContentLink>
+   <ContentLink title="Subject" dataNode="$Letter.document.subject1"></ContentLink>
+   <ContentLink title="Free text" targetId="Free text" dataNode=""></ContentLink>
+  </GuideArea>
+  <InputArea>
+   <Group title="Recipient">
+    <Field dataNode="$Letter.Costumer.gender"></Field>
+    <Field dataNode="$Letter.Customer.title"></Field>
+    <Field dataNode="$Letter.Customer.firstname"></Field>
+    <Field dataNode="$Letter.Customer.surname"></Field>
+    <Field dataNode="$Letter.Customer.street"></Field>
+    <Field dataNode="$Letter.Customer.postcode"></Field>
+    <Field dataNode="$Letter.Customer.town"></Field>
+   </Group>
+   <Group title="Letter data" id="12345">
+    <Field title="Subject Line 1" dataNode="$Letter.document.subject1"></Field>
+    <Field title="Subject Line 2" dataNode="$Letter.document.subject2"></Field>
+   </Group>
+  </InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Section>
+  <Style parentName="SAMLetter"></Style>
+  <SectionPartRef uri="Models\SAMLetterform.model"></SectionPartRef>
+  <SectionPartRef uri="Models\SAMLetterHeader.model">
+   <Param name="Letter">$Letter</Param>
+  </SectionPartRef>
+  <SectionPart>
+   <DataDefinition></DataDefinition>
+   <ModificationRights>
+    <Allowed>
+     <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
+    </Allowed>
+    <Denied></Denied>
+   </ModificationRights>
+   <Container id="Free text">
+    <ContainerExtensionDef id="Please insert the current letter here"></ContainerExtensionDef>
+    <ContainerPartRef uri="Models/Regards.model"></ContainerPartRef>
+   </Container>
+  </SectionPart>
+ </Section>
+</DocumentPart>

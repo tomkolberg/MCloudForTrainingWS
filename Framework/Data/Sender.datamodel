@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Name"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Street"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Zip"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field="EDITFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="City"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="SenderAddress"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field="EDITFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script>$Name + ' &lt;A00b7&gt; ' + $Street + ' &lt;A00b7&gt; ' + $Zip + ' ' + $City</Script>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="ReturnAddress"
+         ref="\\Framework\Data\Recipient.datamodel">
+      <Settings>
+         <Script>if ($current.Partner.count()== 0) {
+	var partner = $current.add($current.Partner, "");
+	partner.add(partner.CompanyName1, $Name);
+	partner.add(partner.Firstname, "");
+	partner.add(partner.Street, $Street);
+	partner.add(partner.Zip, $Zip);
+	partner.add(partner.City, $City);
+	var line = partner.add(partner.Address, "");
+	line.add(line.Line, $Name);
+	line.add(line.Line, $Street);
+	line.add(line.Line, $Zip + ' ' + $City);
+}
+</Script>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="User"
+         ref="\\Framework\Data\Partner.datamodel">
+      <Settings>
+         <Script></Script>
+      </Settings>
+   </Node>
+</DataModel>

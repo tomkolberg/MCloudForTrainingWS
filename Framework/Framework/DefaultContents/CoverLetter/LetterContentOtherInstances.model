@@ -1,0 +1,37 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Instance" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="InstancePrimary" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <Par>
+  <Translations>
+   <Translation>
+    <Language language="en" country="US" variant=""></Language>
+    <Span>
+     <Text>attached we send your personal copy of the message we originally sent to  </Text>
+     <Data>$InstancePrimary.Recipient.NameFirstname</Data>
+     <Text>.</Text>
+    </Span>
+   </Translation>
+   <Translation>
+    <Language language="de" country="DE" variant=""></Language>
+    <Span>
+     <Text>beigefügt senden wir Ihnen die Dokumente, die </Text>
+     <Data>$InstancePrimary.Recipient.NameFirstname</Data>
+     <Text> im Original bekommen hat.</Text>
+    </Span>
+   </Translation>
+  </Translations>
+  <Span>
+     <Text>beigefügt senden wir Ihnen die Dokumente, die </Text>
+     <Data>$InstancePrimary.Recipient.NameFirstname</Data>
+     <Text> im Original bekommen hat.</Text>
+  </Span>
+ </Par>
+</ContainerPart>

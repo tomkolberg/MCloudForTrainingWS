@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:mspell-exceptions xmlns:tns="http://www.kwsoft.de/mspell/exceptions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kwsoft.de/mspell/exceptions http://www.kwsoft.de/mspell/exceptions ">
+	<tns:includes>
+		<tns:word>mother-in-law</tns:word>
+		<tns:word>free-for-all</tns:word>
+	</tns:includes></tns:mspell-exceptions>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<muser>
+    <globalInfo objectCount="99" creator="M/User Master" exportNode="DEFAULT" creationDate="2021-02-03T09:02:43" descriptionEnc="1" description="TVVzZXIgTWlncmF0aW9uIEZpbGU=" versionMajor="1" versionMinor="1"/>
+    <node name="DEFAULT" readonly="0" descriptionEnc="1" description="RGVmYXVsdCBNL1VzZXIgbm9kZQ==" obj_id="5" valid_always="0" nodeKey="5"/>
+    <attributeFolder name="Attribute" readonly="1" descriptionEnc="1" description="" obj_id="2" valid_always="0" attrdefdict_key="2">
+        <attributeFolder name="Config" readonly="1" descriptionEnc="1" description="" obj_id="14" valid_always="0" attrdefdict_key="14">
+            <attributeFolder name="MOMS" readonly="1" descriptionEnc="1" description="" obj_id="15" valid_always="0" attrdefdict_key="15">
+                <attributeDefinition name="MOMSWebGUISettings2" readonly="1" descriptionEnc="1" description="" obj_id="58" valid_always="1" attributedef_key="58" type="19" muCompressed="0" muEncrypted="0"/>
+            </attributeFolder>
+        </attributeFolder>
+        <attributeFolder name="Rights" readonly="1" descriptionEnc="1" description="" obj_id="18" valid_always="0" attrdefdict_key="18">
+            <attributeFolder name="MOMS" readonly="1" descriptionEnc="1" description="" obj_id="19" valid_always="0" attrdefdict_key="19">
+                <attributeDefinition name="MOMSAllowWebGUI" readonly="1" descriptionEnc="1" description="" obj_id="62" valid_always="1" attributedef_key="62" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="MOMSWebGUIAdminErasers" readonly="1" descriptionEnc="1" description="V2hlbiB0cnVlLCB0aGUgZGVsZXRpbmcgKHN0YWNrIHJ1bnMsIGlucHV0IGRvY3VtZW50cywgc3BsaXQgZG9jdW1lbnRzLCAuLi4pIGlzIGFsbG93ZWQu" obj_id="63" valid_always="1" attributedef_key="63" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="MOMSWebGUIAdminInputDocs" readonly="1" descriptionEnc="1" description="V2hlbiB0cnVlLCB0aGUgYWRtaW5pc3RyYXRpb24gb2YgaW5wdXQgZG9jdW1lbnRzIChyZS1zcGxpdCwgLi4uKSBpcyBhbGxvd2VkLg==" obj_id="64" valid_always="1" attributedef_key="64" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="MOMSWebGUIAdminRuntime" readonly="1" descriptionEnc="1" description="V2hlbiB0cnVlLCB0aGUgYWRtaW5pc3RyYXRpb24gb2YgcnVubmluZyBzdGFja3MgKHN0b3BwaW5nLCAuLi4pIGlzIGFsbG93ZWQu" obj_id="65" valid_always="1" attributedef_key="65" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="MOMSWebGUIAdminSplitDocs" readonly="1" descriptionEnc="1" description="V2hlbiB0cnVlLCB0aGUgYWRtaW5pc3RyYXRpb24gb2Ygc3BsaXQgZG9jdW1lbnRzIChlZGl0LCAuLi4pIGlzIGFsbG93ZWQu" obj_id="66" valid_always="1" attributedef_key="66" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="MOMSWebGUIAdminStackRun" readonly="1" descriptionEnc="1" description="V2hlbiB0cnVlLCB0aGUgYWRtaW5pc3RyYXRpb24gb2Ygc3RhY2sgcnVucyAocmUtcHJpbnQsIGRlbGV0ZSwgLi4uKSBpcyBhbGxvd2VkLg==" obj_id="67" valid_always="1" attributedef_key="67" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="MOMSWebGUIAdminStackStart" readonly="1" descriptionEnc="1" description="V2hlbiB0cnVlLCB0aGUgc3RhcnRpbmcgb2Ygc3RhY2tzIGlzIGFsbG93ZWQu" obj_id="68" valid_always="1" attributedef_key="68" type="3" muCompressed="0" muEncrypted="0"/>
+            </attributeFolder>
+            <attributeFolder name="MText" readonly="1" descriptionEnc="1" description="" obj_id="21" valid_always="0" attrdefdict_key="21">
+                <attributeFolder name="Folders" readonly="1" descriptionEnc="1" description="" obj_id="22" valid_always="0" attrdefdict_key="22">
+                    <attributeDefinition name="folder-1" readonly="1" descriptionEnc="1" description="" obj_id="69" valid_always="1" attributedef_key="69" type="1" muCompressed="0" muEncrypted="0"/>
+                </attributeFolder>
+                <attributeDefinition name="DocumentAdmin" readonly="1" descriptionEnc="1" description="" obj_id="70" valid_always="1" attributedef_key="70" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="ManageOfflinePrinting" readonly="1" descriptionEnc="1" description="" obj_id="72" valid_always="1" attributedef_key="72" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="PackageAdmin" readonly="1" descriptionEnc="1" description="" obj_id="73" valid_always="1" attributedef_key="73" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="UseClientApi" readonly="1" descriptionEnc="1" description="" obj_id="74" valid_always="1" attributedef_key="74" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="UseControlCenter" readonly="1" descriptionEnc="1" description="" obj_id="75" valid_always="1" attributedef_key="75" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="UseMTextGui" readonly="1" descriptionEnc="1" description="" obj_id="77" valid_always="1" attributedef_key="77" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="UserRightsAdmin" readonly="1" descriptionEnc="1" description="" obj_id="78" valid_always="1" attributedef_key="78" type="3" muCompressed="0" muEncrypted="0"/>
+                <attributeDefinition name="UseServerApi" readonly="1" descriptionEnc="1" description="" obj_id="79" valid_always="1" attributedef_key="79" type="3" muCompressed="0" muEncrypted="0"/>
+            </attributeFolder>
+        </attributeFolder>
+    </attributeFolder>
+    <templateFolder name="Templates" readonly="0" descriptionEnc="1" description="" obj_id="3" valid_always="0" templatedict_key="3">
+        <templateFolder name="MOMS" readonly="1" descriptionEnc="1" description="" obj_id="23" valid_always="0" templatedict_key="23">
+            <template name="MOMSWebGUIAdmin" readonly="1" descriptionEnc="1" description="VGhpcyByb2xlIGNvbnRhaW5zIHRoZSByZXF1aXJlZCBhdHRyaWJ1dGVzIHRvIGhhdmUgZnVsbCBjb250cm9sbCBpbiBNL09NcyBXZWIgR1VJ" obj_id="25" valid_always="1" template_key="25" type="0">
+                <attributeInstance name="MOMSAllowWebGUI" readonly="0" descriptionEnc="1" description="" obj_id="32" valid_always="0" attributedef_key="62" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="LTE="/>
+                <attributeInstance name="MOMSWebGUIAdminErasers" readonly="0" descriptionEnc="1" description="" obj_id="26" valid_always="0" attributedef_key="63" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="LTE="/>
+                <attributeInstance name="MOMSWebGUIAdminInputDocs" readonly="0" descriptionEnc="1" description="" obj_id="27" valid_always="0" attributedef_key="64" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="LTE="/>
+                <attributeInstance name="MOMSWebGUIAdminRuntime" readonly="0" descriptionEnc="1" description="" obj_id="28" valid_always="0" attributedef_key="65" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="LTE="/>
+                <attributeInstance name="MOMSWebGUIAdminSplitDocs" readonly="0" descriptionEnc="1" description="" obj_id="29" valid_always="0" attributedef_key="66" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="LTE="/>
+                <attributeInstance name="MOMSWebGUIAdminStackRun" readonly="0" descriptionEnc="1" description="" obj_id="30" valid_always="0" attributedef_key="67" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="LTE="/>
+                <attributeInstance name="MOMSWebGUIAdminStackStart" readonly="0" descriptionEnc="1" description="" obj_id="31" valid_always="0" attributedef_key="68" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="LTE="/>
+            </template>
+        </templateFolder>
+        <templateFolder name="MText" readonly="1" descriptionEnc="1" description="" obj_id="24" valid_always="0" templatedict_key="24">
+            <template name="Clerk" readonly="0" descriptionEnc="1" description="" obj_id="136" valid_always="1" template_key="136" type="0">
+                <attributeInstance name="DocumentAdmin" readonly="0" descriptionEnc="1" description="" obj_id="137" valid_always="0" attributedef_key="70" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="ManageOfflinePrinting" readonly="0" descriptionEnc="1" description="" obj_id="138" valid_always="0" attributedef_key="72" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="PackageAdmin" readonly="0" descriptionEnc="1" description="" obj_id="139" valid_always="0" attributedef_key="73" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseClientApi" readonly="0" descriptionEnc="1" description="" obj_id="140" valid_always="0" attributedef_key="74" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseControlCenter" readonly="0" descriptionEnc="1" description="" obj_id="141" valid_always="0" attributedef_key="75" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseMTextGui" readonly="0" descriptionEnc="1" description="" obj_id="142" valid_always="0" attributedef_key="77" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UserRightsAdmin" readonly="0" descriptionEnc="1" description="" obj_id="143" valid_always="0" attributedef_key="78" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseServerApi" readonly="0" descriptionEnc="1" description="" obj_id="144" valid_always="0" attributedef_key="79" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+            </template>
+            <template name="DepartmentManagement" readonly="0" descriptionEnc="1" description="" obj_id="145" valid_always="1" template_key="145" type="0">
+                <attributeInstance name="DocumentAdmin" readonly="0" descriptionEnc="1" description="" obj_id="146" valid_always="0" attributedef_key="70" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="ManageOfflinePrinting" readonly="0" descriptionEnc="1" description="" obj_id="147" valid_always="0" attributedef_key="72" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="PackageAdmin" readonly="0" descriptionEnc="1" description="" obj_id="148" valid_always="0" attributedef_key="73" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseClientApi" readonly="0" descriptionEnc="1" description="" obj_id="149" valid_always="0" attributedef_key="74" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseControlCenter" readonly="0" descriptionEnc="1" description="" obj_id="150" valid_always="0" attributedef_key="75" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseMTextGui" readonly="0" descriptionEnc="1" description="" obj_id="151" valid_always="0" attributedef_key="77" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UserRightsAdmin" readonly="0" descriptionEnc="1" description="" obj_id="152" valid_always="0" attributedef_key="78" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseServerApi" readonly="0" descriptionEnc="1" description="" obj_id="153" valid_always="0" attributedef_key="79" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+            </template>
+            <template name="MTextAdmin" readonly="1" descriptionEnc="1" description="" obj_id="43" valid_always="1" template_key="43" type="0">
+                <attributeInstance name="folder-1" readonly="0" descriptionEnc="1" description="" obj_id="52" valid_always="0" attributedef_key="69" type="1" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="MTExMTExMTExMTExMTExMQ=="/>
+                <attributeInstance name="DocumentAdmin" readonly="0" descriptionEnc="1" description="" obj_id="44" valid_always="0" attributedef_key="70" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="ManageOfflinePrinting" readonly="0" descriptionEnc="1" description="" obj_id="45" valid_always="0" attributedef_key="72" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="PackageAdmin" readonly="0" descriptionEnc="1" description="" obj_id="46" valid_always="0" attributedef_key="73" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="UseClientApi" readonly="0" descriptionEnc="1" description="" obj_id="47" valid_always="0" attributedef_key="74" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="UseControlCenter" readonly="0" descriptionEnc="1" description="" obj_id="48" valid_always="0" attributedef_key="75" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="UseMTextGui" readonly="0" descriptionEnc="1" description="" obj_id="49" valid_always="0" attributedef_key="77" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="UserRightsAdmin" readonly="0" descriptionEnc="1" description="" obj_id="50" valid_always="0" attributedef_key="78" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="UseServerApi" readonly="0" descriptionEnc="1" description="" obj_id="51" valid_always="0" attributedef_key="79" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+            </template>
+            <template name="MTextUser" readonly="1" descriptionEnc="1" description="" obj_id="33" valid_always="1" template_key="33" type="0">
+                <attributeInstance name="folder-1" readonly="0" descriptionEnc="1" description="" obj_id="42" valid_always="0" attributedef_key="69" type="1" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val=""/>
+                <attributeInstance name="DocumentAdmin" readonly="0" descriptionEnc="1" description="" obj_id="34" valid_always="0" attributedef_key="70" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="ManageOfflinePrinting" readonly="0" descriptionEnc="1" description="" obj_id="35" valid_always="0" attributedef_key="72" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="PackageAdmin" readonly="0" descriptionEnc="1" description="" obj_id="36" valid_always="0" attributedef_key="73" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseClientApi" readonly="0" descriptionEnc="1" description="" obj_id="37" valid_always="0" attributedef_key="74" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="UseControlCenter" readonly="0" descriptionEnc="1" description="" obj_id="38" valid_always="0" attributedef_key="75" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseMTextGui" readonly="0" descriptionEnc="1" description="" obj_id="39" valid_always="0" attributedef_key="77" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+                <attributeInstance name="UserRightsAdmin" readonly="0" descriptionEnc="1" description="" obj_id="40" valid_always="0" attributedef_key="78" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseServerApi" readonly="0" descriptionEnc="1" description="" obj_id="41" valid_always="0" attributedef_key="79" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="dHJ1ZQ=="/>
+            </template>
+            <template name="Trainees" readonly="0" descriptionEnc="1" description="" obj_id="154" valid_always="1" template_key="154" type="0">
+                <attributeInstance name="DocumentAdmin" readonly="0" descriptionEnc="1" description="" obj_id="155" valid_always="0" attributedef_key="70" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="ManageOfflinePrinting" readonly="0" descriptionEnc="1" description="" obj_id="156" valid_always="0" attributedef_key="72" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="PackageAdmin" readonly="0" descriptionEnc="1" description="" obj_id="157" valid_always="0" attributedef_key="73" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseClientApi" readonly="0" descriptionEnc="1" description="" obj_id="158" valid_always="0" attributedef_key="74" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseControlCenter" readonly="0" descriptionEnc="1" description="" obj_id="159" valid_always="0" attributedef_key="75" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseMTextGui" readonly="0" descriptionEnc="1" description="" obj_id="160" valid_always="0" attributedef_key="77" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UserRightsAdmin" readonly="0" descriptionEnc="1" description="" obj_id="161" valid_always="0" attributedef_key="78" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+                <attributeInstance name="UseServerApi" readonly="0" descriptionEnc="1" description="" obj_id="162" valid_always="0" attributedef_key="79" type="3" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="ZmFsc2U="/>
+            </template>
+        </templateFolder>
+    </templateFolder>
+    <company name="sam plc" readonly="0" descriptionEnc="1" description="" obj_id="163" valid_always="0" company_key="163">
+        <department name="clerk" readonly="0" descriptionEnc="1" description="" obj_id="133" valid_always="0" department_key="133">
+            <participant name="Keen" readonly="0" descriptionEnc="1" description="" obj_id="122" valid_always="1" loginid="clerk" guid="-75db6333:168fb3c5694:-7ffb" firstname="Fred" shortname="Fred Keen" telephone="" emailaddress="" room="" fax="" department_key="133" pwd="234e4636962207b4e21082b85b624d38" location="" language="1" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <attributeInstance name="folder-1" readonly="0" descriptionEnc="1" description="" obj_id="123" valid_always="0" attributedef_key="69" type="1" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="MTExMTExMTExMTExMTExMQ=="/>
+                <userTemplate template_key="136"/>
+                <userTemplate template_key="33"/>
+            </participant>
+            <participant name="Head" readonly="0" descriptionEnc="1" description="" obj_id="124" valid_always="1" loginid="chief" guid="-75db6333:168fb3c5694:-7ffa" firstname="Claudia" shortname="Claudia Head" telephone="" emailaddress="" room="" fax="" department_key="133" pwd="234e4636962207b4e21082b85b624d38" location="" language="1" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <attributeInstance name="folder-1" readonly="0" descriptionEnc="1" description="" obj_id="125" valid_always="0" attributedef_key="69" type="1" muCompressed="0" muEncrypted="0" canBeOverwritten="true" attrdef_val="MTExMTExMTExMTExMTExMQ=="/>
+                <userTemplate template_key="145"/>
+                <userTemplate template_key="33"/>
+            </participant>
+            <participant name="New" readonly="0" descriptionEnc="1" description="" obj_id="126" valid_always="1" loginid="trainee" guid="-40a1a142:16d43ab9167:-7ffa" firstname="Kevin" shortname="Kevin New" telephone="" emailaddress="" room="" fax="" department_key="133" pwd="234e4636962207b4e21082b85b624d38" location="" language="1" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <userTemplate template_key="33"/>
+                <userTemplate template_key="154"/>
+            </participant>
+            <participant name="Fleißig" readonly="0" descriptionEnc="1" description="" obj_id="127" valid_always="1" loginid="german" guid="-40a1a142:16d43ab9167:-7ff9" firstname="Fred" shortname="Fred Fleißig" telephone="" emailaddress="" room="" fax="" department_key="133" pwd="234e4636962207b4e21082b85b624d38" location="" language="0" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <userTemplate template_key="136"/>
+                <userTemplate template_key="33"/>
+            </participant>
+            <participant name="Binoche" readonly="0" descriptionEnc="1" description="" obj_id="128" valid_always="1" loginid="french" guid="1f1f8d1b:1773f1d20a9:-7fff" firstname="Juliette" shortname="Juliette Binoche" telephone="" emailaddress="" room="" fax="" department_key="133" pwd="234e4636962207b4e21082b85b624d38" location="" language="2" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <userTemplate template_key="136"/>
+                <userTemplate template_key="33"/>
+            </participant>
+        </department>
+        <department name="technical users" readonly="0" descriptionEnc="1" description="" obj_id="134" valid_always="0" department_key="134">
+            <participant name="oms" readonly="0" descriptionEnc="1" description="" obj_id="129" valid_always="1" loginid="oms" guid="-40a1a142:16d43ab9167:-7ffc" firstname="" shortname="oms" telephone="" emailaddress="" room="" fax="" department_key="134" pwd="9ffdb33ef5802146e555cf9e1082e314" location="" language="0" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <userTemplate template_key="25"/>
+                <userTemplate template_key="43"/>
+                <userTemplate template_key="33"/>
+            </participant>
+            <participant name="Administrator" readonly="0" descriptionEnc="1" description="" obj_id="130" valid_always="1" loginid="seriem" guid="-40a1a142:16d43ab9167:-7ffb" firstname="" shortname="Admin" telephone="" emailaddress="" room="" fax="" department_key="134" pwd="234e4636962207b4e21082b85b624d38" location="" language="1" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <attributeInstance name="MOMSWebGUISettings2" readonly="0" descriptionEnc="1" description="" obj_id="131" valid_always="0" attributedef_key="58" type="19" muCompressed="0" muEncrypted="0" canBeOverwritten="false" attrdef_val=""/>
+                <userTemplate template_key="25"/>
+                <userTemplate template_key="43"/>
+                <userTemplate template_key="33"/>
+            </participant>
+        </department>
+    </company>
+    <company name="kwsoft" readonly="0" descriptionEnc="1" description="" obj_id="164" valid_always="0" company_key="164">
+        <department name="Consulting" readonly="0" descriptionEnc="1" description="" obj_id="135" valid_always="0" department_key="135">
+            <participant name="admin" readonly="0" descriptionEnc="1" description="" obj_id="132" valid_always="0" loginid="admin" guid="76a869dd:17724100728:-8000" firstname="admin" shortname="admin" telephone="" emailaddress="" room="" fax="" department_key="135" pwd="234e4636962207b4e21082b85b624d38" location="" language="1" reportsto="" basicattr="0" pop3name="" pop3password="" isexternal="0" isContact="0" absentreason="" ctitle="" cposition="" cpositionnr="">
+                <mtextRights/>
+                <mtextSections/>
+                <userNode nodeKey="5"/>
+                <userTemplate template_key="43"/>
+            </participant>
+        </department>
+    </company>
+</muser>

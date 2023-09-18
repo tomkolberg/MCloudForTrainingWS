@@ -1,0 +1,26 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Span>
+   <Text>mit Datum vom 10.10.2019 haben wir dir eine fehlerhafte Quartalsrechnung zugesandt.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Der Fehler liegt in der IT und wurde bereits behoben.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Wir bitten dich die Unannehmlichkeiten, die dir daraus entstanden sind, zu entschuldigen.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Wir treffen die geeigneten Maßnahmen, dass ein solcher Fehler nicht wieder auftreten kann.</Text>
+  </Span>
+ </Par>
+</ContainerPart>

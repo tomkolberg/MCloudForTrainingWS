@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\TONIC_Editor\Data\Infoblock.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true" name="/Infoblock/clerk" xpath="/letter/clerk"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="Creator"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node multiple="true"
+         name="Message"
+         ref="\\Framework\Data\Message.datamodel">
+      <Settings>
+         <Script></Script>
+      </Settings>
+   </Node>
+</DataModel>

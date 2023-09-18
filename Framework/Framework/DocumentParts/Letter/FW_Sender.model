@@ -1,0 +1,44 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <Par>
+  <Translations>
+   <Translation>
+    <Language language="en" country="US" variant=""></Language>
+    <Span>
+     <Data>$Sender.Name</Data>
+     <Text> - </Text>
+    </Span>
+    <Span>
+     <Data>$Sender.Street</Data>
+     <Text> - </Text>
+    </Span>
+    <Span>
+     <Data>$Sender.Zip</Data>
+     <Text> </Text>
+     <Data>$Sender.City</Data>
+     <Text></Text>
+    </Span>
+   </Translation>
+  </Translations>
+  <Style parentName="FW_SenderAddress"></Style>
+  <Span>
+   <Data>$Sender.Name</Data>
+   <Text> - </Text>
+  </Span>
+  <Span>
+   <Data>$Sender.Street</Data>
+   <Text> - </Text>
+  </Span>
+  <Span>
+   <Data>$Sender.Zip</Data>
+   <Text> </Text>
+   <Data>$Sender.City</Data>
+   <Text></Text>
+  </Span>
+ </Par>
+</ContainerPart>

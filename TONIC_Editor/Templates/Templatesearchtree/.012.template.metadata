@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+   <entry name="/dataProviders/Metadata">
+      <SerializedDataProvider providerClass="de.kwsoft.mtext.format.dataprovider.MetadataNodeInstance">
+         <DataModelResourceName name=""/>
+         <NodeInst name="Metadata" value="">
+            <Children>
+               <NodeInst name="Templatesearchtree" value="">
+                  <Children>
+                     <NodeInst name="Level_1" value="Car"/>
+                     <NodeInst name="Level_2" value="Insurance"/>
+                     <NodeInst name="Level_3" value="Police"/>
+                  </Children>
+               </NodeInst>
+            </Children>
+         </NodeInst>
+      </SerializedDataProvider>
+   </entry>
+</content>

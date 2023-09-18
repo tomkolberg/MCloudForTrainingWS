@@ -1,0 +1,1106 @@
+<taskcontrol>
+	<message>
+		<letterdate>29.02.2020</letterdate>
+		<instance>
+			<sender>
+				<Name>sam plc</Name>
+				<Street>St Helen's, 1 Undershaft</Street>
+				<zip>EC3P 3DQ</zip>
+				<city>London</city>
+				<senderline>sam plc - St Helen's, 1 Undershaft - London EC3P 3DQ
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+						<partnerid>14213373</partnerid>
+					<userid>HB</userid>
+					<salutation>Mr.</salutation>
+					<title></title>
+					<firstname>David</firstname>
+					<lastname>Brack</lastname>
+					<companyname1>sam plc</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>St Helen's, 1 Undershaft</Street>
+					<zip>EC3P 3DQ</zip>
+					<city>London</city>
+					<country></country>
+					<address>
+						<line>sam plc</line>
+						<line>David Brack</line>
+						<line>St Helen's, 1 Undershaft</line>
+						<line>London EC3P 3DQ</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Hello Mr. Brack,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>h.brack@sam-ag.com</email>
+					<phone>0815-47111337</phone>
+					<fax>+44 20 45689-11</fax>
+				</user>
+			</sender>
+			<recipient>
+				<Partner>
+							<partnerid>20698101</partnerid>
+					<userid></userid>
+					<salutation>Ms.</salutation>
+					<title></title>
+					<firstname>Maria</firstname>
+					<lastname>Mercury</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno></houseno>
+					<addresssupplement>Postal Box 1337</addresssupplement>
+					<Street></Street>
+					<zip>EC3P 3DQ</zip>
+					<city>London</city>
+					<country></country>
+					<address>
+						<line>Maria Mercury</line>
+						<line>Postal Box 1337</line>
+						<line>EC3P 3DQ London</line>
+						<line></line> 
+						<line></line>
+						<line></line>
+						<line></line>
+					</address>
+					<!-- <salutatoryaddress>Hello Ms. Mercury,</salutatoryaddress> -->
+					<role>Director</role>
+					<email>m.mercury@fasa.sr</email>
+					<phone>0815-47111340</phone>
+					<fax>+44 20 45689-15</fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Mercurial,</salutatoryaddress> -->
+				<!-- <Namefirstname>Maria Mercurial</Namefirstname> -->
+			</recipient>
+			<recipientproxy>
+				<Partner>
+					<partnerid>20698117</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Marla</firstname>
+					<lastname>Aguilar</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno>17</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Am Boulevard</Street>
+					<zip>98142</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Marla Aguilar</line>
+						<line>Am Boulevard 17</line>
+						<line>98142 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+					<role>Purzelbaum</role>
+					<email>m.aguilar@fasa.sr</email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+				<!-- <Namefirstname>Marla Aguilar</Namefirstname> -->
+			</recipientproxy>
+			<outputcontrol>
+				<outputchannel>LOCALPRINTING</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698101</partnerid>
+				</ARCHIVE>
+				<LOCALPRINTING>
+					<UserID>14213374</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+				<CENTRALPRINTING>
+					<Batch></Batch>
+					<zip></zip>
+					<LKZ></LKZ>
+				</CENTRALPRINTING>
+				<FAX>
+					<sender></sender>
+					<recipient></recipient>
+				</FAX>
+				<EMAIL>
+					<sender></sender>
+					<recipient></recipient>
+				</EMAIL>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698102</partnerid>
+				</ARCHIVE>
+			</outputcontrol>
+		</instance>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>14213373</partnerid>
+					<userid>HB</userid>
+					<salutation>Herr</salutation>
+					<title></title>
+					<firstname>Hans</firstname>
+					<lastname>Brackhaus</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Hans Brackhaus</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>h.brackhaus@sam-ag.com</email>
+					<phone>0815-47111337</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<Partner>
+					<partnerid>20698117</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Marla</firstname>
+					<lastname>Aguilar</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno>17</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Am Boulevard</Street>
+					<zip>98142</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Marla Aguilar</line>
+						<line>Am Boulevard 17</line>
+						<line>98142 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+					<role>Purzelbaum</role>
+					<email>m.aguilar@fasa.sr</email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+				<!-- <Namefirstname>Marla Aguilar</Namefirstname> -->
+			</recipient>
+			<outputcontrol>
+				<outputchannel>LOCALPRINTING</outputchannel>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698117</partnerid>
+				</ARCHIVE>
+			</outputcontrol>
+		</instance>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>14213373</partnerid>
+					<userid>HB</userid>
+					<salutation>Herr</salutation>
+					<title></title>
+					<firstname>Hans</firstname>
+					<lastname>Brackhaus</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Hans Brackhaus</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>h.brackhaus@sam-ag.com</email>
+					<phone>0815-47111337</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<Partner>
+					<partnerid>14789632</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title>Dr.</title>
+					<firstname>Pauline</firstname>
+					<lastname>Paragraphenreiter</lastname>
+					<companyname1>Rechtsanwälte</companyname1>
+					<companyname2>Paragraphenreiter, Buch &amp; Partner</companyname2>
+					<houseno>42</houseno>
+					<addresssupplement>vertraulich</addresssupplement>
+					<Street>Am Amtsgericht</Street>
+					<zip>12345</zip>
+					<city>Gottesgnade</city>
+					<country></country>
+					<address>
+						<line>Rechtsanwälte</line>
+						<line>Paragraphenreiter, Buch &amp; Partner</line>
+						<line>Dr. Pauline Paragraphenreiter</line>
+						<line>vertraulich</line>
+						<line>Am Amtsgericht 42</line>
+						<line>12345 Gottesgnade</line>
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Dr. Paragraphenreiter</salutatoryaddress> -->
+					<role>salto</role>
+					<email></email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Dr. Paragraphenreiter</salutatoryaddress> -->
+				<!-- <Namefirstname>Dr. Pauline Paragraphenreiter</Namefirstname> -->
+			</recipient>
+			<outputcontrol>
+				<outputchannel>LOCALPRINTING</outputchannel>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>14789632</partnerid>
+				</ARCHIVE>
+			</outputcontrol>
+		</instance>
+	</message>
+	<message>
+		<letterdate>29.02.2020</letterdate>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>31337342</partnerid>
+					<userid>BG</userid>
+					<salutation>Herr</salutation>
+					<title></title>
+					<firstname>Berthold</firstname>
+					<lastname>König</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Berthold König</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Herr König,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>b.koenig@sam-ag.com</email>
+					<phone>0815-47117331</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<Partner>
+					<partnerid>20698101</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Maria</firstname>
+					<lastname>Mercurial</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno></houseno>
+					<addresssupplement>Postfach 1337</addresssupplement>
+					<Street></Street>
+					<zip>98199</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Maria Mercurial</line>
+						<line>Postfach 1337</line>
+						<line>98199 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Mercurial,</salutatoryaddress> -->
+					<role>vorwärts</role>
+					<email>m.mercurial@fasa.sr</email>
+					<phone>01989-2050</phone>
+					<fax>01989-2001</fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Mercurial,</salutatoryaddress> -->
+				<!-- <Namefirstname>Maria Mercurial</Namefirstname> -->
+			</recipient>
+			<recipientproxy>
+				<Partner>
+					<partnerid>20698117</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Marla</firstname>
+					<lastname>Aguilar</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno>17</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Am Boulevard</Street>
+					<zip>98142</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Marla Aguilar</line>
+						<line>Am Boulevard 17</line>
+						<line>98142 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+					<role>Purzelbaum</role>
+					<email>m.aguilar@fasa.sr</email>
+					<phone></phone>
+					<fax>01989-2017</fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+				<!-- <Namefirstname>Marla Aguilar</Namefirstname> -->
+			</recipientproxy>
+			<outputcontrol>
+				<outputchannel>FAX</outputchannel>
+				<FAX>
+					<sender>0815-47114242</sender>
+					<recipient>01989-2017</recipient>
+				</FAX>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698101</partnerid>
+				</ARCHIVE>
+			</outputcontrol>
+		</instance>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>31337342</partnerid>
+					<userid>BG</userid>
+					<salutation>Herr</salutation>
+					<title></title>
+					<firstname>Berthold</firstname>
+					<lastname>König</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Berthold König</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Herr König,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>b.koenig@sam-ag.com</email>
+					<phone>0815-47117331</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<Partner>
+					<partnerid>20698117</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Marla</firstname>
+					<lastname>Aguilar</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno>17</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Am Boulevard</Street>
+					<zip>98142</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Marla Aguilar</line>
+						<line>Am Boulevard 17</line>
+						<line>98142 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+					<role>Purzelbaum</role>
+					<email>m.aguilar@fasa.sr</email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+				<!-- <Namefirstname>Marla Aguilar</Namefirstname> -->
+			</recipient>
+			<outputcontrol>
+				<outputchannel>LOCALPRINTING</outputchannel>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698117</partnerid>
+				</ARCHIVE>
+			</outputcontrol>
+		</instance>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>31337342</partnerid>
+					<userid>BG</userid>
+					<salutation>Herr</salutation>
+					<title></title>
+					<firstname>Berthold</firstname>
+					<lastname>König</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Berthold König</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Herr König,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>b.koenig@sam-ag.com</email>
+					<phone>0815-47117331</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<istGueltig>ja</istGueltig>
+				<Partner>
+					<partnerid>14789632</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title>Dr.</title>
+					<firstname>Pauline</firstname>
+					<lastname>Paragraphenreiter</lastname>
+					<companyname1>Rechtsanwälte</companyname1>
+					<companyname2>Paragraphenreiter, Buch &amp; Partner</companyname2>
+					<houseno>42</houseno>
+					<addresssupplement>vertraulich</addresssupplement>
+					<Street>Am Amtsgericht</Street>
+					<zip>12345</zip>
+					<city>Gottesgnade</city>
+					<country></country>
+					<address>
+						<line>Rechtsanwälte</line>
+						<line>Paragraphenreiter, Buch &amp; Partner</line>
+						<line>Dr. Pauline Paragraphenreiter</line>
+						<line>vertraulich</line>
+						<line>Am Amtsgericht 42</line>
+						<line>12345 Gottesgnade</line>
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Dr. Paragraphenreiter</salutatoryaddress> -->
+					<role>salto</role>
+					<email></email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Dr. Paragraphenreiter</salutatoryaddress> -->
+				<!-- <Namefirstname>Dr. Pauline Paragraphenreiter</Namefirstname> -->
+			</recipient>
+			<outputcontrol>
+				<outputchannel>LOCALPRINTING</outputchannel>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>14789632</partnerid>
+				</ARCHIVE>
+			</outputcontrol>
+		</instance>
+	</message>
+	<message>
+		<letterdate>29.02.2020</letterdate>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>13374242</partnerid>
+					<userid>AV</userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Anna</firstname>
+					<lastname>Villalobos</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Anna Villalobos</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Frau Villalobos,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>a.villalobos@sam-ag.com</email>
+					<phone>0815-47111717</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<istGueltig>ja</istGueltig>
+				<Partner>
+					<partnerid>20698101</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Maria</firstname>
+					<lastname>Mercurial</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno></houseno>
+					<addresssupplement>Postfach 1337</addresssupplement>
+					<Street></Street>
+					<zip>98199</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Maria Mercurial</line>
+						<line>Postfach 1337</line>
+						<line>98199 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Mercurial,</salutatoryaddress> -->
+					<role>vorwärts</role>
+					<email>m.mercurial@fasa.sr</email>
+					<phone>01989-2050</phone>
+					<fax>01989-2001</fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Mercurial,</salutatoryaddress> -->
+				<!-- <Namefirstname>Maria Mercurial</Namefirstname> -->
+			</recipient>
+			<recipientproxy>
+				<istGueltig>ja</istGueltig>
+				<Partner>
+					<partnerid>20698117</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Marla</firstname>
+					<lastname>Aguilar</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno>17</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Am Boulevard</Street>
+					<zip>98142</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Marla Aguilar</line>
+						<line>Am Boulevard 17</line>
+						<line>98142 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+					<role>Purzelbaum</role>
+					<email>m.aguilar@fasa.sr</email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+				<!-- <Namefirstname>Marla Aguilar</Namefirstname> -->
+			</recipientproxy>
+			<outputcontrol>
+				<outputchannel>LOCALPRINTING</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698101</partnerid>
+				</ARCHIVE>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+				<CENTRALPRINTING>
+					<Batch></Batch>
+					<zip></zip>
+					<LKZ></LKZ>
+				</CENTRALPRINTING>
+				<FAX>
+					<sender></sender>
+					<recipient></recipient>
+				</FAX>
+				<EMAIL>
+					<sender></sender>
+					<recipient></recipient>
+				</EMAIL>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698101</partnerid>
+				</ARCHIVE>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+				<CENTRALPRINTING>
+					<Batch></Batch>
+					<zip></zip>
+					<LKZ></LKZ>
+				</CENTRALPRINTING>
+				<FAX>
+					<sender></sender>
+					<recipient></recipient>
+				</FAX>
+				<EMAIL>
+					<sender></sender>
+					<recipient></recipient>
+				</EMAIL>
+			</outputcontrol>
+		</instance>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>13374242</partnerid>
+					<userid>AV</userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Anna</firstname>
+					<lastname>Villalobos</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Anna Villalobos</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Frau Villalobos,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>a.villalobos@sam-ag.com</email>
+					<phone>0815-47111717</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<istGueltig>ja</istGueltig>
+				<Partner>
+					<partnerid>20698117</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Marla</firstname>
+					<lastname>Aguilar</lastname>
+					<companyname1></companyname1>
+					<companyname2></companyname2>
+					<houseno>17</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Am Boulevard</Street>
+					<zip>98142</zip>
+					<city>Smaragdstadt</city>
+					<country></country>
+					<address>
+						<line>Marla Aguilar</line>
+						<line>Am Boulevard 17</line>
+						<line>98142 Smaragdstadt</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+					<role>Purzelbaum</role>
+					<email>m.aguilar@fasa.sr</email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Aguilar,</salutatoryaddress> -->
+				<!-- <Namefirstname>Marla Aguilar</Namefirstname> -->
+			</recipient>
+			<outputcontrol>
+				<outputchannel>EMAIL</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698117</partnerid>
+				</ARCHIVE>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+				<CENTRALPRINTING>
+					<Batch></Batch>
+					<zip></zip>
+					<LKZ></LKZ>
+				</CENTRALPRINTING>
+				<FAX>
+					<sender></sender>
+					<recipient></recipient>
+				</FAX>
+				<EMAIL>
+					<sender>a.villalobos@sam-ag.com</sender>
+					<recipient>m.aguilar@fasa.sr</recipient>
+				</EMAIL>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>20698117</partnerid>
+				</ARCHIVE>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+				<CENTRALPRINTING>
+					<Batch></Batch>
+					<zip></zip>
+					<LKZ></LKZ>
+				</CENTRALPRINTING>
+				<FAX>
+					<sender></sender>
+					<recipient></recipient>
+				</FAX>
+				<EMAIL>
+					<sender></sender>
+					<recipient></recipient>
+				</EMAIL>
+			</outputcontrol>
+		</instance>
+		<instance>
+			<sender>
+				<Name>SAM AG</Name>
+				<Street>Kruppallee 42</Street>
+				<zip>13373</zip>
+				<city>Essen</city>
+				<senderline>sam ag - kruppallee 42 - 13373 essen
+				</senderline>
+				<!-- <Ruecksendeanschrift> <istGueltig>ja</istGueltig> <Partner> <partnerid>14213373</partnerid> 
+					<userid>HB</userid> <salutation>Herr</salutation> <title></title> 
+					<firstname>Hans</firstname> <lastname>Brackhaus</lastname> <companyname1>SAM AG</companyname1> 
+					<companyname2></companyname2> <houseno>42</houseno> <addresssupplement></addresssupplement> 
+					<Street>Kruppallee</Street> <zip>13373</zip> <city>Essen</city> <country></country> 
+					<address> <line>SAM AG</line> <line>Hans Brackhaus</line> <line>Kruppallee 
+					42</line> <line>13373 Essen</line> </address> <salutatoryaddress>Moin Herr Brackhaus,</salutatoryaddress> 
+					<role>rückwärts</role> <email>h.brackhaus@sam-ag.com</email> 
+					<phone>0815-47111337</phone> <fax>0815-47114242</fax> </Partner> <salutatoryaddress>Moin 
+					Herr Brackhaus,</salutatoryaddress> <Namefirstname>Hans Brackhaus</Namefirstname> </Ruecksendeanschrift> -->
+				<user>
+					<partnerid>13374242</partnerid>
+					<userid>AV</userid>
+					<salutation>Frau</salutation>
+					<title></title>
+					<firstname>Anna</firstname>
+					<lastname>Villalobos</lastname>
+					<companyname1>SAM AG</companyname1>
+					<companyname2></companyname2>
+					<houseno>42</houseno>
+					<addresssupplement></addresssupplement>
+					<Street>Kruppallee</Street>
+					<zip>13373</zip>
+					<city>Essen</city>
+					<country></country>
+					<address>
+						<line>SAM AG</line>
+						<line>Anna Villalobos</line>
+						<line>Kruppallee 42</line>
+						<line>13373 Essen</line>
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+						<!-- <line></line> -->
+					</address>
+					<salutatoryaddress>Moin Frau Villalobos,</salutatoryaddress>
+					<role>rückwärts</role>
+					<email>a.villalobos@sam-ag.com</email>
+					<phone>0815-47111717</phone>
+					<fax>0815-47114242</fax>
+				</user>
+			</sender>
+			<recipient>
+				<istGueltig>ja</istGueltig>
+				<Partner>
+					<partnerid>14789632</partnerid>
+					<userid></userid>
+					<salutation>Frau</salutation>
+					<title>Dr.</title>
+					<firstname>Pauline</firstname>
+					<lastname>Paragraphenreiter</lastname>
+					<companyname1>Rechtsanwälte</companyname1>
+					<companyname2>Paragraphenreiter, Buch &amp; Partner</companyname2>
+					<houseno>42</houseno>
+					<addresssupplement>vertraulich</addresssupplement>
+					<Street>Am Amtsgericht</Street>
+					<zip>12345</zip>
+					<city>Gottesgnade</city>
+					<country></country>
+					<address>
+						<line>Rechtsanwälte</line>
+						<line>Paragraphenreiter, Buch &amp; Partner</line>
+						<line>Dr. Pauline Paragraphenreiter</line>
+						<line>vertraulich</line>
+						<line>Am Amtsgericht 42</line>
+						<line>12345 Gottesgnade</line>
+						<!-- <line></line> -->
+					</address>
+					<!-- <salutatoryaddress>Moin Frau Dr. Paragraphenreiter</salutatoryaddress> -->
+					<role>salto</role>
+					<email></email>
+					<phone></phone>
+					<fax></fax>
+				</Partner>
+				<!-- <salutatoryaddress>Moin Frau Dr. Paragraphenreiter</salutatoryaddress> -->
+				<!-- <Namefirstname>Dr. Pauline Paragraphenreiter</Namefirstname> -->
+			</recipient>
+			<outputcontrol>
+				<outputchannel>LOCALPRINTING</outputchannel>
+				<ARCHIVE>
+					<partnerid>14789632</partnerid>
+				</ARCHIVE>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+				<CENTRALPRINTING>
+					<Batch></Batch>
+					<zip></zip>
+					<LKZ></LKZ>
+				</CENTRALPRINTING>
+				<FAX>
+					<sender></sender>
+					<recipient></recipient>
+				</FAX>
+				<EMAIL>
+					<sender></sender>
+					<recipient></recipient>
+				</EMAIL>
+			</outputcontrol>
+			<outputcontrol>
+				<outputchannel>ARCHIVE</outputchannel>
+				<ARCHIVE>
+					<partnerid>14789632</partnerid>
+				</ARCHIVE>
+				<LOCALPRINTING>
+					<UserID>14213373</UserID>
+					<Druckername>D4711</Druckername>
+				</LOCALPRINTING>
+				<CENTRALPRINTING>
+					<Batch></Batch>
+					<zip></zip>
+					<LKZ></LKZ>
+				</CENTRALPRINTING>
+				<FAX>
+					<sender></sender>
+					<recipient></recipient>
+				</FAX>
+				<EMAIL>
+					<sender></sender>
+					<recipient></recipient>
+				</EMAIL>
+			</outputcontrol>
+		</instance>
+	</message>
+</taskcontrol>

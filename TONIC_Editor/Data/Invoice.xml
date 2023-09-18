@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE write [
+]>
+<!-- I n v o i c e -->
+<letter>
+	<account>
+		<title1>2346543</title1>
+		<title2>Michelle Forbes, South Brent</title2>
+	</account>
+	<document>
+		<type />
+		<subject1></subject1>
+		<subject2></subject2>
+		<id>010102</id>
+	</document>
+	<!-- C u s t o m e r (Address) -->
+	<customer>
+		<customerno>2345543320</customerno>
+		<gender>Mrs</gender>
+		<title></title>
+		<firstname>Michelle</firstname>
+		<surname>Forbes</surname>
+		<street>12 Hillside</street>
+		<postcode>TQ10</postcode>
+		<town>South Brent</town>
+		<!-- B a n k  d e t a i l s -->
+		<bankdetails>
+			<owner>Michelle Forbes</owner>
+			<bank>Royal Bank of Scotland</bank>
+			<bic></bic>
+			<iban>GB32ESSE40486562135099</iban>
+		</bankdetails>
+	</customer>
+	<!-- C l e r k  -->
+	<clerk>
+		<gender>Mr</gender>
+		<firstname>Erich</firstname>
+		<surname>Hofmeier</surname>
+		<phone>0761-8852-123</phone>
+		<fullname>Erich Hofmeier</fullname>
+		<email>Hofmeier@kw.de</email>
+		<function>Customer Service Manager</function>
+	</clerk>
+	<!-- I n v o i c e -->
+	<invoice>
+		<totalTime>01:10:23</totalTime>
+		<totalNet>135.01</totalNet>
+		<totalGross>140.99</totalGross>
+		<totalTax>15.00</totalTax>
+		<date>11.11.2018</date>
+		<period>10/2018</period>
+		<item>
+			<number>+44 151 55123456</number>
+			<description>mobile sim</description>
+			<amount>1</amount>
+			<duration>03:22:10</duration>
+			<net>100.00</net>
+			<gross>119.00</gross>
+			<tax>19.00</tax>
+			<singleConnection>
+				<connection>
+					<date>01.10.</date>
+					<begin>09:35</begin>
+					<duration>00:00:34</duration>
+					<call>+44 761 8852 285</call>
+					<tariff>mobile2landline</tariff>
+					<price>0.0022</price>
+				</connection>
+				<connection>
+					<date>15.10.</date>
+					<begin>20:13</begin>
+					<duration>00:05:12</duration>
+					<call>+44 151 55123457</call>
+					<tariff>familyNfriends</tariff>
+					<price>3.5344</price>
+				</connection>
+			</singleConnection>
+		</item>
+		<item>
+			<number>+44 761 9876543</number>
+			<description>landline</description>
+			<amount>1</amount>
+			<duration>02:22:00</duration>
+			<net>50.00</net>
+			<gross>59.50</gross>
+			<tax>9.50</tax>
+			<singleConnection>
+				<connection>
+					<date>02.10.</date>
+					<begin>05:10</begin>
+					<duration>00:02:59</duration>
+					<call>+44 761 8852 984</call>
+					<tariff>landline</tariff>
+					<price>0.1034</price>
+				</connection>
+				<connection>
+					<date>16.10.</date>
+					<begin>15:33</begin>
+					<duration>00:03:54</duration>
+					<call>+44 157 4321 985</call>
+					<tariff>landline2mobile</tariff>
+					<price>2.5200</price>
+				</connection>
+			</singleConnection>
+		</item>
+	</invoice>
+</letter>

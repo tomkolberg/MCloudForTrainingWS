@@ -1,0 +1,164 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="Legal advice traffic law" title-de_DE="Unterstützung Verkehrsrecht" description="009 Info legal advice service" description-de_DE="009 Info zur Beratung durch RA Partnerkanzlei">
+ <DataDefinition>
+  <ParamDef name="Letter" ref="Data\Letter.datamodel" dataMappingRef="Data\Letter.mapping">
+   <Description>Basics for standard templates SAM</Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ContentLink title="Recipient" title-de_DE="Empfänger" targetId="" dataNode="$Letter.Customer.gender"></ContentLink>
+   <ContentLink title="Subject" title-de_DE="Betreff" dataNode="$Letter.document.subject1"></ContentLink>
+   <ContentLink title="Free text" title-de_DE="Freier Text" targetId="Free text" dataNode=""></ContentLink>
+   <ActionLink title="Change language" title-de_DE="Sprache wechseln" inputAreaGroupID="">
+    <Script><![CDATA[switch ($Metadata.DocumentLanguage.toString()) {
+	case 'GER':
+	$context.setDataValue($Metadata.DocumentLanguage, '')
+	break;
+	default:
+	$context.setDataValue($Metadata.DocumentLanguage, 'GER')
+}]]></Script>
+   </ActionLink>
+  </GuideArea>
+  <InputArea>
+   <Group title="Recipient" title-de_DE="Empfänger">
+    <Field title="Salutation" title-de_DE="Anrede" dataNode="$Letter.Customer.gender"></Field>
+    <Field title="Title" title-de_DE="Titel" dataNode="$Letter.Customer.title"></Field>
+    <Field title="First Given Name" title-de_DE="Vorname" dataNode="$Letter.Customer.firstname"></Field>
+    <Field title="Surname" title-de_DE="Nachname" dataNode="$Letter.Customer.surname"></Field>
+    <Field title="No. Street" title-de_DE="Straße Nr." dataNode="$Letter.Customer.street"></Field>
+    <Field title="Postcode" title-de_DE="PLZ" dataNode="$Letter.Customer.postcode"></Field>
+    <Field title="City" title-de_DE="Ort" dataNode="$Letter.Customer.town"></Field>
+   </Group>
+   <Group title="Letter data" title-de_DE="Briefdaten" id="12345">
+    <Field title="Subject line 1" title-de_DE="Betreff Zeile 1" dataNode="$Letter.document.subject1"></Field>
+    <Field title="Subject line 2" title-de_DE="Betreff Zeile 2" dataNode="$Letter.document.subject2"></Field>
+   </Group>
+  </InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="SAMLetter"></Style>
+   <SectionPartRef uri="Models\SAMLetterform.model"></SectionPartRef>
+   <SectionPartRef uri="Models\SAMLetterHeader.model">
+    <Param name="Letter">$Letter</Param>
+   </SectionPartRef>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Footer</RegionRef>
+    </Style>
+   </StaticContainer>
+   <SectionPart>
+    <DataDefinition></DataDefinition>
+    <ModificationRights>
+     <Allowed>
+      <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
+     </Allowed>
+     <Denied></Denied>
+    </ModificationRights>
+    <Container id="Free text">
+     <Numbering id="1">
+      <Style parentName="Friendly"></Style>
+     </Numbering>
+     <Par>
+      <Translations>
+       <Translation>
+        <Language language="de" country="DE" variant=""></Language>
+        <Span>
+         <Text>Du benötigst die Unterstützung eines Anwalts im Verkehrsrecht? Als unserem Leasing-Kunden bieten wir dir auch in diesem Punkt einen besonderen Service:</Text>
+        </Span>
+       </Translation>
+      </Translations>
+      <Style parentName="Text"></Style>
+      <Span>
+       <Text>Do you need legal advice relating to traffic law? We offer our leasing customers a special legal advice service:</Text>
+      </Span>
+     </Par>
+     <Par>
+      <Translations>
+       <Translation>
+        <Language language="de" country="DE" variant=""></Language>
+        <Span>
+         <Text>eine für dich kostenlose telefonische Beratung binnen 24 Stunden durch einen Rechtsanwalt unserer renommierten Partnerkanzlei</Text>
+        </Span>
+       </Translation>
+      </Translations>
+      <NumberingRef numberingId="1" level="1"></NumberingRef>
+      <Style parentName="Text spacing before"></Style>
+      <Span>
+       <Text>a free telephone consultation with a legal expert from our partner law firm within 24 hours</Text>
+      </Span>
+     </Par>
+     <Par>
+      <Translations>
+       <Translation>
+        <Language language="de" country="DE" variant=""></Language>
+        <Span>
+         <Text>die für dich kostenfreie anwaltliche Sachverhaltsbewertung und Empfehlung zu deinem Anliegen</Text>
+        </Span>
+       </Translation>
+      </Translations>
+      <NumberingRef numberingId="1" level="1"></NumberingRef>
+      <Style parentName="Text spacing before"></Style>
+      <Span>
+       <Text>a free legal appraisal of your situation and a legal recommendation</Text>
+      </Span>
+     </Par>
+     <Par>
+      <Translations>
+       <Translation>
+        <Language language="de" country="DE" variant=""></Language>
+        <Span>
+         <Text>eine völlig unverbindliche Anfrage, die dich nicht zur Übertragung eines Mandats verpflichtet</Text>
+        </Span>
+       </Translation>
+      </Translations>
+      <NumberingRef numberingId="1" level="1"></NumberingRef>
+      <Style parentName="Text spacing before"></Style>
+      <Span>
+       <Text>non-binding enquiries that don’t require you to engage legal counsel</Text>
+      </Span>
+     </Par>
+     <Par>
+      <Translations>
+       <Translation>
+        <Language language="de" country="DE" variant=""></Language>
+        <Span>
+         <Text>Bitte beachte dabei:</Text>
+        </Span>
+       </Translation>
+      </Translations>
+      <NumberingRef numberingId="1" level="1"></NumberingRef>
+      <Style parentName="Text spacing before"></Style>
+      <Span>
+       <Text>Please note:</Text>
+      </Span>
+     </Par>
+     <Par>
+      <Translations>
+       <Translation>
+        <Language language="de" country="DE" variant=""></Language>
+        <Span>
+         <Text>Deine eingegebenen Daten werden streng vertraulich behandelt und ausschließlich und direkt an unsere Partnerkanzlei weitergeleitet. Weder wir noch dein Arbeitgeber erhalten Kenntnis über deine Anfrage.</Text>
+        </Span>
+       </Translation>
+      </Translations>
+      <Style parentName="Text spacing before"></Style>
+      <Span>
+       <Text>Your data is always treated in strict confidentiality and only transferred to our partner law firm. Neither we nor your employer are informed about your enquiry.</Text>
+      </Span>
+     </Par>
+     <ContainerPartRef uri="Models/Regards.model"></ContainerPartRef>
+    </Container>
+   </SectionPart>
+  </Section>
+ </Document>
+</RootPart>

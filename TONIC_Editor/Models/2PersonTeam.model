@@ -1,0 +1,44 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <SectionPart>
+  <DataDefinition></DataDefinition>
+  <UIContribution>
+   <GuideArea>
+    <ActionLink title="Forward" hint="Continue workflow" inputAreaGroupID="">
+     <Script><![CDATA[	switch ($Metadata.State.toString()){
+			case 'Created':
+				$context.setDataValue($Metadata.GroupAssignee, 'MText.DepartmentManagement'); 
+				$context.setDataValue($Metadata.State, 'WaitingForRelease');
+				$context.save();
+				$context.close();
+				break;
+			case 'WaitingForRelease':
+				$context.setDataValue($Metadata.GroupAssignee, ''); 
+				$context.setDataValue($Metadata.State, 'Released');
+				$context.save();
+				$context.print('OMS');
+				$context.close();
+				break;
+	}]]></Script>
+    </ActionLink>
+   </GuideArea>
+   <InputArea></InputArea>
+  </UIContribution>
+ </SectionPart>
+ <SectionPart>
+  <VisibleIf><![CDATA[$Metadata.State.toString() == 'Created']]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <StaticContainer>
+   <Style>
+    <RegionRef>2PersonMandatory</RegionRef>
+   </Style>
+   <Image uri="mtx:Graphics/2Person.png">
+    <Style>
+     <FillContainerHeight>true</FillContainerHeight>
+     <FillContainerWidth>true</FillContainerWidth>
+     <Stretch>scale_to_fill</Stretch>
+    </Style>
+   </Image>
+  </StaticContainer>
+ </SectionPart>
+</SectionPart>

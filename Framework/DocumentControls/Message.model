@@ -1,0 +1,126 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom" resolveLoopOnEdit="false">
+ <DataDefinition>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+  <ParamDef name="Subject1" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject2" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject3" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <DocumentPart resolveLoopOnEdit="false">
+  <VisibleIf><![CDATA[$Metadata.OutputControl.FormattingMode.valueOf() == "Editor"]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <DocumentPartRef uri="\\Framework\Framework\InstanceControl.model">
+   <Extensions>
+    <DocumentExtension id="Instance Content">
+     <DocumentExtensionDef id="Message Content"></DocumentExtensionDef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Instance">$Message.Instances.Instance.instance(0)</Param>
+   <Param name="InstanceOutputSettings">$Message.Instances.Instance.instance(0)</Param>
+   <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+   <Param name="Message">$Message</Param>
+  </DocumentPartRef>
+ </DocumentPart>
+ <DocumentPart>
+  <VisibleIf><![CDATA[$Metadata.OutputControl.FormattingMode == "OMS"]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <DocumentPart>
+   <ForEach alias="$InstanceInLoop"><![CDATA[$Message.Instances.Instance]]></ForEach>
+   <Validation></Validation>
+   <DataDefinition></DataDefinition>
+   <DocumentPart>
+    <VisibleIf><![CDATA[$InstanceInLoop.Type.valueOf() != "PRIMARY_INSTANCE"]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <DocumentPartRef uri="\\Framework\Framework\InstanceControl.model">
+     <Extensions>
+      <DocumentExtension id="Instance Content">
+       <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+        <Extensions>
+         <ContainerExtension id="CoverLetter Content">
+          <ContainerPartRef uri="Framework/DefaultContents/CoverLetter/LetterContentOtherInstances.model">
+           <Param name="Instance">$InstanceInLoop</Param>
+           <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+          </ContainerPartRef>
+         </ContainerExtension>
+        </Extensions>
+        <Param name="Instance">$InstanceInLoop</Param>
+        <Param name="Subject1">$Subject1 || 'Subject of cover letter for recipients of other instances'</Param>
+        <Param name="Subject2">$Subject2</Param>
+       </DocumentPartRef>
+      </DocumentExtension>
+     </Extensions>
+     <Param name="Instance">$InstanceInLoop</Param>
+     <Param name="InstanceOutputSettings">$InstanceInLoop</Param>
+     <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+     <Param name="Message">$Message</Param>
+    </DocumentPartRef>
+   </DocumentPart>
+   <DocumentPartRef uri="\\Framework\Framework\InstanceControl.model">
+    <Extensions>
+     <DocumentExtension id="Instance Content">
+      <DocumentExtensionDef id="Message Content"></DocumentExtensionDef>
+     </DocumentExtension>
+    </Extensions>
+    <Param name="Instance">$Message.Instances.Instance.instance(0)</Param>
+    <Param name="InstanceOutputSettings">$InstanceInLoop</Param>
+    <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+    <Param name="Message">$Message</Param>
+   </DocumentPartRef>
+  </DocumentPart>
+ </DocumentPart>
+ <DocumentPart>
+  <DataDefinition></DataDefinition>
+  <UIContribution>
+   <GuideArea>
+    <Folder title="Finalize document" title-en_US="Finalize document">
+     <ActionLink title="PDF Preview" title-en_US="PDF Preview" inputAreaGroupID="">
+      <Script><![CDATA[$context.save(); $context.export('application/pdf');]]></Script>
+     </ActionLink>
+     <ActionLink title="M/OMS" title-en_US="M/OMS" inputAreaGroupID="">
+      <Script><![CDATA[$context.save(); 
+$context.setDataValue($Metadata.OutputControl.FormattingMode, 'OMS'); 
+$context.print('OMS');
+$context.setDataValue($Metadata.OutputControl.FormattingMode, 'Editor');
+$context.setDataValue($Metadata.State, 'OMS');
+$context.save();
+$context.close();]]></Script>
+     </ActionLink>
+    </Folder>
+   </GuideArea>
+   <InputArea></InputArea>
+  </UIContribution>
+ </DocumentPart>
+</DocumentPart>

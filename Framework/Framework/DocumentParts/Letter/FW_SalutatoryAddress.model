@@ -1,0 +1,24 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Recipient" ref="\\Framework\Data\Recipient.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <Par>
+  <Translations>
+   <Translation>
+    <Language language="en" country="US" variant=""></Language>
+    <Span>
+     <Data>$Recipient.SalutatoryAddress</Data>
+     <Text></Text>
+    </Span>
+   </Translation>
+  </Translations>
+  <Style parentName="FW_SalutatoryAddress"></Style>
+  <Span>
+   <Data>$Recipient.SalutatoryAddress</Data>
+   <Text>,</Text>
+  </Span>
+ </Par>
+</ContainerPart>

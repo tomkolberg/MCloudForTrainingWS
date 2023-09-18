@@ -1,0 +1,100 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="Legal advice traffic law" description="009 Info legal advice service">
+ <DataDefinition>
+  <ParamDef name="Letter" ref="\\TONIC_Editor\Data\Letter.datamodel" dataMappingRef="Data\Letter.mapping">
+   <Description>Basics for standard templates SAM</Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ContentLink title="Recipient" targetId="" dataNode="$Letter.Customer.gender"></ContentLink>
+   <ContentLink title="Subject" dataNode="$Letter.document.subject1"></ContentLink>
+   <ContentLink title="Free text" targetId="Free text" dataNode=""></ContentLink>
+  </GuideArea>
+  <InputArea>
+   <Group title="Recipient">
+    <Field title="" dataNode="$Letter.Customer.gender"></Field>
+    <Field dataNode="$Letter.Customer.title"></Field>
+    <Field dataNode="$Letter.Customer.firstname"></Field>
+    <Field dataNode="$Letter.Customer.surname"></Field>
+    <Field dataNode="$Letter.Customer.street"></Field>
+    <Field dataNode="$Letter.Customer.postcode"></Field>
+    <Field dataNode="$Letter.Customer.town"></Field>
+   </Group>
+   <Group title="Letter data" id="12345">
+    <Field title="Subject Line 1" dataNode="$Letter.document.subject1"></Field>
+    <Field title="Subject Line 2" dataNode="$Letter.document.subject2"></Field>
+   </Group>
+  </InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="SAMLetter"></Style>
+   <SectionPartRef uri="Models\SAMLetterform.model"></SectionPartRef>
+   <SectionPartRef uri="Models\SAMLetterHeader.model">
+    <Param name="Letter">$Letter</Param>
+   </SectionPartRef>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Footer</RegionRef>
+    </Style>
+   </StaticContainer>
+   <Container id="Free text">
+    <Numbering id="1">
+     <Style parentName="Friendly"></Style>
+    </Numbering>
+    <Par>
+     <Style parentName="Text"></Style>
+     <Span>
+      <Text>Du benötigst die Unterstützung eines Anwalts im Verkehrsrecht? Als unserem Leasing-Kunden bieten wir dir auch in diesem Punkt einen besonderen Service:</Text>
+     </Span>
+    </Par>
+    <Par>
+     <NumberingRef numberingId="1" level="1"></NumberingRef>
+     <Style parentName="Text spacing before"></Style>
+     <Span>
+      <Text>eine für dich kostenlose telefonische Beratung binnen 24 Stunden durch einen Rechtsanwalt unserer renommierten Partnerkanzlei</Text>
+     </Span>
+    </Par>
+    <Par>
+     <NumberingRef numberingId="1" level="1"></NumberingRef>
+     <Span>
+      <Text>die für dich kostenfreie anwaltliche Sachverhaltsbewertung und Empfehlung zu deinem Anliegen</Text>
+     </Span>
+    </Par>
+    <Par>
+     <NumberingRef numberingId="1" level="1"></NumberingRef>
+     <Span>
+      <Text>eine völlig unverbindliche Anfrage, die dich nicht zur Übertragung eines Mandats verpflichtet</Text>
+     </Span>
+    </Par>
+    <Par>
+     <NumberingRef numberingId="1" level="1"></NumberingRef>
+     <Span>
+      <Text>Bitte beachte dabei:</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style parentName="Text spacing before"></Style>
+     <Span>
+      <Text>Es können ausschließlich Anfragen zum deutschen Verkehrsrecht beantwortet werden. Anfragen zu Unfällen mit Fahrzeugen, für die wir vertragsgemäß den Schadenservice abwickeln, können nicht beantwortet werden, um Interessenskonflikte für unsere Partnerkanzlei auszuschließen.</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style parentName="Text spacing before"></Style>
+     <Span>
+      <Text>Deine eingegebenen Daten werden streng vertraulich behandelt und ausschließlich und direkt an unsere Partnerkanzlei weitergeleitet. Weder wir noch dein Arbeitgeber erhalten Kenntnis über deine Anfrage.</Text>
+     </Span>
+    </Par>
+    <ContainerPartRef uri="Models/Regards.model"></ContainerPartRef>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

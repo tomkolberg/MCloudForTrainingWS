@@ -1,0 +1,14 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Span>
+   <Text>-- START 2nd extension model</Text>
+  </Span>
+ </Par>
+ <ContainerExtensionDef id="Content Second Extension"></ContainerExtensionDef>
+ <Par>
+  <Span>
+   <Text>-- END 2nd extension model</Text>
+  </Span>
+ </Par>
+</ContainerPart>

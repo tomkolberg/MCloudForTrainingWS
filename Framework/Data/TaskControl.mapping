@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\Framework\Data\TaskControl.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message"
+            xpath="/taskcontrol/message"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance"
+            xpath="instance"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings"
+            xpath="outputcontrol">
+         <Sort order="descending" select="outputchannel"/>
+      </Rule>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/ARCHIVE"
+            xpath="ARCHIVE[../outputchannel=name()]"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/CENTRALPRINTING"
+            xpath="CENTRALPRINTING[../outputchannel=name()]"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/CENTRALPRINTING/Batch"
+            xpath="Batch"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/CENTRALPRINTING/Zip"
+            xpath="zip"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/EMAIL"
+            xpath="EMAIL[../outputchannel=name()]"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/EMAIL/Recipient"
+            xpath="recipient"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/EMAIL/Sender"
+            xpath="sender"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/FAX"
+            xpath="FAX[../outputchannel=name()]"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/LOCALPRINTING"
+            xpath="LOCALPRINTING[../outputchannel=name()]"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/LOCALPRINTING/UserID"
+            xpath="UserID"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputChannel"
+            xpath="outputchannel"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Recipient"
+            xpath="recipient"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Recipient/Partner"
+            submappingRef="\\Framework\Data\Partner.mapping"
+            xpath="Partner"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/RecipientProxy"
+            xpath="recipientproxy"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/RecipientProxy/Partner"
+            submappingRef="\\Framework\Data\Partner.mapping"
+            xpath="Partner"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender"
+            xpath="sender"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/City"
+            xpath="city"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/Name"
+            xpath="Name"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/Street"
+            xpath="Street"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender/User"
+            submappingRef="\\Framework\Data\Partner.mapping"
+            xpath="user"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/Zip"
+            xpath="zip"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/LetterDate"
+            xpath="letterdate"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

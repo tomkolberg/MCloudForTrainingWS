@@ -1,0 +1,13 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Span>
+   <Text>we welcome you cordially in the circle of our new customers.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Span>
+   <Text>We invite you to participate in the online conference of our board to greet our new customers personally.</Text>
+  </Span>
+ </Par>
+</ContainerPart>

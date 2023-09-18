@@ -1,0 +1,194 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+  <DataNodeDef name="Subject1">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="false" label="Subject line #1">
+    <Values></Values>
+    <ErrorMessage>Please enter at least one subject line!</ErrorMessage>
+   </Validation>
+  </DataNodeDef>
+  <DataNodeDef name="Subject2">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <DataNodeDef name="Subject3">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <ParamDef name="Insurance" ref="\\Framework_TONIC_Demo\Data\Insurance.datamodel" dataMappingRef="\\Framework_TONIC_Demo\Data\Insurance.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ActionLink title="Update with DataGrid" hint="" inputAreaGroupID="">
+    <Script><![CDATA[var formFunc = $context.FormIO.createForm("\\\\Framework_TONIC_Demo\\FormIO\\en\\Insurance_Personlist_DataGrid.formio");
+var layout = {
+	"height": "700",
+	"width" : "700",
+	"title" : "Edit Insured Person with DataGrid"
+};
+$context.showForm(formFunc, $Insurance, layout);]]></Script>
+   </ActionLink>
+   <ActionLink title="Update with EditGrid" inputAreaGroupID="">
+    <Script><![CDATA[var formFunc = $context.FormIO.createForm("\\\\Framework_TONIC_Demo\\FormIO\\en\\Insurance_Personlist_EditGrid.formio");
+var layout = {
+	"height": "700",
+	"width" : "700",
+	"title" : "Edit Insured Person with EditGrid"
+};
+$context.showForm(formFunc, $Insurance, layout);]]></Script>
+   </ActionLink>
+  </GuideArea>
+  <InputArea></InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <Par>
+         <Span>
+          <Text>please confirm the data of the following people:</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Table>
+         <Headers>
+          <Header>
+           <Row>
+            <Cell>
+             <Container>
+              <Par>
+               <Span>
+                <Text>First Name</Text>
+               </Span>
+              </Par>
+             </Container>
+            </Cell>
+            <Cell>
+             <Container>
+              <Par>
+               <Span>
+                <Text>Last Name</Text>
+               </Span>
+              </Par>
+             </Container>
+            </Cell>
+            <Cell>
+             <Container>
+              <Par>
+               <Span>
+                <Text>Gender</Text>
+               </Span>
+              </Par>
+             </Container>
+            </Cell>
+            <Cell>
+             <Container>
+              <Par>
+               <Span>
+                <Text>Date of birth</Text>
+               </Span>
+              </Par>
+             </Container>
+            </Cell>
+           </Row>
+          </Header>
+         </Headers>
+         <Columns></Columns>
+         <TablePart>
+          <ForEach alias="Person"><![CDATA[$Insurance.person]]></ForEach>
+          <DataDefinition></DataDefinition>
+          <Row>
+           <Cell>
+            <Container>
+             <Par>
+              <Span>
+               <Data>$Person.firstname</Data>
+               <Text></Text>
+              </Span>
+             </Par>
+            </Container>
+           </Cell>
+           <Cell>
+            <Container>
+             <Par>
+              <Span>
+               <Data>$Person.name</Data>
+               <Text></Text>
+              </Span>
+             </Par>
+            </Container>
+           </Cell>
+           <Cell>
+            <Container>
+             <Par>
+              <Span>
+               <Data>$Person.gender</Data>
+               <Text></Text>
+              </Span>
+             </Par>
+            </Container>
+           </Cell>
+           <Cell>
+            <Container>
+             <Par>
+              <Span>
+               <Data>$Person.dateofbirth</Data>
+               <Text></Text>
+              </Span>
+             </Par>
+            </Container>
+           </Cell>
+          </Row>
+         </TablePart>
+        </Table>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Message">$Message</Param>
+      <Param name="Instance">$Instance</Param>
+      <Param name="Subject3">$Subject3</Param>
+      <Param name="Subject1">$Subject1</Param>
+      <Param name="Subject2">$Subject2</Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE write [
+]>
+<!-- L e t t e r -->
+<letter>
+	<account>
+		<title1>2346543</title1>
+		<title2>Michelle Forbes, South Brent</title2>
+	</account>
+	<document>
+		<type />
+		<subject1></subject1>
+		<subject2></subject2>
+		<id>010102</id>
+	</document>
+	<!-- C u s t o m e r (Address) -->
+	<customer>
+		<customerno>2345543320</customerno>
+		<gender>Mrs</gender>
+		<title></title>
+		<firstname>Michelle</firstname>
+		<surname>Forbes</surname>
+		<street>12 Hillside</street>
+		<postcode>TQ10</postcode>
+		<town>South Brent</town>
+		<!-- B a n k  d e t a i l s -->
+		<bankdetails>
+			<owner>Michelle Forbes</owner>
+			<bank>Royal Bank of Scotland</bank>
+			<bic></bic>
+			<iban>GB32ESSE40486562135099</iban>
+		</bankdetails>
+	</customer>
+	<!-- C l e r k  -->
+	<clerk>
+		<gender>Mr</gender>
+		<firstname>Erich</firstname>
+		<surname>Hofmeier</surname>
+		<phone>0761-8852-123</phone>
+		<fullname>Erich Hofmeier</fullname>
+		<email>Hofmeier@kw.de</email>
+		<function>Customer Service Manager</function>
+	</clerk>
+</letter>

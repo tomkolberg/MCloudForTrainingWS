@@ -1,0 +1,35 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="Liability" description="011 Car liability supplement - Example table">
+ <DataDefinition></DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Container>
+    <Table>
+     <Columns></Columns>
+     <Style parentName="demo"></Style>
+     <Row>
+      <Cell>
+       <Container>
+        <Par>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

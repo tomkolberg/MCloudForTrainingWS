@@ -1,0 +1,726 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+	<!-- Sections styles used in document parts. See \\Framework\Framework\DocumentParts 
+		folder -->
+	<SectionStyle name="Letter">
+		<PageLayouts
+			parentRef="Framework/DocumentParts/Letter/Letter.pageLayouts"></PageLayouts>
+		<ContainerStyle>
+			<ParStyle>
+				<SpanStyle>
+					<!-- Define default styles for Letter content here -->
+				</SpanStyle>
+			</ParStyle>
+			<NumberingStyle>
+				<Levels>
+					<Level
+						number="1"
+						firstLineIndent="0.0cm"
+						indent="0.5cm">
+						<Symbol>circle</Symbol>
+						<Tab
+							position="0.5cm"
+							tabType="left"
+							underlineStyle="default"></Tab>
+						<Separator>tab</Separator>
+						
+					</Level>
+				</Levels>
+				<ParStyle>
+					<SpanStyle>
+						<TextColor>rgb(255,0,0,0)</TextColor>
+					</SpanStyle>
+				</ParStyle>
+			</NumberingStyle>
+		</ContainerStyle>
+	</SectionStyle>
+	<SectionStyle name="Blank">
+		<PageLayouts
+			parentRef="Framework/DocumentParts/Blank/Blank.pageLayouts"></PageLayouts>
+	</SectionStyle>
+	<NumberingStyle name="Bullet">
+		<Levels>
+			<Level
+				number="1"
+				firstLineIndent="0.0cm"
+				indent="0.5cm">
+				<Symbol>bullet</Symbol>
+				<Tab
+					position="0.5cm"
+					tabType="left"
+					underlineStyle="default"></Tab>
+			</Level>
+		</Levels>
+	</NumberingStyle>
+	<NumberingStyle name="BulletWithoutIndent">
+		<Levels>
+			<Level
+				number="1"
+				firstLineIndent="0.0cm"
+				indent="0.0cm">
+				<Symbol>bullet</Symbol>
+				<Tab
+					position="0.0cm"
+					tabType="left"
+					underlineStyle="default"></Tab>
+			</Level>
+		</Levels>
+	</NumberingStyle>
+	<NumberingStyle name="TableOfContent">
+		<Levels>
+			<Level
+				number="1"
+				firstLineIndent="0.0cm"
+				indent="0.0cm">
+				<Text 
+					format="arabic_numerals" 
+					pattern="%1."></Text>
+				<Tab
+					position="0.6cm"
+					tabType="left"
+					underlineStyle="default"></Tab>
+			</Level>
+			<Level
+				number="2"
+				firstLineIndent="0.0cm"
+				indent="0.0cm">
+				<Text 
+					format="arabic_numerals" 
+					pattern="%1.%2"></Text>
+				<Tab
+					position="0.6cm"
+					tabType="left"
+					underlineStyle="default"></Tab>
+			</Level>
+		</Levels>
+	</NumberingStyle>
+	<SectionStyle name="Leaflet">
+		<PageLayouts
+			parentRef="Framework/DocumentParts/Leaflet/Leaflet.pageLayouts"></PageLayouts>
+	</SectionStyle>
+	<SectionStyle name="TermsAndConditions">
+		<PageLayouts
+			parentRef="Framework/DocumentParts/TermsAndConditons/TermsAndConditons.pageLayouts"></PageLayouts>
+	</SectionStyle>
+	<SectionStyle name="Reply">
+		<PageLayouts
+			parentRef="Framework/DocumentParts/Reply/Reply.pageLayouts"></PageLayouts>
+	</SectionStyle>
+	<AttachmentSectionStyle name="Attachment">
+		<PageLayouts
+			parentRef="Framework/DocumentParts/Attachment/Attachment.pageLayouts"></PageLayouts>
+	</AttachmentSectionStyle>
+	<!-- This section style is for making testcases. The pages are small to 
+		see more than one page on the screen -->
+	<SectionStyle name="SmallPages">
+		<PageLayouts parentRef="Framework/SmallPages.pageLayouts"></PageLayouts>
+	</SectionStyle>
+	<!-- Define the default parstyle if nothing is applied -->
+	<ParStyle>
+		<SpanStyle>
+			<FontSize>11000.0mpt</FontSize>
+			<FontFamily>STANDARD</FontFamily>
+		</SpanStyle>
+		<RightIndent>0.0cm</RightIndent>
+		<Align>left</Align>
+		<LeftIndent>0.0cm</LeftIndent>
+	</ParStyle>
+	<ParStyle name="FW_Default"
+		hideInEditor="true">
+		<SpanStyle>
+			<FontSize>11000.0mpt</FontSize>
+			<FontFamily>STANDARD</FontFamily>
+		</SpanStyle>
+		<LineSpacing
+			type="fixed"
+			value="12.5pt"></LineSpacing>
+		<RightIndent>0.0mpt</RightIndent>
+		<Align>left</Align>
+		<LeftIndent>0.0mpt</LeftIndent>
+	</ParStyle>
+	<ParStyle name="FW_SenderAddress"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<SpanStyle>
+			<FontSize>6000.0mpt</FontSize>
+		</SpanStyle>
+		<LineSpacing
+			type="fixed"
+			value="6.5pt"></LineSpacing>
+		<Role>Artifact</Role>
+	</ParStyle>
+	<ParStyle name="FW_RecipientAddress"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<Role>Artifact</Role>
+	</ParStyle>
+	<ParStyle name="FW_Info"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<SpanStyle>
+			<FontSize>9000.0mpt</FontSize>
+		</SpanStyle>
+		<Role>Artifact</Role>
+	</ParStyle>
+	<ParStyle name="FW_InfoBold"
+		parentName="FW_Info"
+		hideInEditor="true">
+		<SpanStyle>
+			<FontStyle>bold</FontStyle>
+		</SpanStyle>
+		<Role>Artifact</Role>
+	</ParStyle>
+	<ParStyle name="FW_Subject"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<SpanStyle>
+			<FontStyle>bold</FontStyle>
+		</SpanStyle>
+		<Role>H</Role>
+	</ParStyle>
+	<ParStyle name="FW_Subject2"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<Role>P</Role>
+	</ParStyle>
+	<ParStyle name="FW_SalutatoryAddress"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<Role>P</Role>
+		<SpaceAfter>11000.0mpt</SpaceAfter>
+		<NextCaseCorrection>lower</NextCaseCorrection>
+		<ReduceMultipleBlanks>true</ReduceMultipleBlanks>
+	</ParStyle>
+	<ParStyle name="FW_MarginalNotes"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<Role>P</Role>
+		<SpaceAfter>7000.0mpt</SpaceAfter>
+	</ParStyle>
+	<ParStyle name="Standard"
+		parentName="FW_Default"
+		hideInEditor="true">
+		<Role>P</Role>
+	</ParStyle>
+	<ParStyle name="small">
+		<SpanStyle>
+			<FontSize>8.0pt</FontSize>
+		</SpanStyle>
+		<ReduceMultipleBlanks>true</ReduceMultipleBlanks>
+		<SpaceAfter>0.0cm</SpaceAfter>
+		<SpaceBefore>0.0cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="Indented">
+		<SpanStyle>
+			<FontSize>8.0pt</FontSize>
+		</SpanStyle>
+		<ReduceMultipleBlanks>true</ReduceMultipleBlanks>
+		<LeftIndent>0.8cm</LeftIndent>
+		<SpaceAfter>0.0cm</SpaceAfter>
+		<SpaceBefore>0.0cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="Table_rightaligned"
+		parentName="small">
+		<SpanStyle>
+			<FontSize>10.0pt</FontSize>
+		</SpanStyle>
+		<Align>right</Align>
+	</ParStyle>
+	<ParStyle name="Table_leftaligned"
+		parentName="Table_rightaligned">
+		<SpanStyle></SpanStyle>
+		<Align>left</Align>
+	</ParStyle>
+	<ParStyle name="Table_rightaligned_small"
+		parentName="Table_rightaligned">
+		<SpanStyle>
+			<FontSize>8.0pt</FontSize>
+		</SpanStyle>
+	</ParStyle>
+	<ParStyle name="Table_leftaligned_small"
+		parentName="Table_rightaligned_small">
+		<SpanStyle></SpanStyle>
+		<Align>left</Align>
+	</ParStyle>
+	<InlineFieldStyle name="Formfield">
+		<Height>0.6cm</Height>
+	</InlineFieldStyle>
+	<ParStyle name="Formfield_Label">
+		<SpanStyle>
+			<Padding left="0.0cm"></Padding>
+			<FontSize>8.0pt</FontSize>
+		</SpanStyle>
+		<SpaceAfter>0.0cm</SpaceAfter>
+		<SpaceBefore>0.0cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="Formfield_Label_SpaceBefore"
+		parentName="Formfield_Label">
+		<SpaceAfter>0.0cm</SpaceAfter>
+		<SpaceBefore>0.3cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="small red"
+		parentName="small">
+		<SpanStyle>
+			<TextColor>rgb(228,0,25,236)</TextColor>
+		</SpanStyle>
+	</ParStyle>
+	<ParStyle name="Header1">
+		<SpanStyle>
+			<TextColor>rgb(227,0,24)</TextColor>
+			<FontStyle>bold</FontStyle>
+			<FontSize>24000.0mpt</FontSize>
+			<FontFamily>SANS</FontFamily>
+		</SpanStyle>
+		<KeepWithNext>true</KeepWithNext>
+		<Role>H1</Role>
+		<KeepTogether>true</KeepTogether>
+		<SpaceAfter>0.5cm</SpaceAfter>
+		<SpaceBefore>0.5cm</SpaceBefore>
+
+	</ParStyle>
+	<ParStyle name="Header2">
+		<SpanStyle>
+			<TextColor>rgb(227,0,24)</TextColor>
+			<FontStyle>italics</FontStyle>
+			<FontSize>16000.0mpt</FontSize>
+			<FontFamily>SANS</FontFamily>
+		</SpanStyle>
+		<KeepWithNext>true</KeepWithNext>
+		<Role>H2</Role>
+		<KeepTogether>true</KeepTogether>
+		<SpaceAfter>0.3cm</SpaceAfter>
+		<SpaceBefore>0.3cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="Header3">
+		<SpanStyle>
+			<TextColor>rgb(227,0,24)</TextColor>
+			<FontStyle>italics</FontStyle>
+			<FontSize>12000.0mpt</FontSize>
+			<FontFamily>SANS</FontFamily>
+		</SpanStyle>
+		<KeepWithNext>true</KeepWithNext>
+		<Role>H3</Role>
+		<KeepTogether>true</KeepTogether>
+		<SpaceAfter>0.3cm</SpaceAfter>
+		<SpaceBefore>0.3cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="TextSpaceAfter">
+		<SpaceAfter>0.15cm</SpaceAfter>
+	</ParStyle>
+	<ParStyle name="TextSpaceAfter">
+		<SpaceAfter>0.15cm</SpaceAfter>
+	</ParStyle>
+	<ParStyle name="TextSpaceBefore">
+		<SpaceBefore>0.15cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="TextSpaceBeforeAndAfter">
+		<SpaceAfter>0.15cm</SpaceAfter>
+		<SpaceBefore>0.15cm</SpaceBefore>
+	</ParStyle>
+	<ParStyle name="Indentation"
+		parentName="TextSpaceBefore">
+		<LeftIndent>1.0cm</LeftIndent>
+	</ParStyle>
+	<ParStyle name="Hint"
+		parentName="TextSpaceBefore">
+		<SpanStyle>
+			<FontStyle>italics</FontStyle>
+			<FontFamily>SANS</FontFamily>
+		</SpanStyle>
+	</ParStyle>
+	<NumberingStyle name="TC">
+		<Levels>
+			<Level
+				number="1"
+				firstLineIndent="0.0cm"
+				indent="0.5cm">
+				<Text pattern="%1."></Text>
+				<Tab
+					position="0.5cm"
+					tabType="left"
+					underlineStyle="default"></Tab>
+			</Level>
+			<Level
+				number="2"
+				firstLineIndent="0.4cm"
+				indent="1.1cm">
+				<Text pattern="%1.%2."></Text>
+				<Tab
+					position="1.1cm"
+					tabType="left"
+					underlineStyle="default"></Tab>
+			</Level>
+			<Level
+				number="3"
+				firstLineIndent="3.2cm"
+				indent="4.5cm">
+				<Text pattern="%1.%2.%3."></Text>
+				<Tab
+					position="1.4cm"
+					tabType="left"
+					underlineStyle="default"></Tab>
+			</Level>
+		</Levels>
+	</NumberingStyle>
+	<ContainerStyle name="Enumeration">
+		<SpaceAfter resolution="overwrite">0.15cm</SpaceAfter>
+	</ContainerStyle>
+	<ColumnStyle name="RightAligned">
+		<CellStyle>
+			<ContainerStyle>
+				<ParStyle>
+					<Align>right</Align>
+				</ParStyle>
+			</ContainerStyle>
+		</CellStyle>
+	</ColumnStyle>
+	<TableStyle name="Policy">
+		<ColumnStyle>
+			<CellStyle index="0">
+				<ContainerStyle>
+					<ParStyle>
+						<SpanStyle>
+							<FontStyle>bold</FontStyle>
+							<FontSize>11.0pt</FontSize>
+						</SpanStyle>
+					</ParStyle>
+				</ContainerStyle>
+			</CellStyle>
+			<CellStyle index="1">
+				<ContainerStyle>
+					<ParStyle>
+						<SpanStyle>
+							<FontSize>11.0pt</FontSize>
+						</SpanStyle>
+					</ParStyle>
+				</ContainerStyle>
+			</CellStyle>
+		</ColumnStyle>
+		<RowStyle>
+			<CellStyle>
+				<Padding
+					top="0.0cm"
+					right="0.0cm"
+					bottom="0.3cm"
+					left="0.0cm"></Padding>
+				<Border>
+					<Left
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Left>
+					<Top
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Top>
+					<Right
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Right>
+					<Bottom
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Bottom>
+				</Border>
+			</CellStyle>
+		</RowStyle>
+		<SpaceBefore>0.0cm</SpaceBefore>
+	</TableStyle>
+	<TableStyle name="Border">
+		<TableHeaderStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<FontStyle>bold</FontStyle>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+			</RowStyle>
+		</TableHeaderStyle>
+		<TableFooterStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<FontStyle>bold</FontStyle>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+			</RowStyle>
+		</TableFooterStyle>
+		<RowStyle>
+			<CellStyle>
+				<Padding
+					top="0.05cm"
+					right="0.3cm"
+					bottom="0.05cm"
+					left="0.3cm"></Padding>
+				<Border>
+					<Left
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="solid"></Left>
+					<Top
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="solid"></Top>
+					<Right
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="solid"></Right>
+					<Bottom
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="solid"></Bottom>
+				</Border>
+			</CellStyle>
+		</RowStyle>
+		<SpaceBefore>0.5cm</SpaceBefore>
+	</TableStyle>
+	<TableStyle name="Simple">
+		<TableHeaderStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<FontStyle></FontStyle>
+								<FontSize>8.0pt</FontSize>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+			</RowStyle>
+		</TableHeaderStyle>
+		<TableFooterStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<FontStyle>bold</FontStyle>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+			</RowStyle>
+		</TableFooterStyle>
+		<RowStyle>
+			<CellStyle>
+				<ContainerStyle>
+					<ParStyle>
+						<SpanStyle>
+							<FontStyle></FontStyle>
+							<FontSize>8.0pt</FontSize>
+						</SpanStyle>
+					</ParStyle>
+				</ContainerStyle>
+				<Padding
+					top="0.0cm"
+					right="0.0cm"
+					bottom="0.0cm"
+					left="0.0cm"></Padding>
+				<Border>
+					<Left
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Left>
+					<Top
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Top>
+					<Right
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Right>
+					<Bottom
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Bottom>
+				</Border>
+			</CellStyle>
+		</RowStyle>
+		<SpaceBefore>0.0cm</SpaceBefore>
+	</TableStyle>
+	<TableStyle name="Stripes"
+		parentName="Border">
+		<TableHeaderStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<TextColor>rgb(255,255,255)</TextColor>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+				<BackgroundColor>rgb(119,119,119)</BackgroundColor>
+			</RowStyle>
+		</TableHeaderStyle>
+		<RowStyle index="even">
+			<BackgroundColor>rgb(237,237,237)</BackgroundColor>
+		</RowStyle>
+	</TableStyle>
+	<TableStyle name="StripesColoured"
+		parentName="Border">
+		<TableHeaderStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<TextColor>rgb(255,255,255)</TextColor>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+				<BackgroundColor>rgb(227,0,24)</BackgroundColor>
+			</RowStyle>
+		</TableHeaderStyle>
+		<RowStyle index="even">
+			<BackgroundColor>rgb(241,225,227)</BackgroundColor>
+		</RowStyle>
+	</TableStyle>
+	<TableStyle name="HeaderLineColoured"
+		parentName="Border">
+		<TableHeaderStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<TextColor>rgb(255,255,255)</TextColor>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+				<BackgroundColor>rgb(227,0,24)</BackgroundColor>
+			</RowStyle>
+		</TableHeaderStyle>
+	</TableStyle>
+	<TableStyle	name="GroupMembers"
+		parentName="HeaderLineColoured">
+		<ColumnStyle index="3">
+			<CellStyle>
+				<ContainerStyle>
+					<ParStyle>
+						<Align>right</Align>
+					</ParStyle>
+				</ContainerStyle>
+			</CellStyle>
+		</ColumnStyle>
+	</TableStyle>
+	<TableStyle name="Space_Centered">
+		<TableHeaderStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<FontStyle>bold</FontStyle>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+			</RowStyle>
+		</TableHeaderStyle>
+		<TableFooterStyle>
+			<RowStyle>
+				<CellStyle>
+					<ContainerStyle>
+						<ParStyle>
+							<SpanStyle>
+								<FontStyle>bold</FontStyle>
+							</SpanStyle>
+						</ParStyle>
+					</ContainerStyle>
+				</CellStyle>
+			</RowStyle>
+		</TableFooterStyle>
+		<RowStyle>
+			<CellStyle>
+				<Padding
+					top="0.0cm"
+					right="0.2cm"
+					bottom="0.0cm"
+					left="0.2cm"></Padding>
+				<Border>
+					<Left
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Left>
+					<Top
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Top>
+					<Right
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Right>
+					<Bottom
+						width="500.0mpt"
+						color="rgb(0,0,0)"
+						style="none"></Bottom>
+				</Border>
+			</CellStyle>
+		</RowStyle>
+		<SpaceBefore>0.0cm</SpaceBefore>
+	</TableStyle>
+	<InlineFieldStyle name="Formfield">
+		<Height>0.6cm</Height>
+	</InlineFieldStyle>
+	<ParStyle name="Formfield_Label">
+		<SpaceAfter>0.0cm</SpaceAfter>
+		<SpaceBefore>0.0cm</SpaceBefore>
+
+		<SpanStyle>
+			<FontSize>8pt</FontSize>
+			<Padding left="0.0cm" />
+		</SpanStyle>
+	</ParStyle>
+	<TableStyle name="Form">
+		<RowStyle>
+			<CellStyle>
+				<Padding
+					top="0.05cm"
+					right="0.3cm"
+					bottom="0.05cm"
+					left="0cm"></Padding>
+				<Border>
+					<Left
+						width="500.0mpt"
+						color="rgb(0,0,0,255)"
+						style="none"></Left>
+					<Top
+						width="500.0mpt"
+						color="rgb(0,0,0,255)"
+						style="none"></Top>
+					<Right
+						width="500.0mpt"
+						color="rgb(0,0,0,255)"
+						style="none"></Right>
+					<Bottom
+						width="500.0mpt"
+						color="rgb(0,0,0,255)"
+						style="none"></Bottom>
+				</Border>
+
+				<ContainerStyle>
+					<ParStyle parentName="Formfield_Label">
+						<SpanStyle>
+							<InlineFieldStyle parentName="Formfield">
+								<Printable>true</Printable>
+							</InlineFieldStyle>
+						</SpanStyle>
+					</ParStyle>
+
+				</ContainerStyle>
+			</CellStyle>
+		</RowStyle>
+		<SpaceBefore>0.50cm</SpaceBefore>
+	</TableStyle>
+</StyleCollection>

@@ -1,0 +1,20 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Letter" ref="Data\Letter.datamodel" dataMappingRef="Data\Letter.mapping">
+   <Description>Basics for standard templates SAM</Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="Models/CoverLetter.model">
+   <Param name="Letter">$Letter</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

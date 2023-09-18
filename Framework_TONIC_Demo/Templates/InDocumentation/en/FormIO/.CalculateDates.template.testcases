@@ -1,0 +1,49 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="testcase">
+ <TestCase name="testcase">
+  <Root base="Framework_TONIC_Demo">
+   <DocumentDescription></DocumentDescription>
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Metadata" valueChanged="fromDataSource">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="OutputControl" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="FormattingMode" valueChanged="fromDataSource">
+        <Value><![CDATA[string:Editor]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="State" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="manually">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
+       <Value><![CDATA[string:\library\Framework_TONIC_Demo\Templates\InDocumentation\en\FormIO\CalculateDates.template]]></Value>
+      </DataNode>
+      <DataNode name="Language">
+       <Value><![CDATA[string:de]]></Value>
+      </DataNode>
+     </DataNode>
+     <DataNode name="CalculateDates">
+      <DataNode name="returndate" valueChanged="manually">
+       <Value><![CDATA[date:Aug 2, 2021, 12:00:00 AM]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+   </RootPartInstance>
+  </Root>
+ </TestCase>
+</TestCases>

@@ -1,0 +1,9 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First parentRef="Layouts\LetterFirstPage.pageLayout">
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+ </First>
+ <DefaultPageLayout parentRef="Layouts\LetterStandard.pageLayout">
+  <PageSize name="A4"></PageSize>
+ </DefaultPageLayout>
+</PageLayouts>

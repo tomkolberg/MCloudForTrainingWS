@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+   <entry name="/dataProviders/Metadata">
+      <SerializedDataProvider providerClass="de.kwsoft.mtext.format.dataprovider.MetadataNodeInstance">
+         <DataModelResourceName name=""/>
+         <NodeInst name="Metadata" value="">
+            <Children>
+               <NodeInst name="Models" value="">
+                  <Children>
+                     <NodeInst name="Selection_1"
+                               uuid="42355314-4295-4c0a-8310-78f4d04fb8de"
+                               value="Text1"/>
+                  </Children>
+               </NodeInst>
+            </Children>
+         </NodeInst>
+      </SerializedDataProvider>
+   </entry>
+</content>

@@ -1,0 +1,50 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="testcase">
+ <TestCase name="testcase">
+  <Root base="Framework_TONIC_Demo">
+   <DocumentDescription></DocumentDescription>
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="ContactPerson" valueChanged="fromDataSource">
+      <Value><![CDATA[string:]]></Value>
+     </DataNode>
+     <DataNode name="Metadata" valueChanged="fromDataSource">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="OutputControl" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="FormattingMode" valueChanged="fromDataSource">
+        <Value><![CDATA[string:Editor]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="State" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="manually">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
+       <Value><![CDATA[string:\library\Framework_TONIC_Demo\Templates\InDocumentation\en\FormIO\ContactPerson.template]]></Value>
+      </DataNode>
+      <DataNode name="Language">
+       <Value><![CDATA[string:de]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\Framework_TONIC_Demo\Testdata\en\JSON\Task_1Mess_1Inst_1Rec_central.json" name="ContactPerson.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+</TestCases>

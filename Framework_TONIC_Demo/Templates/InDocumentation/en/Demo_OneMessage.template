@@ -1,0 +1,60 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\InDocumentation\en\Demo_1Message.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPart>
+   <DataDefinition></DataDefinition>
+   <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+    <Extensions>
+     <DocumentExtension id="Message Content">
+      <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+       <Extensions>
+        <ContainerExtension id="CoverLetter Content">
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>12000.0mpt</FontSize>
+            </Style>
+            <Text>we are happy to inform you that we will cover the costs of your inpatient treatment.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+          <Span>
+           <Text>wir freuen uns Ihnen mitteilen zu können, dass wir die Kosten der Behandlung übernehmen.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+        </ContainerExtension>
+       </Extensions>
+       <Param name="Message">$Message</Param>
+       <Param name="Instance">$Instance</Param>
+       <Param name="Subject3"></Param>
+      </DocumentPartRef>
+     </DocumentExtension>
+    </Extensions>
+    <Param name="Message">$TaskControl.Message.instance(0)</Param>
+    <Param name="Subject1">"Information about your treatment"</Param>
+    <Param name="Subject2">"Assumption of treatment costs"</Param>
+   </DocumentPartRef>
+  </DocumentPart>
+ </Document>
+</RootPart>

@@ -1,0 +1,20 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="FreeLetter" description="006 Letter CD / CI for free use">
+ <DataDefinition></DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Container>
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://www.kwsoft.de/InsertionPointRules"
+       allowModelInsertion="true"
+       allowTextInsertion="false"
+       showModelSearchTree="DEFAULT">
+   <description/>
+   <modelQuery>
+      <queryOr>
+         <queryAtom name="Metadata.Models.Selection_1"
+                    operator="Equal"
+                    value="$Models.modelname"/>
+      </queryOr>
+   </modelQuery>
+   <modelList>
+      <model name="Models/Text3.model"/>
+   </modelList>
+</rules>

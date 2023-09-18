@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+   <entry name="/Metadata.metadataembedded">
+      <DataModel>
+         <Node can-overwrite="true"
+               data-type="TEXT"
+               hierarchical="FLAT"
+               meta-restype="1"
+               meta-restype-docinst="1"
+               multiple="false"
+               name="State"
+               searchable="true">
+            <Settings>
+               <Description>Dokumentstatus</Description>
+               <Validation allow-empty-value="false"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="LIST">
+                  <Values>
+                     <Value content="Created" valId="1"/>
+                     <Value content="WaitingForRelease" valId="2"/>
+                     <Value content="Released" valId="3"/>
+                  </Values>
+               </Validation>
+               <Format>
+                  <Input/>
+                  <Output/>
+               </Format>
+               <Script></Script>
+            </Settings>
+         </Node>
+         <Node can-overwrite="true"
+               meta-restype="1"
+               meta-restype-docinst="0"
+               multiple="false"
+               name="Templatesearchtree">
+            <Settings>
+               <Script></Script>
+            </Settings>
+            <Node can-overwrite="true"
+                  data-type="TEXT"
+                  hierarchical="FLAT"
+                  meta-restype="1"
+                  meta-restype-docinst="0"
+                  multiple="false"
+                  name="Level_1"
+                  searchable="true">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Format>
+                     <Input/>
+                     <Output/>
+                  </Format>
+                  <Script></Script>
+               </Settings>
+            </Node>
+            <Node can-overwrite="true"
+                  data-type="TEXT"
+                  hierarchical="FLAT"
+                  meta-restype="1"
+                  meta-restype-docinst="0"
+                  multiple="false"
+                  name="Level_2"
+                  searchable="true">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Format>
+                     <Input/>
+                     <Output/>
+                  </Format>
+                  <Script></Script>
+               </Settings>
+            </Node>
+            <Node can-overwrite="true"
+                  data-type="TEXT"
+                  hierarchical="FLAT"
+                  meta-restype="1"
+                  meta-restype-docinst="0"
+                  multiple="false"
+                  name="Level_3"
+                  searchable="true">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Format>
+                     <Input/>
+                     <Output/>
+                  </Format>
+                  <Script></Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node can-overwrite="true"
+               meta-restype="5"
+               meta-restype-docinst="0"
+               multiple="false"
+               name="Modelsearchtree">
+            <Settings>
+               <Script></Script>
+            </Settings>
+            <Node can-overwrite="true"
+                  data-type="TEXT"
+                  hierarchical="FLAT"
+                  meta-restype="4"
+                  meta-restype-docinst="0"
+                  multiple="false"
+                  name="Foldername"
+                  searchable="true">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Format>
+                     <Input/>
+                     <Output/>
+                  </Format>
+                  <Script></Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node can-overwrite="true"
+               meta-restype="1"
+               meta-restype-docinst="1"
+               multiple="false"
+               name="DataProvisioningService">
+            <Settings>
+               <Script></Script>
+            </Settings>
+            <Node can-overwrite="true"
+                  data-type="TEXT"
+                  hierarchical="FLAT"
+                  meta-restype="1"
+                  meta-restype-docinst="1"
+                  multiple="false"
+                  name="Pfad"
+                  searchable="true">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Format>
+                     <Input/>
+                     <Output/>
+                  </Format>
+                  <Script></Script>
+               </Settings>
+            </Node>
+            <Node can-overwrite="true"
+                  data-type="TEXT"
+                  hierarchical="FLAT"
+                  meta-restype="1"
+                  meta-restype-docinst="1"
+                  multiple="false"
+                  name="Extension"
+                  searchable="true">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Format>
+                     <Input/>
+                     <Output/>
+                  </Format>
+                  <Script></Script>
+               </Settings>
+            </Node>
+         </Node>
+      </DataModel>
+   </entry>
+   <entry name="/dataProviders/Metadata">
+      <SerializedDataProvider providerClass="de.kwsoft.mtext.format.dataprovider.MetadataNodeInstance">
+         <DataModelResourceName name="~\Metadata.metadataembedded"/>
+         <NodeInst name="Metadata" value="">
+            <Children>
+               <NodeInst name="Templatesearchtree" value="">
+                  <Children>
+                     <NodeInst name="Level_1" value=""/>
+                     <NodeInst name="Level_2" value=""/>
+                     <NodeInst name="Level_3" value=""/>
+                  </Children>
+               </NodeInst>
+               <NodeInst name="Modelsearchtree" value="">
+                  <Children>
+                     <NodeInst name="Foldername" value=""/>
+                  </Children>
+               </NodeInst>
+               <NodeInst name="State" value="Created"/>
+               <NodeInst name="DataProvisioningService" value="">
+                  <Children>
+                     <NodeInst name="Pfad" value="mtx://\\TONIC_Editor\Testdata\"/>
+                     <NodeInst name="Extension" value=".xml"/>
+                  </Children>
+               </NodeInst>
+            </Children>
+         </NodeInst>
+      </SerializedDataProvider>
+   </entry>
+</content>

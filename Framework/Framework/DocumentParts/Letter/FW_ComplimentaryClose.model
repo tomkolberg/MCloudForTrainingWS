@@ -1,0 +1,93 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <DataNodeDef name="ComplimentaryClose">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script><![CDATA[load("Scripts\\Base.js");
+if (FW_I18n.toLanguage($Metadata.DocumentLanguage) == "en") {
+	"Sincerely yours";
+}
+else {
+	"Mit freundlichen Grüßen"
+} ]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true" dialog-field="combobox" label="ComplimentaryClose">
+    <Values>
+     <Value content="Mit freundlichen Grüßen"></Value>
+     <Value content="best regards"></Value>
+     <Value content="Kind regards"></Value>
+     <Value content="Sincerely yours"></Value>
+     <Value content="Yours truly"></Value>
+    </Values>
+   </Validation>
+  </DataNodeDef>
+  <DataNodeDef name="Signature">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script><![CDATA[$Sender.User.Signature || 'mtx://Framework/Graphics/signature_BG.png';]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied>
+   <ModificationRight role="_EVERYONE_" operations="EDIT"></ModificationRight>
+  </Denied>
+ </ModificationRights>
+ <Container id="Greetings">
+  <Style>
+   <RegionRef>Body</RegionRef>
+  </Style>
+  <Par>
+   <Style>
+    <SpaceBefore>0.3cm</SpaceBefore>
+    <KeepWithPrevious>true</KeepWithPrevious>
+    <SpaceAfter resolution="combine">0.9cm</SpaceAfter>
+   </Style>
+   <Span>
+    <Data>$ComplimentaryClose</Data>
+   </Span>
+  </Par>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$Sender.User.Signature.notEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Image>
+    <DataUri>$Sender.User.Signature</DataUri>
+    <Style>
+     <Stretch>keep_aspect_ratio</Stretch>
+     <Height>2.0cm</Height>
+     <KeepWithPrevious>true</KeepWithPrevious>
+    </Style>
+   </Image>
+  </ContainerPart>
+  <ContainerPart>
+   <VisibleIf><![CDATA[else]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Image>
+    <DataUri>$Signature</DataUri>
+    <Style>
+     <Stretch>keep_aspect_ratio</Stretch>
+     <Height>2.0cm</Height>
+     <KeepWithPrevious>true</KeepWithPrevious>
+    </Style>
+   </Image>
+  </ContainerPart>
+  <Par>
+   <Style parentName="TextSpaceBefore">
+    <KeepWithPrevious>true</KeepWithPrevious>
+   </Style>
+   <Span>
+    <Data>$Sender.User.Lastname</Data>
+   </Span>
+  </Par>
+ </Container>
+</SectionPart>

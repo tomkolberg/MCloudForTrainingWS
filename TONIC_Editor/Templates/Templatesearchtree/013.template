@@ -1,0 +1,20 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="Dunning_Level_2" description="013 Reminder with threat of legal action">
+ <DataDefinition></DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Container>
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

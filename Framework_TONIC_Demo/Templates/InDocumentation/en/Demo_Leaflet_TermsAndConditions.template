@@ -1,0 +1,611 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\InDocumentation\en\Demo_Leaflet_TermsAndConditions.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>12000.0mpt</FontSize>
+            </Style>
+            <Text>we are happy to inform you that we will cover the costs of your inpatient treatment.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="Standard"></Style>
+         <Span>
+          <Text>wir freuen uns Ihnen mitteilen zu können, dass wir die Kosten Ihrer stationären Behandlung übernehmen werden.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="Standard"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>12000.0mpt</FontSize>
+            </Style>
+            <Text>Please note the attached information sheet and our current treatment conditions.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="Standard"></Style>
+         <Span>
+          <Text>Bitte beachten Sie dazu das beigefügte Informationsblatt sowie unsere aktuellen Behandlungsbedingungen.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="Standard"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Instance">$Instance</Param>
+     </DocumentPartRef>
+     <DocumentPartRef uri="\\Framework\Framework\DocumentParts\Leaflet\Leaflet.model">
+      <Extensions>
+       <ContainerExtension id="Leaflet Content">
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="US" variant=""></Language>
+           <Span>
+            <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+           </Span>
+          </Translation>
+         </Translations>
+         <Style parentName="small"></Style>
+         <Span>
+          <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+         </Span>
+        </Par>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Title">'Treatment Informations'</Param>
+     </DocumentPartRef>
+     <DocumentPartRef uri="\\Framework\Framework\DocumentParts\TermsAndConditons\TermsAndConditons.model">
+      <Extensions>
+       <ContainerExtension id="TermsAndConditons Content">
+        <Container>
+         <Style>
+          <ColumnsDefinition>
+           <ColumnDefinition gap="0.5cm"></ColumnDefinition>
+           <ColumnDefinition gap="0.5cm"></ColumnDefinition>
+          </ColumnsDefinition>
+         </Style>
+         <Numbering id="avb">
+          <Style name="TC">
+           <Levels>
+            <Level number="1" firstLineIndent="0.0cm" indent="0.0cm">
+             <Text pattern="%1."></Text>
+             <Tab position="0.5cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+            <Level number="2" firstLineIndent="0.0cm" indent="0.0cm">
+             <Text pattern="%1.%2."></Text>
+             <Tab position="0.5cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+            <Level number="3" firstLineIndent="3.2cm" indent="4.5cm">
+             <Text pattern="%1.%2.%3."></Text>
+             <Tab position="1.4cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+           </Levels>
+          </Style>
+         </Numbering>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Common</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <NumberingRef numberingId="avb" level="1"></NumberingRef>
+          <Span>
+           <Text>Allgemeines</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text>   </Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Terms</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <NumberingRef numberingId="avb" level="2"></NumberingRef>
+          <Style parentName="Standard"></Style>
+          <Span>
+           <Text>Begriffe</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.    </Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.    </Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Requirements</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <NumberingRef numberingId="avb" level="2"></NumberingRef>
+          <Style parentName="Standard">
+           <LeftIndent>0.0cm</LeftIndent>
+          </Style>
+          <Span>
+           <Text>Voraussetzungen</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Special Notes</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <NumberingRef numberingId="avb" level="1"></NumberingRef>
+          <Span>
+           <Text>Besonderes</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Additional Notes</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <NumberingRef numberingId="avb" level="1"></NumberingRef>
+          <Span>
+           <Text>Weiteres</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="US" variant=""></Language>
+            <Span>
+             <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla</Text>
+            </Span>
+           </Translation>
+          </Translations>
+          <Style parentName="Indented"></Style>
+          <Span>
+           <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla</Text>
+          </Span>
+         </Par>
+        </Container>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Titel">'Contract Terms and Conditions'</Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+   <Param name="Subject1">"Assumption of treatment costs"</Param>
+   <Param name="Subject2">"Information and conditions"</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

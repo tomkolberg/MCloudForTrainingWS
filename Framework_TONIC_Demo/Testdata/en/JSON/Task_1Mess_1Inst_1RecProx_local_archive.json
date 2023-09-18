@@ -1,0 +1,120 @@
+{
+  "taskcontrol": {
+    "message": {
+      "letterdate": "29.02.2020",
+      "instance": {
+        "sender": {
+          "Name": "SAM AG",
+          "Street": "Kruppallee 42",
+          "zip": "13373",
+          "city": "Essen",
+          "senderline": "sam ag - kruppallee 42 - 13373 essen",
+          "user": {
+            "partnerid": "14213373",
+            "userid": "HB",
+            "salutation": "Herr",
+            "firstname": "Hans",
+            "lastname": "Brackhaus",
+            "companyname1": "SAM AG",
+            "houseno": "42",
+            "Street": "Kruppallee",
+            "zip": "13373",
+            "city": "Essen",
+            "address": {
+              "line": [
+                "SAM AG",
+                "Hans Brackhaus",
+                "Kruppallee 42",
+                "13373 Essen"
+              ]
+            },
+            "salutatoryaddress": "Moin Herr Brackhaus,",
+            "role": "rückwärts",
+            "email": "h.brackhaus@sam-ag.com",
+            "phone": "0815-47111337",
+            "fax": "0815-47114242"
+          }
+        },
+        "recipient": {
+          "Partner": {
+            "partnerid": "20698101",
+            "salutation": "Frau",
+            "firstname": "Maria",
+            "lastname": "Mercurial",
+            "addresssupplement": "Postfach 1337",
+            "zip": "98199",
+            "city": "Smaragdstadt",
+            "address": {
+              "line": [
+                "Maria Mercurial",
+                "Postfach 1337",
+                "98199 Smaragdstadt"
+              ]
+            },
+            "role": "vorwärts",
+            "email": "m.mercurial@fasa.sr",
+            "phone": "01989-2050",
+            "fax": "01989-2001"
+          }
+        },
+        "recipientproxy": {
+          "Partner": {
+            "partnerid": "20698117",
+            "salutation": "Frau",
+            "firstname": "Marla",
+            "lastname": "Aguilar",
+            "houseno": "17",
+            "Street": "Am Boulevard",
+            "zip": "98142",
+            "city": "Smaragdstadt",
+            "address": {
+              "line": [
+                "Marla Aguilar",
+                "Am Boulevard 17",
+                "98142 Smaragdstadt"
+              ]
+            },
+            "role": "Purzelbaum",
+            "email": "m.aguilar@fasa.sr"
+          }
+        },
+        "outputcontrol": [
+          {
+            "outputchannel": "LOCALPRINTING",
+            "ARCHIVE": { "partnerid": "20698101" },
+            "LOCALPRINTING": {
+              "UserID": "14213373",
+              "Druckername": "D4711"
+            },
+            "CENTRALPRINTING": {
+              
+            },
+            "FAX": {
+              
+            },
+            "EMAIL": {
+              
+            }
+          },
+          {
+            "outputchannel": "ARCHIVE",
+            "ARCHIVE": { "partnerid": "20698101" },
+            "LOCALPRINTING": {
+              "UserID": "14213373",
+              "Druckername": "D4711"
+            },
+            "CENTRALPRINTING": {
+              
+            },
+            "FAX": {
+              
+            },
+            "EMAIL": {
+              
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\Framework_TONIC_Demo\Data\GenderList.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false" name="/GenderList" xpath="/genderlist"/>
+      <Rule copySubtree="false" name="/GenderList/gender" xpath="gender"/>
+      <Rule copySubtree="true" name="/GenderList/gender/text" xpath="Text"/>
+      <Rule copySubtree="true"
+            name="/GenderList/selectedGender"
+            xpath="selectedGender"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

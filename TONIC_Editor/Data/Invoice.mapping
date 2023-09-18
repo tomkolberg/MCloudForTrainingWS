@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\TONIC_Editor\Data\Invoice.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false" name="/Invoice" xpath="/letter/invoice"/>
+      <Rule copySubtree="true" name="/Invoice/date" xpath="date"/>
+      <Rule copySubtree="false" name="/Invoice/line" xpath="item"/>
+      <Rule copySubtree="true" name="/Invoice/line/amount" xpath="amount"/>
+      <Rule copySubtree="true"
+            name="/Invoice/line/description"
+            xpath="description"/>
+      <Rule copySubtree="true" name="/Invoice/line/duration" xpath="duration"/>
+      <Rule copySubtree="true" name="/Invoice/line/grossPrice" xpath="gross"/>
+      <Rule copySubtree="true" name="/Invoice/line/netPrice" xpath="net"/>
+      <Rule copySubtree="true" name="/Invoice/line/number" xpath="number"/>
+      <Rule copySubtree="false"
+            name="/Invoice/line/singleConnection"
+            xpath="singleConnection/connection"/>
+      <Rule copySubtree="true"
+            name="/Invoice/line/singleConnection/begin"
+            xpath="begin"/>
+      <Rule copySubtree="true"
+            name="/Invoice/line/singleConnection/call"
+            xpath="call"/>
+      <Rule copySubtree="true"
+            name="/Invoice/line/singleConnection/date"
+            xpath="date"/>
+      <Rule copySubtree="true"
+            name="/Invoice/line/singleConnection/duration"
+            xpath="duration"/>
+      <Rule copySubtree="true"
+            name="/Invoice/line/singleConnection/price"
+            xpath="price"/>
+      <Rule copySubtree="true"
+            name="/Invoice/line/singleConnection/tariff"
+            xpath="tariff"/>
+      <Rule copySubtree="true" name="/Invoice/line/VAT" xpath="tax"/>
+      <Rule copySubtree="true" name="/Invoice/period" xpath="period"/>
+      <Rule copySubtree="true" name="/Invoice/totalGross" xpath="totalGross"/>
+      <Rule copySubtree="true" name="/Invoice/totalNet" xpath="totalNet"/>
+      <Rule copySubtree="true" name="/Invoice/totalTax" xpath="totalTax"/>
+      <Rule copySubtree="true" name="/Invoice/totalTime" xpath="totalTime"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

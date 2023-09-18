@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="document">
+      <Settings>
+         <Script></Script>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="type"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="subject1"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="subject2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="id"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="id_from_dialog"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="false"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="LIST">
+               <Values>
+                  <Value content="Customer_Bacres" valId="1"/>
+                  <Value content="Customer_Forbes" valId="2"/>
+                  <Value content="Customer_Lloyd" valId="3"/>
+               </Values>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script></Script>
+         </Settings>
+      </Node>
+      <Node data-type="DATETIME"
+            hierarchical="FLAT"
+            multiple="false"
+            name="date"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input date-format="MMM d, yyyy h:mm:ss a"/>
+               <Output date-format="dd-MMM-yyyy HH:mm:ss"
+                       date-style="2"
+                       date-type="DATE"
+                       use-current-locale="true"/>
+            </Format>
+            <Script>new Date();</Script>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="salutation"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Input/>
+               <Output/>
+            </Format>
+            <Script>switch ($Letterdps.Customer.gender.toString()){
+	case 'Mr':
+	'Dear ' + $Letterdps.Customer.firstname + ','
+	break;
+	case 'Mrs':
+	'Dear ' +  $Letterdps.Customer.firstname + ','
+	break;
+	default:
+	'Dear sir or madam,'
+}</Script>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false"
+         name="Infoblock"
+         ref="\\TONIC_Editor\Data\Infoblock.datamodel">
+      <Settings>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="Customer"
+         ref="\\TONIC_Editor\Data\Customer.datamodel">
+      <Settings>
+         <Script></Script>
+      </Settings>
+   </Node>
+</DataModel>

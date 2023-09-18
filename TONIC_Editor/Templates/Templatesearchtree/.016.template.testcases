@@ -1,0 +1,890 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="medium">
+ <TestCase name="&lt;Standard&gt;">
+  <Root base="TONIC_Editor">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Letter">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="document">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="type">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject1">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject2">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="id">
+        <Value><![CDATA[string:010102]]></Value>
+       </DataNode>
+       <DataNode name="date">
+        <Value><![CDATA[date:Sep 18, 2019, 11:51:18 AM]]></Value>
+       </DataNode>
+       <DataNode name="salutation">
+        <Value><![CDATA[string:Dear Michelle,]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Infoblock">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="clerk">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="gender">
+         <Value><![CDATA[string:Mr]]></Value>
+        </DataNode>
+        <DataNode name="firstname">
+         <Value><![CDATA[string:Erich]]></Value>
+        </DataNode>
+        <DataNode name="surname">
+         <Value><![CDATA[string:Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="phone">
+         <Value><![CDATA[string:0761-8852-123]]></Value>
+        </DataNode>
+        <DataNode name="fullname">
+         <Value><![CDATA[string:Erich Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="email">
+         <Value><![CDATA[string:Hofmeier@kw.de]]></Value>
+        </DataNode>
+        <DataNode name="function">
+         <Value><![CDATA[string:Customer Service Manager]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Customer">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="customerno">
+        <Value><![CDATA[string:2345543320]]></Value>
+       </DataNode>
+       <DataNode name="gender">
+        <Value><![CDATA[string:Mrs]]></Value>
+       </DataNode>
+       <DataNode name="title">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="firstname">
+        <Value><![CDATA[string:Michelle]]></Value>
+       </DataNode>
+       <DataNode name="surname">
+        <Value><![CDATA[string:Forbes]]></Value>
+       </DataNode>
+       <DataNode name="street">
+        <Value><![CDATA[string:12 Hillside]]></Value>
+       </DataNode>
+       <DataNode name="postcode">
+        <Value><![CDATA[string:TQ10]]></Value>
+       </DataNode>
+       <DataNode name="town">
+        <Value><![CDATA[string:South Brent]]></Value>
+       </DataNode>
+       <DataNode name="bankdetails">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="owner">
+         <Value><![CDATA[string:Michelle Forbes]]></Value>
+        </DataNode>
+        <DataNode name="Bank">
+         <Value><![CDATA[string:Royal Bank of Scotland]]></Value>
+        </DataNode>
+        <DataNode name="BIC">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+        <DataNode name="IBAN">
+         <Value><![CDATA[string:GB32ESSE40486562135099]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Invoice">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="line">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="number">
+        <Value><![CDATA[string:+44 151 55123456]]></Value>
+       </DataNode>
+       <DataNode name="description">
+        <Value><![CDATA[string:mobile sim]]></Value>
+       </DataNode>
+       <DataNode name="amount">
+        <Value><![CDATA[string:1]]></Value>
+       </DataNode>
+       <DataNode name="duration">
+        <Value><![CDATA[string:03:22:10]]></Value>
+       </DataNode>
+       <DataNode name="netPrice">
+        <Value><![CDATA[number:10,000]]></Value>
+       </DataNode>
+       <DataNode name="grossPrice">
+        <Value><![CDATA[number:11,900]]></Value>
+       </DataNode>
+       <DataNode name="VAT">
+        <Value><![CDATA[string:19.00]]></Value>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:01.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:09:35]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:00:34]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 761 8852 285]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:mobile2landline]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:0.0022]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:15.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:20:13]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:05:12]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 151 55123457]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:familyNfriends]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:3.5344]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="line">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="number">
+        <Value><![CDATA[string:+44 761 9876543]]></Value>
+       </DataNode>
+       <DataNode name="description">
+        <Value><![CDATA[string:landline]]></Value>
+       </DataNode>
+       <DataNode name="amount">
+        <Value><![CDATA[string:1]]></Value>
+       </DataNode>
+       <DataNode name="duration">
+        <Value><![CDATA[string:02:22:00]]></Value>
+       </DataNode>
+       <DataNode name="netPrice">
+        <Value><![CDATA[number:5,000]]></Value>
+       </DataNode>
+       <DataNode name="grossPrice">
+        <Value><![CDATA[number:5,950]]></Value>
+       </DataNode>
+       <DataNode name="VAT">
+        <Value><![CDATA[string:9.50]]></Value>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:02.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:05:10]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:02:59]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 761 8852 984]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:landline]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:0.1034]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:16.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:15:33]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:03:54]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 157 4321 985]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:landline2mobile]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:2.5200]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="totalTime">
+       <Value><![CDATA[string:01:10:23]]></Value>
+      </DataNode>
+      <DataNode name="totalNet">
+       <Value><![CDATA[number:13,501]]></Value>
+      </DataNode>
+      <DataNode name="totalGross">
+       <Value><![CDATA[number:14,099]]></Value>
+      </DataNode>
+      <DataNode name="totalTax">
+       <Value><![CDATA[number:1,500]]></Value>
+      </DataNode>
+      <DataNode name="date">
+       <Value><![CDATA[string:11.11.2018]]></Value>
+      </DataNode>
+      <DataNode name="period">
+       <Value><![CDATA[string:10/2018]]></Value>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="DataProvisioningService">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Pfad">
+        <Value><![CDATA[string:mtx://\\TONIC_Editor\Testdata\]]></Value>
+       </DataNode>
+       <DataNode name="Extension">
+        <Value><![CDATA[string:.xml]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="true">
+       <Value><![CDATA[string:ERROR]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding">
+       <Value><![CDATA[string:\library\TONIC_Editor\Templates\Templatesearchtree\016.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <SectionPartInstance partIndex="0">
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <SectionPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef ref="$Letter" name="Letter"></DataNodeRef>
+     </Data>
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <TablePartInstance partIndex="2">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(0)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+    </TablePartInstance>
+    <TablePartInstance partIndex="2">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(1)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+    </TablePartInstance>
+    <TablePartInstance partIndex="3">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(0)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(0)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(1)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+    </TablePartInstance>
+    <TablePartInstance partIndex="3">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(1)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(0)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(1)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+    </TablePartInstance>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\TONIC_Editor\Data\Invoice.xml" name="Letter.FILE_NAME"></Property>
+   <Property value="\\TONIC_Editor\Data\Rechnung.xml" name="Brief.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+ <TestCase name="medium">
+  <Root>
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Letter">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="document">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="type">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject1">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject2">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="id">
+        <Value><![CDATA[string:010102]]></Value>
+       </DataNode>
+       <DataNode name="date">
+        <Value><![CDATA[date:Sep 18, 2019, 11:52:08 AM]]></Value>
+       </DataNode>
+       <DataNode name="salutation">
+        <Value><![CDATA[string:Dear Michelle,]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Infoblock">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="clerk">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="gender">
+         <Value><![CDATA[string:Mr]]></Value>
+        </DataNode>
+        <DataNode name="firstname">
+         <Value><![CDATA[string:Erich]]></Value>
+        </DataNode>
+        <DataNode name="surname">
+         <Value><![CDATA[string:Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="phone">
+         <Value><![CDATA[string:0761-8852-123]]></Value>
+        </DataNode>
+        <DataNode name="fullname">
+         <Value><![CDATA[string:Erich Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="email">
+         <Value><![CDATA[string:Hofmeier@kw.de]]></Value>
+        </DataNode>
+        <DataNode name="function">
+         <Value><![CDATA[string:Customer Service Manager]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Customer">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="customerno">
+        <Value><![CDATA[string:2345543320]]></Value>
+       </DataNode>
+       <DataNode name="gender">
+        <Value><![CDATA[string:Mrs]]></Value>
+       </DataNode>
+       <DataNode name="title">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="firstname">
+        <Value><![CDATA[string:Michelle]]></Value>
+       </DataNode>
+       <DataNode name="surname">
+        <Value><![CDATA[string:Forbes]]></Value>
+       </DataNode>
+       <DataNode name="street">
+        <Value><![CDATA[string:12 Hillside]]></Value>
+       </DataNode>
+       <DataNode name="postcode">
+        <Value><![CDATA[string:TQ10]]></Value>
+       </DataNode>
+       <DataNode name="town">
+        <Value><![CDATA[string:South Brent]]></Value>
+       </DataNode>
+       <DataNode name="bankdetails">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="owner">
+         <Value><![CDATA[string:Michelle Forbes]]></Value>
+        </DataNode>
+        <DataNode name="Bank">
+         <Value><![CDATA[string:Royal Bank of Scotland]]></Value>
+        </DataNode>
+        <DataNode name="BIC">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+        <DataNode name="IBAN">
+         <Value><![CDATA[string:GB32ESSE40486562135099]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Invoice">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="line">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="number">
+        <Value><![CDATA[string:+44 151 55123456]]></Value>
+       </DataNode>
+       <DataNode name="description">
+        <Value><![CDATA[string:mobile sim]]></Value>
+       </DataNode>
+       <DataNode name="amount">
+        <Value><![CDATA[string:1]]></Value>
+       </DataNode>
+       <DataNode name="duration">
+        <Value><![CDATA[string:00:58:23]]></Value>
+       </DataNode>
+       <DataNode name="netPrice">
+        <Value><![CDATA[number:524]]></Value>
+       </DataNode>
+       <DataNode name="grossPrice">
+        <Value><![CDATA[number:624]]></Value>
+       </DataNode>
+       <DataNode name="VAT">
+        <Value><![CDATA[string:1.00]]></Value>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:01.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:09:35]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:25:13]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 761 8852 285]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:mobile2landline]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:05.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:20:13]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:01:00]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 151 55123457]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:familyNfriends]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:05.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:20:15]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:05:49]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 151 55123457]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:familyNfriends]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:09.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:11:19]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:03:13]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 157 12345657]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:mobile2mobile]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:11.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:13:09]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:02:56]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 151 55123488]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:familyNfriends]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:15.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:20:13]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:01:01]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 152 35627891]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:mobile2mobile]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:19.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:15:15]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:00:59]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 157 95124879]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:mobile2mobile]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:19.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:17:35]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:10:33]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 151 55123459]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:familyNfriends]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:25.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:10:40]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:00:15]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 40 1256744]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:mobile2landline]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:31.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:22:01]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:07:24]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 151 55123408]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:familyNfriends]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="line">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="number">
+        <Value><![CDATA[string:+44 761 9876543]]></Value>
+       </DataNode>
+       <DataNode name="description">
+        <Value><![CDATA[string:landline]]></Value>
+       </DataNode>
+       <DataNode name="amount">
+        <Value><![CDATA[string:1]]></Value>
+       </DataNode>
+       <DataNode name="duration">
+        <Value><![CDATA[string:00:06:52]]></Value>
+       </DataNode>
+       <DataNode name="netPrice">
+        <Value><![CDATA[number:17]]></Value>
+       </DataNode>
+       <DataNode name="grossPrice">
+        <Value><![CDATA[number:20]]></Value>
+       </DataNode>
+       <DataNode name="VAT">
+        <Value><![CDATA[string:0.03]]></Value>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:02.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:05:10]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:02:59]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 761 8852 984]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:landline]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+       <DataNode name="singleConnection">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="date">
+         <Value><![CDATA[string:16.10.]]></Value>
+        </DataNode>
+        <DataNode name="begin">
+         <Value><![CDATA[string:15:33]]></Value>
+        </DataNode>
+        <DataNode name="duration">
+         <Value><![CDATA[string:00:03:54]]></Value>
+        </DataNode>
+        <DataNode name="call">
+         <Value><![CDATA[string:+44 157 4321 985]]></Value>
+        </DataNode>
+        <DataNode name="tariff">
+         <Value><![CDATA[string:landline2mobile]]></Value>
+        </DataNode>
+        <DataNode name="price">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="totalTime">
+       <Value><![CDATA[string:01:05:15]]></Value>
+      </DataNode>
+      <DataNode name="totalNet">
+       <Value><![CDATA[number:541]]></Value>
+      </DataNode>
+      <DataNode name="totalGross">
+       <Value><![CDATA[number:644]]></Value>
+      </DataNode>
+      <DataNode name="totalTax">
+       <Value><![CDATA[number:103]]></Value>
+      </DataNode>
+      <DataNode name="date">
+       <Value><![CDATA[string:11.11.2018]]></Value>
+      </DataNode>
+      <DataNode name="period">
+       <Value><![CDATA[string:10/2018]]></Value>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="DataProvisioningService">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Pfad">
+        <Value><![CDATA[string:mtx://\\TONIC_Editor\Testdata\]]></Value>
+       </DataNode>
+       <DataNode name="Extension">
+        <Value><![CDATA[string:.xml]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="true">
+       <Value><![CDATA[string:ERROR]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding">
+       <Value><![CDATA[string:\library\TONIC_Editor\Templates\Templatesearchtree\016.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <SectionPartInstance partIndex="0">
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <SectionPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef ref="$Letter" name="Letter"></DataNodeRef>
+     </Data>
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <TablePartInstance partIndex="2">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(0)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+    </TablePartInstance>
+    <TablePartInstance partIndex="2">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(1)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+    </TablePartInstance>
+    <TablePartInstance partIndex="3">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(0)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(0)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(1)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(2)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(3)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(4)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(5)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(6)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(7)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(8)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(9)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+    </TablePartInstance>
+    <TablePartInstance partIndex="3">
+     <Data>
+      <DataNodeRef ref="$Invoice.line.instance(1)" loopNode="true" name="line"></DataNodeRef>
+     </Data>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(0)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+     <TablePartInstance partIndex="0">
+      <Data>
+       <DataNodeRef ref="$line.singleConnection.instance(1)" loopNode="true" name="singleConnection"></DataNodeRef>
+      </Data>
+     </TablePartInstance>
+    </TablePartInstance>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\TONIC_Editor\Data\Invoice_1.xml" name="Letter.FILE_NAME"></Property>
+   <Property value="\\TONIC_Editor\Data\Invoice_1.xml" name="Brief.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+</TestCases>

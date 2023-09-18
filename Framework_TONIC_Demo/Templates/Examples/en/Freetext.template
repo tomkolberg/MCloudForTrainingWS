@@ -1,0 +1,91 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+  <DataNodeDef name="Subject1">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="false" label="Betreff Zeile 1" label-en_US="Subject line #1">
+    <Values></Values>
+    <ErrorMessage translation-en_US="Please enter at least one subject line!">Bitte geben Sie mindestens eine Betreff Zeile ein!</ErrorMessage>
+   </Validation>
+  </DataNodeDef>
+  <DataNodeDef name="Subject2">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <DataNodeDef name="Subject3">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ContentLink title="Betreff" title-en_US="Subject" hint="Bitte geben Sie mindestens eine Betreffzeile ein." hint-en_US="Please enter at least one subject line." targetId="" dataNode="$Subject1"></ContentLink>
+   <ContentLink title="Freitext" title-en_US="Freetext" hint="Bitte geben Sie den Freitext ein." hint-en_US="Please insert Freetext." targetId="Freitext Absatz" dataNode=""></ContentLink>
+  </GuideArea>
+  <InputArea>
+   <Group title="Betreff" title-en_US="Subject">
+    <Field title="Betreff Zeile 1" title-en_US="Subject line #1" dataNode="$Subject1"></Field>
+    <Field title="Betreff Zeile 2" title-en_US="Subject line #2" dataNode="$Subject2"></Field>
+    <Field title="Betreff Zeile 3" title-en_US="Subject line #3" dataNode="$Subject3"></Field>
+   </Group>
+  </InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <ContainerPart>
+         <DataDefinition></DataDefinition>
+         <ModificationRights>
+          <Allowed>
+           <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
+          </Allowed>
+          <Denied></Denied>
+         </ModificationRights>
+         <Par id="Freetext Paragraph">
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+        </ContainerPart>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Message">$Message</Param>
+      <Param name="Instance">$Instance</Param>
+      <Param name="Subject3">$Subject3</Param>
+      <Param name="Subject1">$Subject1</Param>
+      <Param name="Subject2">$Subject2</Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

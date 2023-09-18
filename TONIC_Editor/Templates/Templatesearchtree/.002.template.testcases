@@ -1,0 +1,149 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="&lt;Standard&gt;">
+ <TestCase name="&lt;Standard&gt;">
+  <Root base="TONIC_Editor">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Letter">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="document">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="type">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject1">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="subject2">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="id">
+        <Value><![CDATA[string:010101]]></Value>
+       </DataNode>
+       <DataNode name="date">
+        <Value><![CDATA[date:Sep 18, 2019, 8:31:15 AM]]></Value>
+       </DataNode>
+       <DataNode name="salutation">
+        <Value><![CDATA[string:Dear Sylvia,]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Infoblock">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="clerk">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="gender">
+         <Value><![CDATA[string:Mr]]></Value>
+        </DataNode>
+        <DataNode name="firstname">
+         <Value><![CDATA[string:Erich]]></Value>
+        </DataNode>
+        <DataNode name="surname">
+         <Value><![CDATA[string:Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="phone">
+         <Value><![CDATA[string:0761-8852-123]]></Value>
+        </DataNode>
+        <DataNode name="fullname">
+         <Value><![CDATA[string:Erich Hofmeier]]></Value>
+        </DataNode>
+        <DataNode name="email">
+         <Value><![CDATA[string:Hofmeier@kw.de]]></Value>
+        </DataNode>
+        <DataNode name="function">
+         <Value><![CDATA[string:Customer Service Manager]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Customer">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="customerno">
+        <Value><![CDATA[string:234567890]]></Value>
+       </DataNode>
+       <DataNode name="gender">
+        <Value><![CDATA[string:Mrs]]></Value>
+       </DataNode>
+       <DataNode name="title">
+        <Value><![CDATA[string:Dr.]]></Value>
+       </DataNode>
+       <DataNode name="firstname">
+        <Value><![CDATA[string:Sylvia]]></Value>
+       </DataNode>
+       <DataNode name="surname">
+        <Value><![CDATA[string:Bacres]]></Value>
+       </DataNode>
+       <DataNode name="street">
+        <Value><![CDATA[string:22 Christchurch Street]]></Value>
+       </DataNode>
+       <DataNode name="postcode">
+        <Value><![CDATA[string:SW3 4AR]]></Value>
+       </DataNode>
+       <DataNode name="town">
+        <Value><![CDATA[string:London]]></Value>
+       </DataNode>
+       <DataNode name="bankdetails">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="owner">
+         <Value><![CDATA[string:Sylvia Bacres]]></Value>
+        </DataNode>
+        <DataNode name="Bank">
+         <Value><![CDATA[string:Bank of England]]></Value>
+        </DataNode>
+        <DataNode name="BIC">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+        <DataNode name="IBAN">
+         <Value><![CDATA[string:GB32ESSE40486562136016]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="DataProvisioningService">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Pfad">
+        <Value><![CDATA[string:mtx://\\TONIC_Editor\Testdata\]]></Value>
+       </DataNode>
+       <DataNode name="Extension">
+        <Value><![CDATA[string:.xml]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="true">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding">
+       <Value><![CDATA[string:\library\TONIC_Editor\Templates\Templatesearchtree\002.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <SectionPartInstance partIndex="0">
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+    <SectionPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef ref="$Letter" name="Letter"></DataNodeRef>
+     </Data>
+     <SectionPartInstance partIndex="0"></SectionPartInstance>
+    </SectionPartInstance>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\TONIC_Editor\Data\Customer.xml" name="Letter.FILE_NAME"></Property>
+   <Property value="\\TONIC_Editor\Data\Kunde.xml" name="Brief.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+</TestCases>

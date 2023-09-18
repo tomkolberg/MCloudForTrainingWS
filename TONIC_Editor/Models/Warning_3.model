@@ -1,0 +1,31 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <DataNodeDef name="Amount" ref="Data\Invoice.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </DataNodeDef>
+ </DataDefinition>
+ <Par>
+  <Span>
+   <Text>you still have an amount of € </Text>
+   <Data editable="true">$Amount.totalGross</Data>
+   <Text> open with us.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>We have already reminded you twice. This is our third attempt. If the open amount of € </Text>
+   <Data editable="true">$Amount.totalGross</Data>
+   <Text> not until the </Text>
+   <Data editable="true">$Amount.date</Data>
+   <Text> should have arrived on our account, we must take further measures.</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>If you have paid in the meantime, consider this letter done.</Text>
+  </Span>
+ </Par>
+</ContainerPart>

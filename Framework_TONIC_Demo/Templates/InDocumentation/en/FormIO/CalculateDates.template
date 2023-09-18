@@ -1,0 +1,42 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="CalculateDates" ref="\\Framework_TONIC_Demo\Data\CalculateDates.datamodel" dataMappingRef="">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ActionLink title="Set Return Date" inputAreaGroupID="">
+    <Script><![CDATA[var formFunc = $context.FormIO.createForm(
+"\\\\Framework_TONIC_Demo\\FormIO\\en\\CalculateDates.formio");
+var layout = {
+	"height": "700",
+	"width" : "700",
+	"title" : "Enter Return Date"
+};
+$context.showForm(formFunc, $CalculateDates, layout);]]></Script>
+   </ActionLink>
+  </GuideArea>
+  <InputArea></InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Container>
+    <Par>
+     <Span>
+      <Text>Please return your reply until </Text>
+      <Data>$CalculateDates.returndate</Data>
+      <Text>.</Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

@@ -1,0 +1,9 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Style parentName="TextSpaceAfter"></Style>
+  <Span>
+   <Text>Text1-model</Text>
+  </Span>
+ </Par>
+</ContainerPart>

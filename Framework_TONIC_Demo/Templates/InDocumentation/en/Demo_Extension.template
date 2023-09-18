@@ -1,0 +1,37 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="Leaflet"></Style>
+   <Container>
+    <Par>
+     <Span>
+      <Text>This text is part of the template</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+    <ContainerPartRef uri="Models\ExtensionSimple.model">
+     <Extensions>
+      <ContainerExtension id="Extension Content">
+       <Par>
+        <Span>
+         <Text>This text is displayed in the model's extension, but stored in the template.</Text>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+    </ContainerPartRef>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

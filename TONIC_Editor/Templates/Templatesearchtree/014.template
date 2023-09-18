@@ -1,0 +1,82 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="Dunning_Level_3" description="014 Legal consequences">
+ <DataDefinition>
+  <ParamDef name="Letterdps" ref="Data\Letterdps.datamodel" dataMappingRef="Data\Letterdps.mapping">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Provisioning name="Datenquelle_aus_ID" dataMapping="Data\Letterdps.mapping">
+    <Parameters>
+     <Parameter name="ID"><![CDATA[$Letterdps.document.id_from_dialog]]></Parameter>
+     <Parameter name="PfadInRepository"><![CDATA[$Metadata.DataProvisioningService.Pfad]]></Parameter>
+     <Parameter name="DatenquelleExtension"><![CDATA[$Metadata.DataProvisioningService.Extension]]></Parameter>
+    </Parameters>
+    <DataMappingParameters></DataMappingParameters>
+   </Provisioning>
+  </ParamDef>
+  <ParamDef name="Invoice" ref="Data\Invoice.datamodel" dataMappingRef="Data\Invoice.mapping">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ContentLink title="Recipient" targetId="" dataNode="$Letterdps.Customer.gender"></ContentLink>
+   <ContentLink title="Subject" dataNode="$Letterdps.document.subject1"></ContentLink>
+   <ContentLink title="Free text" targetId="Free text" dataNode=""></ContentLink>
+  </GuideArea>
+  <InputArea>
+   <Field title="data acquisition" dataNode="$Letterdps.document.id_from_dialog">
+    <VisibleIf><![CDATA[$Letterdps.Customer.surname == '']]></VisibleIf>
+   </Field>
+   <Group title="Recipient">
+    <Field dataNode="$Letterdps.Customer.gender"></Field>
+    <Field dataNode="$Letterdps.Customer.title"></Field>
+    <Field dataNode="$Letterdps.Customer.firstname"></Field>
+    <Field dataNode="$Letterdps.Customer.surname"></Field>
+    <Field dataNode="$Letterdps.Customer.street"></Field>
+    <Field dataNode="$Letterdps.Customer.postcode"></Field>
+    <Field dataNode="$Letterdps.Customer.town"></Field>
+   </Group>
+   <Group title="Letter data" id="Free text">
+    <Field title="Subject Line 1" dataNode="$Letterdps.document.subject1"></Field>
+    <Field title="Subject Line 2" dataNode="$Letterdps.document.subject2"></Field>
+   </Group>
+  </InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <OutputSettings staple="false">
+   <Parameters></Parameters>
+   <DataDefinition></DataDefinition>
+   <Target medium="PRINT">
+    <Replacements></Replacements>
+   </Target>
+  </OutputSettings>
+  <Section>
+   <Style parentName="2PersonLetter"></Style>
+   <SectionPartRef uri="Models/SAMLetterform.model"></SectionPartRef>
+   <SectionPartRef uri="Models/SAMLetterHeader_dps.model">
+    <Param name="Letterdps">$Letterdps</Param>
+   </SectionPartRef>
+   <SectionPartRef uri="Models/2PersonTeam.model"></SectionPartRef>
+   <Container id="Free text">
+    <ContainerPart>
+     <DataDefinition></DataDefinition>
+     <ModificationRights>
+      <Allowed>
+       <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
+      </Allowed>
+      <Denied></Denied>
+     </ModificationRights>
+     <ContainerPartRef uri="Models/Warning_3.model"></ContainerPartRef>
+    </ContainerPart>
+    <ContainerPartRef uri="Models/Regards.model"></ContainerPartRef>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

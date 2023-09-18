@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="BOOLEAN"
+         hierarchical="FLAT"
+         multiple="false"
+         name="isValid"
+         searchable="false">
+      <Settings>
+         <Description>Checks if partner in recipient is set and valid</Description>
+         <Validation allow-empty-value="true"
+                     dialog-field="CHECKBOX"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input false-value="false" true-value="true"/>
+            <Output false-value="false" true-value="true"/>
+         </Format>
+         <Script>!$current.parent().isAbsent() &amp;&amp; $Partner.Zip &amp;&amp; !$Partner.Zip.isEmpty();</Script>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="Partner"
+         ref="\\Framework\Data\Partner.datamodel">
+      <Settings>
+         <Script></Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="SalutatoryAddress"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field="EDITFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script>deriveSalutatoryAddress($Partner, $document.Metadata.DocumentLanguage);</Script>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="NameFirstname"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field="EDITFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Input/>
+            <Output/>
+         </Format>
+         <Script>deriveNameFirstname($Partner);</Script>
+      </Settings>
+   </Node>
+</DataModel>

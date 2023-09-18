@@ -1,0 +1,20 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Span>
+   <Text>START 1st extension model</Text>
+  </Span>
+ </Par>
+ <ContainerPartRef uri="Models\ExtensionNestedSecond.model">
+  <Extensions>
+   <ContainerExtension id="Content Second Extension">
+    <ContainerExtensionDef id="Content First Extension"></ContainerExtensionDef>
+   </ContainerExtension>
+  </Extensions>
+ </ContainerPartRef>
+ <Par>
+  <Span>
+   <Text>END 1st extension model</Text>
+  </Span>
+ </Par>
+</ContainerPart>

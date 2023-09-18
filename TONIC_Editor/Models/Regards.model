@@ -1,0 +1,21 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <ModificationRights>
+  <Allowed></Allowed>
+  <Denied>
+   <ModificationRight role="_EVERYONE_" operations="EDIT"></ModificationRight>
+  </Denied>
+ </ModificationRights>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Kind regards</Text>
+  </Span>
+ </Par>
+ <Par>
+  <Style parentName="Text spacing before"></Style>
+  <Span>
+   <Text>Your Team SAM</Text>
+  </Span>
+ </Par>
+</ContainerPart>

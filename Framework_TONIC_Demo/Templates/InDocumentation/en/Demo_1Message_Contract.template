@@ -1,0 +1,75 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPart>
+   <DataDefinition></DataDefinition>
+   <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+    <Extensions>
+     <DocumentExtension id="Message Content">
+      <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+       <Extensions>
+        <ContainerExtension id="CoverLetter Content">
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Style>
+            <FontSize>12000.0mpt</FontSize>
+           </Style>
+           <Text>We have reviewed your requirements to have an insurance policy for your employees and would like to offer the proposed plan mentioned in this letter. I have mentioned some of our best-selling policies for health and dental covers.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Style>
+            <FontSize>12000.0mpt</FontSize>
+           </Style>
+           <Text>Considering the size and repute of your company, we can offer you a policy that is the best fit for health and life insurance for the employees.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Style>
+            <FontSize>12000.0mpt</FontSize>
+           </Style>
+           <Text>We are referring you to this policy as it requires a minimum contribution from the employees as well as the employers. This policy is best for the employees falling in a medium salary bracket. Employees can avail this policy with very little or no documentation at all.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Style>
+            <FontSize>12000.0mpt</FontSize>
+           </Style>
+           <Text>Please review the policy and let us know if it works best for you.</Text>
+          </Span>
+         </Par>
+        </ContainerExtension>
+       </Extensions>
+       <Param name="Message">$Message</Param>
+       <Param name="Instance">$Instance</Param>
+       <Param name="Subject3"></Param>
+      </DocumentPartRef>
+     </DocumentExtension>
+    </Extensions>
+    <Param name="Message">$TaskControl.Message.instance(0)</Param>
+    <Param name="Subject1">"Contract Information"</Param>
+    <Param name="Subject2">"Your Life Insurance"</Param>
+   </DocumentPartRef>
+  </DocumentPart>
+ </Document>
+</RootPart>

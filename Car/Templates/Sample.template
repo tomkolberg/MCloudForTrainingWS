@@ -1,0 +1,31 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" title="" description="">
+ <DataDefinition>
+  <ParamDef name="Letter" ref="Data\Letterdps.datamodel" dataMappingRef="Data\Letterdps.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <OutputSettings staple="false">
+   <Parameters></Parameters>
+   <DataDefinition></DataDefinition>
+   <Target medium="PRINT">
+    <Replacements></Replacements>
+   </Target>
+  </OutputSettings>
+  <DocumentPartRef uri="Models/CoverLetter.model">
+   <Extensions>
+    <ContainerExtension id="Please insert the current letter here"></ContainerExtension>
+   </Extensions>
+   <Param name="Letter">$Letter</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

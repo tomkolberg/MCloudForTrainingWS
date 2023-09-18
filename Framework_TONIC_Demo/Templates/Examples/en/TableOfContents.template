@@ -1,0 +1,163 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\Examples\en\Table of contents.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <ContainerPart>
+         <DataDefinition></DataDefinition>
+         <Style>
+          <ParStyle name="Indented_local" parentName="TextSpaceAfter">
+           <LeftIndent>0.5cm</LeftIndent>
+          </ParStyle>
+          <NumberingStyle name="TableOfContent">
+           <Levels>
+            <Level number="1" firstLineIndent="0.0cm" indent="0.0cm">
+             <Text pattern="%1."></Text>
+             <Tab position="0.5cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+            <Level number="2" firstLineIndent="2.0cm" indent="3.0cm">
+             <Text pattern="%1.%2"></Text>
+             <Tab position="0.0cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+           </Levels>
+          </NumberingStyle>
+         </Style>
+         <Numbering id="1">
+          <Style parentName="TableOfContent"></Style>
+         </Numbering>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Text>you find the following content in the document:</Text>
+          </Span>
+         </Par>
+         <ContainerPart>
+          <ForEachMarker scope="document">Chapter</ForEachMarker>
+          <DataDefinition></DataDefinition>
+          <Par>
+           <Style parentName="TextSpaceAfter">
+            <Tabs>
+             <Tab position="16.0cm" tabType="right" underlineStyle="dots"></Tab>
+            </Tabs>
+           </Style>
+           <Span>
+            <MarkerRef occurrence="all" scope="loop" operation="sum" name="Chapter">
+             <Placeholder>Chapter about life</Placeholder>
+            </MarkerRef>
+            <Text>	</Text>
+            <MarkerPageRef occurrence="all" scope="loop" name="Chapter">
+             <Placeholder>Chapter about life</Placeholder>
+            </MarkerPageRef>
+           </Span>
+          </Par>
+         </ContainerPart>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+         <Par>
+          <NumberingRef numberingId="1" level="1"></NumberingRef>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Marker name="Chapter">
+            <Text>Preface</Text>
+           </Marker>
+          </Span>
+         </Par>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <Par>
+          <NumberingRef numberingId="1" level="1"></NumberingRef>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Marker name="Chapter">
+            <Text>Introduction</Text>
+           </Marker>
+          </Span>
+         </Par>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <Par>
+          <NumberingRef numberingId="1" level="1"></NumberingRef>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Marker name="Chapter">
+            <Text>Main part 1</Text>
+           </Marker>
+          </Span>
+         </Par>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <Par>
+          <NumberingRef numberingId="1" level="1"></NumberingRef>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Marker name="Chapter">
+            <Text>Main part 2</Text>
+           </Marker>
+          </Span>
+         </Par>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <Par>
+          <NumberingRef numberingId="1" level="1"></NumberingRef>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Marker name="Chapter">
+            <Text>Conclusion</Text>
+           </Marker>
+          </Span>
+         </Par>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <Par>
+          <NumberingRef numberingId="1" level="1"></NumberingRef>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Marker name="Chapter">
+            <Text>Epilogue</Text>
+           </Marker>
+          </Span>
+         </Par>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+         <ContainerPartRef uri="Models\LoremIpsum.model"></ContainerPartRef>
+        </ContainerPart>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Message">$Message</Param>
+      <Param name="Instance">$Instance</Param>
+      <Param name="Subject1">"B1"</Param>
+      <Param name="Subject2">"B2"</Param>
+      <Param name="Subject3"></Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

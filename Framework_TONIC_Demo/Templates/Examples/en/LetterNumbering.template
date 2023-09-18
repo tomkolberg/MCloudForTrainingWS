@@ -1,0 +1,208 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Framework_TONIC_Demo\Templates\Examples\en\LetterNumbering.template">
+ <DataDefinition>
+  <ParamDef name="TaskControl" ref="\\Framework\Data\TaskControl.datamodel" dataMappingRef="\\Framework\Data\TaskControl.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <DocumentPartRef uri="\\Framework\DocumentControls\Message.model">
+   <Extensions>
+    <DocumentExtension id="Message Content">
+     <DocumentPartRef uri="\\Framework\DocumentControls\CoverLetter.model">
+      <Extensions>
+       <ContainerExtension id="CoverLetter Content">
+        <ContainerPart>
+         <DataDefinition></DataDefinition>
+         <Numbering id="4">
+          <Style name="TC">
+           <Levels>
+            <Level number="1" firstLineIndent="0.0cm" indent="0.5cm">
+             <Text pattern="%1."></Text>
+             <Tab position="0.5cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+            <Level number="2" firstLineIndent="0.4cm" indent="1.1cm">
+             <Text pattern="%1.%2."></Text>
+             <Tab position="1.1cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+            <Level number="3" firstLineIndent="3.2cm" indent="4.5cm">
+             <Text pattern="%1.%2.%3."></Text>
+             <Tab position="1.4cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+           </Levels>
+          </Style>
+         </Numbering>
+         <Numbering id="3">
+          <Style parentName="Bullet"></Style>
+         </Numbering>
+         <Numbering id="2">
+          <Style name="Bullet">
+           <Levels>
+            <Level number="1" firstLineIndent="0.0cm" indent="0.5cm">
+             <Symbol>bullet</Symbol>
+             <Tab position="0.5cm" tabType="left" underlineStyle="default"></Tab>
+            </Level>
+           </Levels>
+          </Style>
+         </Numbering>
+         <Numbering id="1"></Numbering>
+         <Par>
+          <NumberingRef numberingId="" level="1"></NumberingRef>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Text>here is a numeric enumeration:</Text>
+          </Span>
+         </Par>
+         <Container>
+          <Style parentName="Enumeration"></Style>
+          <Par>
+           <NumberingRef numberingId="4" level="1"></NumberingRef>
+           <Style parentName="FW_Default"></Style>
+           <Span>
+            <Text>third</Text>
+           </Span>
+          </Par>
+          <Par>
+           <NumberingRef numberingId="4" level="1"></NumberingRef>
+           <Style parentName="FW_Default"></Style>
+           <Span>
+            <Text>second</Text>
+           </Span>
+          </Par>
+          <Par>
+           <NumberingRef numberingId="4" level="1"></NumberingRef>
+           <Style parentName="FW_Default"></Style>
+           <Span>
+            <Text>first</Text>
+           </Span>
+          </Par>
+         </Container>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Text>Afterwards an enumeration with bullets:</Text>
+          </Span>
+         </Par>
+         <Container>
+          <Style parentName="Enumeration"></Style>
+          <Par>
+           <NumberingRef numberingId="2" level="1"></NumberingRef>
+           <Style parentName="FW_Default"></Style>
+           <Span>
+            <Text>one</Text>
+           </Span>
+          </Par>
+          <Par>
+           <NumberingRef numberingId="2" level="1"></NumberingRef>
+           <Style parentName="FW_Default"></Style>
+           <Span>
+            <Text>two</Text>
+           </Span>
+          </Par>
+          <Par>
+           <NumberingRef numberingId="2" level="1"></NumberingRef>
+           <Style parentName="FW_Default"></Style>
+           <Span>
+            <Text>three</Text>
+           </Span>
+          </Par>
+         </Container>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Text>This is the section after the numbering which has distance to the text.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="TextSpaceBeforeAndAfter"></Style>
+          <Span>
+           <Style>
+            <BackgroundColor>rgb(255,255,255)</BackgroundColor>
+            <FontSize>7500.0mpt</FontSize>
+            <TextColor>rgb(102,102,102)</TextColor>
+           </Style>
+           <Text>some text in between in another colour...</Text>
+          </Span>
+         </Par>
+         <Par>
+          <NumberingRef numberingId="3" level="1"></NumberingRef>
+          <Style parentName="TextSpaceBeforeAndAfter"></Style>
+          <Span>
+           <Style>
+            <BackgroundColor>rgb(255,255,255)</BackgroundColor>
+            <FontSize>7500.0mpt</FontSize>
+            <TextColor>rgb(102,102,102)</TextColor>
+           </Style>
+           <Text>Jesus</Text>
+          </Span>
+         </Par>
+         <Par>
+          <NumberingRef numberingId="3" level="1"></NumberingRef>
+          <Style parentName="TextSpaceBeforeAndAfter"></Style>
+          <Span>
+           <Style>
+            <BackgroundColor>rgb(255,255,255)</BackgroundColor>
+            <FontSize>7500.0mpt</FontSize>
+            <TextColor>rgb(102,102,102)</TextColor>
+           </Style>
+           <Text>Christ</Text>
+          </Span>
+         </Par>
+         <Par>
+          <NumberingRef numberingId="3" level="1"></NumberingRef>
+          <Style parentName="TextSpaceBeforeAndAfter"></Style>
+          <Span>
+           <Style>
+            <BackgroundColor>rgb(255,255,255)</BackgroundColor>
+            <FontSize>7500.0mpt</FontSize>
+            <TextColor>rgb(102,102,102)</TextColor>
+           </Style>
+           <Text>Superstar. </Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="TextSpaceBeforeAndAfter"></Style>
+          <Span>
+           <Style>
+            <BackgroundColor>rgb(255,255,255)</BackgroundColor>
+            <FontSize>7500.0mpt</FontSize>
+            <TextColor>rgb(102,102,102)</TextColor>
+           </Style>
+           <Text>Let's do not forget about them.</Text>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="TextSpaceAfter"></Style>
+          <Span>
+           <Text></Text>
+          </Span>
+         </Par>
+        </ContainerPart>
+       </ContainerExtension>
+      </Extensions>
+      <Param name="Message">$Message</Param>
+      <Param name="Instance">$Instance</Param>
+      <Param name="Subject1">"B1"</Param>
+      <Param name="Subject2">"B2"</Param>
+      <Param name="Subject3"></Param>
+     </DocumentPartRef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Message">$TaskControl.Message.instance(0)</Param>
+  </DocumentPartRef>
+ </Document>
+</RootPart>

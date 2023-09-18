@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\Framework_TONIC_Demo\Data\Client.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false" name="/Client" xpath="/Client"/>
+      <Rule copySubtree="true" name="/Client/Damagenumber" xpath="Damagenumber"/>
+      <Rule copySubtree="true"
+            name="/Client/Insurancenumber"
+            xpath="Insurancenumber"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>
